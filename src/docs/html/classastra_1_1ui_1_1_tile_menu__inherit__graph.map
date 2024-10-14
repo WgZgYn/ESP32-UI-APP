@@ -1,0 +1,11 @@
+<map id="astra::ui::TileMenu" name="astra::ui::TileMenu">
+<area shape="rect" id="Node000001" title=" " alt="" coords="97,827,219,1067"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_menu.html" title=" " alt="" coords="91,368,225,779"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,793,161,827,155,827,155,793"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_lifecycle_item.html" title=" " alt="" coords="5,165,151,320"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,334,111,368,106,369,97,335"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_item.html" title=" " alt="" coords="31,5,125,117"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="81,132,81,165,75,165,75,132"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1ui_1_1_animation.html" title=" " alt="" coords="175,165,301,320"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="219,335,210,369,205,368,213,334"/>
+</map>

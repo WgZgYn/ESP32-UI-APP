@@ -1,0 +1,16 @@
+<map id="astra::ui::Menu::itemSize" name="astra::ui::Menu::itemSize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="581,113,749,140"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_selector.html#a91c490f3e877fc3ec394b68f90ba701a" title=" " alt="" coords="387,84,533,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="566,115,533,110,534,105,566,110"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_menu.html#a32143d5d8fc8d5ed03e3503eb635d05f" title=" " alt="" coords="5,143,167,169"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="610,148,533,169,434,189,325,201,269,201,214,196,167,186,124,173,125,167,168,181,215,191,269,196,324,195,433,184,531,164,608,142"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1ui_1_1_selector.html#a2ef020c95cd51bd28735886dcceadef8" title=" " alt="" coords="215,5,339,48"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="621,109,533,75,431,51,339,36,340,31,432,46,534,69,623,104"/>
+<area shape="rect" id="Node000006" href="$classastra_1_1ui_1_1_selector.html#ac55db779df7e9bfe6901ff2823506b45" title=" " alt="" coords="215,139,339,181"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="566,138,339,157,339,152,566,132"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_selector.html#aa297cf9235cb6bbc502e87ddb28eb92b" title=" " alt="" coords="215,72,339,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="371,98,340,97,340,92,371,93"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="408,80,333,51,335,46,410,75"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="405,119,340,141,339,136,404,114"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="201,121,130,145,128,140,199,116"/>
+</map>

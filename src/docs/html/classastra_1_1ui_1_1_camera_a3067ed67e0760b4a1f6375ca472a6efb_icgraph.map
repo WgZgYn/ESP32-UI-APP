@@ -1,0 +1,15 @@
+<map id="astra::ui::Camera::go" name="astra::ui::Camera::go">
+<area shape="rect" id="Node000001" title=" " alt="" coords="574,80,719,107"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_camera.html#a2c84724a5acd5c3affdbfce9428520c8" title=" " alt="" coords="393,5,523,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="591,77,520,51,522,46,593,72"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1ui_1_1_camera.html#aa10e35d5d332632d238a59542ff55c0f" title=" " alt="" coords="390,72,526,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="559,96,527,96,527,91,559,91"/>
+<area shape="rect" id="Node000006" href="$classastra_1_1ui_1_1_camera.html#a455813d9fcd79e5ff21e3ecdbfb28980" title=" " alt="" coords="393,139,523,181"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="593,115,522,141,520,136,591,110"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_camera.html#aa2f5ef925af5c65d685e743307b54a30" title=" " alt="" coords="212,72,342,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,56,338,74,336,69,383,51"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_menu.html#adac1d618671d93e8fc2f8b85ad476ead" title=" " alt="" coords="5,80,164,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="196,96,164,96,164,91,196,91"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="375,96,343,96,343,91,375,91"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="383,135,336,118,338,113,385,130"/>
+</map>

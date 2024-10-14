@@ -1,0 +1,31 @@
+<map id="astra/ui/element/page/Selector.h" name="astra/ui/element/page/Selector.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="319,5,465,48"/>
+<area shape="rect" id="Node000002" href="$_camera_8cpp.html" title=" " alt="" coords="5,187,152,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="344,58,116,188,113,184,341,54"/>
+<area shape="rect" id="Node000003" href="$_menu_8cpp.html" title=" " alt="" coords="176,187,322,229"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="349,59,309,98,279,144,259,187,254,185,274,142,304,94,346,56"/>
+<area shape="rect" id="Node000004" href="$_menu_8h.html" title=" " alt="" coords="319,96,465,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="386,63,387,96,381,96,380,64"/>
+<area shape="rect" id="Node000010" href="$_selector_8cpp.html" title=" " alt="" coords="681,96,828,139"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="481,47,681,96,680,101,480,52"/>
+<area shape="rect" id="Node000011" href="$launcher_8h.html" title=" " alt="" coords="529,104,657,131"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="454,52,565,101,563,106,452,57"/>
+<area shape="poly" id="edge12_Node000004_Node000001" title=" " alt="" coords="398,81,397,49,402,48,403,80"/>
+<area shape="poly" id="edge10_Node000004_Node000002" title=" " alt="" coords="305,146,153,189,151,183,303,141"/>
+<area shape="poly" id="edge11_Node000004_Node000003" title=" " alt="" coords="347,150,284,188,281,184,344,145"/>
+<area shape="rect" id="Node000005" href="$_wi_fi_scan_8h.html" title=" " alt="" coords="346,195,502,221"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="407,152,422,193,417,195,402,154"/>
+<area shape="rect" id="Node000008" href="$_u_i___v_i_e_w_8h.html" title=" " alt="" coords="526,195,660,221"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="454,143,565,192,563,196,452,148"/>
+<area shape="rect" id="Node000006" href="$_wi_fi_scan_8cpp.html" title=" " alt="" coords="314,277,483,304"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="418,237,405,278,400,276,413,235"/>
+<area shape="rect" id="Node000007" href="$_u_i___v_i_e_w_8cpp.html" title=" " alt="" coords="623,277,771,304"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="482,224,655,274,654,279,480,229"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="623,229,683,275,679,279,619,233"/>
+<area shape="rect" id="Node000009" href="$app_8cpp.html" title=" " alt="" coords="507,277,599,304"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="583,236,562,278,557,276,578,234"/>
+<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="628,138,653,159,674,185,685,209,693,235,699,277,694,277,688,236,681,211,670,188,649,163,624,142"/>
+<area shape="poly" id="edge16_Node000011_Node000008" title=" " alt="" coords="596,146,596,194,590,194,590,146"/>
+<area shape="rect" id="Node000012" href="$launcher_8cpp.html" title=" " alt="" coords="734,195,876,221"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="638,134,776,192,774,197,636,139"/>
+</map>

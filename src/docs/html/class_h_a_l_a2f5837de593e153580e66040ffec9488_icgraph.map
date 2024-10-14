@@ -1,0 +1,13 @@
+<map id="HAL::_random" name="HAL::_random">
+<area shape="rect" id="Node000001" title=" " alt="" coords="624,35,730,61"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#a47dc2d0783e90f651ba82441a9d00d11" title=" " alt="" coords="478,35,576,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="608,51,577,51,577,45,608,45"/>
+<area shape="rect" id="Node000003" href="$namespaceastra.html#acd0ea04a8b2ccb11d5a626d7ed38b204" title=" " alt="" coords="279,5,393,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,41,393,30,394,25,463,36"/>
+<area shape="rect" id="Node000005" href="$classgame_1_1_game_of_life_1_1_game_of_life.html#ae204d8f97cd975daecd57403d0dcf277" title=" " alt="" coords="242,56,430,99"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="463,60,431,65,430,60,462,55"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1_launcher.html#a675f04557f2588a878aa362f227206cc" title=" " alt="" coords="24,5,175,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="263,21,176,21,176,16,263,16"/>
+<area shape="rect" id="Node000006" href="$classgame_1_1_game_of_life_1_1_game_of_life.html#a5b5ff0ac0f2c2f9743402ac574b4a38c" title=" " alt="" coords="5,56,194,99"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="226,80,194,80,194,75,226,75"/>
+</map>

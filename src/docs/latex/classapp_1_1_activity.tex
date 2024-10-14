@@ -1,0 +1,219 @@
+\doxysection{app\+::Activity Class Reference}
+\hypertarget{classapp_1_1_activity}{}\label{classapp_1_1_activity}\index{app::Activity@{app::Activity}}
+
+
+{\ttfamily \#include $<$app.\+h$>$}
+
+
+
+Inheritance diagram for app\+::Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classapp_1_1_activity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for app\+::Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classapp_1_1_activity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classapp_1_1_activity_acbedafdd409b1a4e4d655a16e5dd4239}{\texorpdfstring{$\sim$}{\string~}\+Activity}} () override=default
+\item 
+void \mbox{\hyperlink{classapp_1_1_activity_aa2dac425c15e76032ef96705cd637c59}{on\+Init}} () override
+\item 
+bool \mbox{\hyperlink{classapp_1_1_activity_a8a8c4ada857c9dfcdfc9a6108445cd28}{on\+Open}} () override
+\item 
+void \mbox{\hyperlink{classapp_1_1_activity_a13bb340074809977e0c2757c270f136e}{on\+Loop}} () override
+\item 
+void \mbox{\hyperlink{classapp_1_1_activity_a834d270b408de651e363bfbf2ada23f4}{on\+Exit}} () override
+\item 
+virtual void \mbox{\hyperlink{classapp_1_1_activity_aff8608b8ad302285db89fa5072246264}{setup}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classapp_1_1_activity_a38d7a487aade10767403818f3d19b005}{update}} ()=0
+\item 
+\mbox{\hyperlink{namespaceastra_1_1ui_ac3141ad4d0e4335a09fa5748fbe7a4e3}{astra\+::ui\+::\+Item\+Type}} \mbox{\hyperlink{classapp_1_1_activity_a06d5e7c6ef5f84a10633137e3b84fe40}{get\+Type}} () const override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classastra_1_1ui_1_1_item_ae1aaa5e034578e405a201e7558431b75}{Item}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classastra_1_1ui_1_1_item_ad09361e2680e77982dc5b9dec7826301}{parent}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{app_8h_source_l00018}{18}} of file \mbox{\hyperlink{app_8h_source}{app.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classapp_1_1_activity_acbedafdd409b1a4e4d655a16e5dd4239}\index{app::Activity@{app::Activity}!````~Activity@{\texorpdfstring{$\sim$}{\string~}Activity}}
+\index{````~Activity@{\texorpdfstring{$\sim$}{\string~}Activity}!app::Activity@{app::Activity}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Activity()}{\string~Activity()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_acbedafdd409b1a4e4d655a16e5dd4239} 
+app\+::\+Activity\+::\texorpdfstring{$\sim$}{\string~}\+Activity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classapp_1_1_activity_a06d5e7c6ef5f84a10633137e3b84fe40}\index{app::Activity@{app::Activity}!getType@{getType}}
+\index{getType@{getType}!app::Activity@{app::Activity}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_a06d5e7c6ef5f84a10633137e3b84fe40} 
+\mbox{\hyperlink{namespaceastra_1_1ui_ac3141ad4d0e4335a09fa5748fbe7a4e3}{astra\+::ui\+::\+Item\+Type}} app\+::\+Activity\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classastra_1_1ui_1_1_item_afd7747971b1b69e957e28790ff422589}{astra\+::ui\+::\+Item}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classgame_1_1_game_a0c08c602d01b05495d4d277574566ba3}{game\+::\+Game}}.
+
+
+
+Definition at line \mbox{\hyperlink{app_8h_source_l00043}{43}} of file \mbox{\hyperlink{app_8h_source}{app.\+h}}.
+
+\Hypertarget{classapp_1_1_activity_a834d270b408de651e363bfbf2ada23f4}\index{app::Activity@{app::Activity}!onExit@{onExit}}
+\index{onExit@{onExit}!app::Activity@{app::Activity}}
+\doxysubsubsection{\texorpdfstring{onExit()}{onExit()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_a834d270b408de651e363bfbf2ada23f4} 
+void app\+::\+Activity\+::on\+Exit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a58641e6e5ec59eda96d3ff5cfeb7a3f1}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{app_8h_source_l00036}{36}} of file \mbox{\hyperlink{app_8h_source}{app.\+h}}.
+
+\Hypertarget{classapp_1_1_activity_aa2dac425c15e76032ef96705cd637c59}\index{app::Activity@{app::Activity}!onInit@{onInit}}
+\index{onInit@{onInit}!app::Activity@{app::Activity}}
+\doxysubsubsection{\texorpdfstring{onInit()}{onInit()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_aa2dac425c15e76032ef96705cd637c59} 
+void app\+::\+Activity\+::on\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a1305ccdb52bc00ad74e192b621bc9447}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{app_8h_source_l00023}{23}} of file \mbox{\hyperlink{app_8h_source}{app.\+h}}.
+
+\Hypertarget{classapp_1_1_activity_a13bb340074809977e0c2757c270f136e}\index{app::Activity@{app::Activity}!onLoop@{onLoop}}
+\index{onLoop@{onLoop}!app::Activity@{app::Activity}}
+\doxysubsubsection{\texorpdfstring{onLoop()}{onLoop()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_a13bb340074809977e0c2757c270f136e} 
+void app\+::\+Activity\+::on\+Loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a3d656063caf7d2922a111efc0a13bfc1}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{app_8h_source_l00032}{32}} of file \mbox{\hyperlink{app_8h_source}{app.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classapp_1_1_activity_a13bb340074809977e0c2757c270f136e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classapp_1_1_activity_a8a8c4ada857c9dfcdfc9a6108445cd28}\index{app::Activity@{app::Activity}!onOpen@{onOpen}}
+\index{onOpen@{onOpen}!app::Activity@{app::Activity}}
+\doxysubsubsection{\texorpdfstring{onOpen()}{onOpen()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_a8a8c4ada857c9dfcdfc9a6108445cd28} 
+bool app\+::\+Activity\+::on\+Open (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a450eb19717d4723a1e4609c79312eff4}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{app_8h_source_l00027}{27}} of file \mbox{\hyperlink{app_8h_source}{app.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classapp_1_1_activity_a8a8c4ada857c9dfcdfc9a6108445cd28_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classapp_1_1_activity_aff8608b8ad302285db89fa5072246264}\index{app::Activity@{app::Activity}!setup@{setup}}
+\index{setup@{setup}!app::Activity@{app::Activity}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_aff8608b8ad302285db89fa5072246264} 
+virtual void app\+::\+Activity\+::setup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_device_info_ae2a2e5158d6e3cb3308986e3b68d214b}{Device\+Info}}, \mbox{\hyperlink{classgame_1_1_game_a7843ce61560f2b33ab056732976f4e9f}{game\+::\+Game}}, \mbox{\hyperlink{class_network_manager_a41b6bc7c05cf029cb471e3825f34f40f}{Network\+Manager}}, and \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a6398e4451b74befd0a3a8474394bba5c}{Wi\+Fi\+Info\+Item\+::\+Connect\+To}}.
+
+
+
+Referenced by \mbox{\hyperlink{app_8h_source_l00027}{on\+Open()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classapp_1_1_activity_aff8608b8ad302285db89fa5072246264_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classapp_1_1_activity_a38d7a487aade10767403818f3d19b005}\index{app::Activity@{app::Activity}!update@{update}}
+\index{update@{update}!app::Activity@{app::Activity}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_a38d7a487aade10767403818f3d19b005} 
+virtual void app\+::\+Activity\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_device_info_abf68dba0337b8139fdd561d08d09de5c}{Device\+Info}}, \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_ab3258be0bfcf5743a52ab737ecd76276}{game\+::\+Game\+Of\+Life\+::\+Runner}}, \mbox{\hyperlink{class_network_manager_aa78e68868876c7a00727ad566c50f89e}{Network\+Manager}}, and \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a91fe3570cf980215b7acba56ae76fbc9}{Wi\+Fi\+Info\+Item\+::\+Connect\+To}}.
+
+
+
+Referenced by \mbox{\hyperlink{app_8h_source_l00032}{on\+Loop()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classapp_1_1_activity_a38d7a487aade10767403818f3d19b005_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classastra_1_1ui_1_1_item_ad09361e2680e77982dc5b9dec7826301}\index{app::Activity@{app::Activity}!parent@{parent}}
+\index{parent@{parent}!app::Activity@{app::Activity}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_item_ad09361e2680e77982dc5b9dec7826301} 
+\mbox{\hyperlink{classastra_1_1ui_1_1_item_ae1aaa5e034578e405a201e7558431b75}{Item}}\texorpdfstring{$\ast$}{*} astra\+::ui\+::\+Item\+::parent = nullptr\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_item_8h_source_l00026}{26}} of file \mbox{\hyperlink{_item_8h_source}{Item.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_8h_source_l00163}{astra\+::ui\+::\+List\+Menu\+::add()}}, \mbox{\hyperlink{_menu_8h_source_l00104}{astra\+::ui\+::\+Tile\+Menu\+::add()}}, and \mbox{\hyperlink{_menu_8h_source_l00078}{astra\+::ui\+::\+Menu\+::parent\+Item()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\mbox{\hyperlink{app_8h}{app.\+h}}\end{DoxyCompactItemize}

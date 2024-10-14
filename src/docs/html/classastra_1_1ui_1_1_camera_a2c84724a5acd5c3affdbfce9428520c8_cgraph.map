@@ -1,0 +1,9 @@
+<map id="astra::ui::Camera::goToListItemPage" name="astra::ui::Camera::goToListItemPage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,136,48"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_camera.html#a3067ed67e0760b4a1f6375ca472a6efb" title=" " alt="" coords="184,13,328,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,24,168,24,168,29,136,29"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_animation.html#adbab0f44e4a9f9c34589bfbb1b38c075" title=" " alt="" coords="376,5,510,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,24,360,24,360,29,329,29"/>
+<area shape="rect" id="Node000004" href="$namespaceutils.html#aed633e275ed6f46b0091c74c388981d2" title=" " alt="" coords="558,13,657,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="511,24,543,24,543,29,511,29"/>
+</map>

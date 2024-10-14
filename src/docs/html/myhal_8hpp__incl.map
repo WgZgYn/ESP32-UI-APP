@@ -1,0 +1,19 @@
+<map id="hal/myhal.hpp" name="hal/myhal.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,5,205,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,229,82,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,34,59,217,54,214,146,31"/>
+<area shape="rect" id="Node000003" href="$hal_8h.html" title=" " alt="" coords="102,155,151,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,33,142,81,132,140,127,139,137,79,148,32"/>
+<area shape="rect" id="Node000006" href="$_u8g2_bind_8h.html" title=" " alt="" coords="151,80,240,107"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="164,31,183,65,179,68,159,34"/>
+<area shape="rect" id="Node000008" href="$_arduino_bind_8h.html" title=" " alt="" coords="264,80,367,107"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="183,30,275,71,272,76,181,35"/>
+<area shape="poly" id="edge5_Node000003_Node000002" title=" " alt="" coords="114,184,71,221,67,217,110,180"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="106,229,162,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="130,182,134,213,128,214,125,182"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="186,229,240,256"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="143,180,188,217,185,221,140,184"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="185,109,151,145,147,141,182,105"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="175,155,251,181"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="201,107,209,139,204,140,196,108"/>
+</map>

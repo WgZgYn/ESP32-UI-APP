@@ -1,0 +1,13 @@
+<map id="HAL::_drawChinese" name="HAL::_drawChinese">
+<area shape="rect" id="Node000001" title=" " alt="" coords="596,80,735,107"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#ad0a3da5981d4cef340f739f43c703107" title=" " alt="" coords="417,80,548,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="581,96,549,96,549,91,581,91"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_list_menu.html#a50a2c2586d5afcca867581a5f8a41d42" title=" " alt="" coords="226,5,355,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="426,77,353,51,355,46,428,72"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_selector.html#a6751b40a06b9b48e2598c62489957610" title=" " alt="" coords="228,72,352,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="401,96,353,96,353,91,401,91"/>
+<area shape="rect" id="Node000006" href="$classmqtt_1_1_mqtt_view.html#a4db7dd37724a8dc2798e080a8ac832a7" title=" " alt="" coords="212,139,369,165"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="423,114,337,141,336,136,421,109"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1ui_1_1_menu.html#adac1d618671d93e8fc2f8b85ad476ead" title=" " alt="" coords="5,80,164,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="213,96,164,96,164,91,213,91"/>
+</map>

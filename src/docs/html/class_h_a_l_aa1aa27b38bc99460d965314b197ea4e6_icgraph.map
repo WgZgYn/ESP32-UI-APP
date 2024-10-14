@@ -1,0 +1,15 @@
+<map id="HAL::_drawRBox" name="HAL::_drawRBox">
+<area shape="rect" id="Node000001" title=" " alt="" coords="586,81,710,108"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#a450514fd38ce44e484c3c6e84600907d" title=" " alt="" coords="422,81,538,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="571,97,539,97,539,92,571,92"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1_launcher.html#ac24cb43a812f9ef48729946c094b5cc7" title=" " alt="" coords="212,52,374,79"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="406,86,374,81,375,75,407,81"/>
+<area shape="rect" id="Node000007" href="$classastra_1_1ui_1_1_selector.html#a6751b40a06b9b48e2598c62489957610" title=" " alt="" coords="231,103,355,145"/>
+<area shape="poly" id="edge5_Node000002_Node000007" title=" " alt="" coords="407,109,356,117,355,112,406,104"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1_launcher.html#ad7823766875173d51ca21754448edc2a" title=" " alt="" coords="9,5,160,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="215,51,147,35,148,30,216,46"/>
+<area shape="rect" id="Node000006" href="$classastra_1_1_launcher.html#af5200ca1754711c51f1576eaf9914543" title=" " alt="" coords="11,56,158,83"/>
+<area shape="poly" id="edge4_Node000003_Node000006" title=" " alt="" coords="196,70,159,71,159,65,196,65"/>
+<area shape="rect" id="Node000008" href="$classastra_1_1ui_1_1_menu.html#adac1d618671d93e8fc2f8b85ad476ead" title=" " alt="" coords="5,111,164,137"/>
+<area shape="poly" id="edge6_Node000007_Node000008" title=" " alt="" coords="215,127,164,127,164,121,215,121"/>
+</map>

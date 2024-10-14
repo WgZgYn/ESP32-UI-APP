@@ -1,0 +1,349 @@
+\doxysection{block Class Reference}
+\hypertarget{classblock}{}\label{classblock}\index{block@{block}}
+
+
+{\ttfamily \#include $<$block.\+h$>$}
+
+
+
+Inheritance diagram for block\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classblock__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for block\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classblock__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classblock_a137ce2b269fcecbc57dd1d668ce5cc37}{rotateX}} ()
+\item 
+void \mbox{\hyperlink{classblock_aa6f2c154d03ae9bd4bd492c93568b23d}{rotateY}} ()
+\item 
+void \mbox{\hyperlink{classblock_a135f43810aa943585a9e9bdc89af6aa5}{rotateZ}} ()
+\item 
+void \mbox{\hyperlink{classblock_aa9fcde09d74e682ad66b3a690568f4c0}{update}} () override
+\item 
+void \mbox{\hyperlink{classastra_1_1ui_1_1_widget_a993899c83ea374d53e694fd2b77cf1df}{on\+Init}} () override
+\item 
+bool \mbox{\hyperlink{classastra_1_1ui_1_1_widget_a23ba7c0862cc29b85d594a8f86465c19}{on\+Open}} () override
+\item 
+void \mbox{\hyperlink{classastra_1_1ui_1_1_widget_af42dbf19b2f7fae356ee1253ef7f2887}{on\+Loop}} () override
+\item 
+void \mbox{\hyperlink{classastra_1_1ui_1_1_widget_aa8b2efa27c17a07df06906437e1d75e5}{on\+Exit}} () override
+\item 
+Item\+Type \mbox{\hyperlink{classastra_1_1ui_1_1_widget_a5359c97622fbff261d3f69becfc6e2ba}{get\+Type}} () const override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classblock}{block}} \& \mbox{\hyperlink{classblock_a2baad4419dfb653a015fef7ed3bb5c1a}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classblock_a7ca306abe8b3d6431fd4a4d3b8195fb0}{points}} \mbox{[}8\mbox{]}\mbox{[}3\mbox{]}
+\item 
+\mbox{\hyperlink{classastra_1_1ui_1_1_item_ae1aaa5e034578e405a201e7558431b75}{Item}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classastra_1_1ui_1_1_item_ad09361e2680e77982dc5b9dec7826301}{parent}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classblock_a804b5684d69ecadffd45c481f786003a}{draw\+Line}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr float \mbox{\hyperlink{classblock_a9fa87cb7e491064242fd1779f7a61d1f}{d}} = 0.\+02
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{block_8h_source_l00011}{11}} of file \mbox{\hyperlink{block_8h_source}{block.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classblock_a804b5684d69ecadffd45c481f786003a}\index{block@{block}!drawLine@{drawLine}}
+\index{drawLine@{drawLine}!block@{block}}
+\doxysubsubsection{\texorpdfstring{drawLine()}{drawLine()}}
+{\footnotesize\ttfamily \label{classblock_a804b5684d69ecadffd45c481f786003a} 
+void block\+::draw\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{block_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{block_8cpp_source}{block.\+cpp}}.
+
+\Hypertarget{classblock_a2baad4419dfb653a015fef7ed3bb5c1a}\index{block@{block}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!block@{block}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{classblock_a2baad4419dfb653a015fef7ed3bb5c1a} 
+static \mbox{\hyperlink{classblock}{block}} \& block\+::get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{block_8h_source_l00031}{31}} of file \mbox{\hyperlink{block_8h_source}{block.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_u_i___v_i_e_w_8cpp_source_l00016}{UIConfig()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classblock_a2baad4419dfb653a015fef7ed3bb5c1a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_widget_a5359c97622fbff261d3f69becfc6e2ba}\index{block@{block}!getType@{getType}}
+\index{getType@{getType}!block@{block}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_widget_a5359c97622fbff261d3f69becfc6e2ba} 
+Item\+Type astra\+::ui\+::\+Widget\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_aa94bcc2a14e723b167f667d7cb6e90ba}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{widget_8h_source_l00029}{29}} of file \mbox{\hyperlink{widget_8h_source}{widget.\+h}}.
+
+\Hypertarget{classastra_1_1ui_1_1_widget_aa8b2efa27c17a07df06906437e1d75e5}\index{block@{block}!onExit@{onExit}}
+\index{onExit@{onExit}!block@{block}}
+\doxysubsubsection{\texorpdfstring{onExit()}{onExit()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_widget_aa8b2efa27c17a07df06906437e1d75e5} 
+void astra\+::ui\+::\+Widget\+::on\+Exit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a58641e6e5ec59eda96d3ff5cfeb7a3f1}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{widget_8h_source_l00024}{24}} of file \mbox{\hyperlink{widget_8h_source}{widget.\+h}}.
+
+\Hypertarget{classastra_1_1ui_1_1_widget_a993899c83ea374d53e694fd2b77cf1df}\index{block@{block}!onInit@{onInit}}
+\index{onInit@{onInit}!block@{block}}
+\doxysubsubsection{\texorpdfstring{onInit()}{onInit()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_widget_a993899c83ea374d53e694fd2b77cf1df} 
+void astra\+::ui\+::\+Widget\+::on\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a1305ccdb52bc00ad74e192b621bc9447}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{widget_8h_source_l00013}{13}} of file \mbox{\hyperlink{widget_8h_source}{widget.\+h}}.
+
+\Hypertarget{classastra_1_1ui_1_1_widget_af42dbf19b2f7fae356ee1253ef7f2887}\index{block@{block}!onLoop@{onLoop}}
+\index{onLoop@{onLoop}!block@{block}}
+\doxysubsubsection{\texorpdfstring{onLoop()}{onLoop()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_widget_af42dbf19b2f7fae356ee1253ef7f2887} 
+void astra\+::ui\+::\+Widget\+::on\+Loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a3d656063caf7d2922a111efc0a13bfc1}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{widget_8h_source_l00020}{20}} of file \mbox{\hyperlink{widget_8h_source}{widget.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classastra_1_1ui_1_1_widget_af42dbf19b2f7fae356ee1253ef7f2887_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_widget_a23ba7c0862cc29b85d594a8f86465c19}\index{block@{block}!onOpen@{onOpen}}
+\index{onOpen@{onOpen}!block@{block}}
+\doxysubsubsection{\texorpdfstring{onOpen()}{onOpen()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_widget_a23ba7c0862cc29b85d594a8f86465c19} 
+bool astra\+::ui\+::\+Widget\+::on\+Open (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a450eb19717d4723a1e4609c79312eff4}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{widget_8h_source_l00016}{16}} of file \mbox{\hyperlink{widget_8h_source}{widget.\+h}}.
+
+\Hypertarget{classblock_a137ce2b269fcecbc57dd1d668ce5cc37}\index{block@{block}!rotateX@{rotateX}}
+\index{rotateX@{rotateX}!block@{block}}
+\doxysubsubsection{\texorpdfstring{rotateX()}{rotateX()}}
+{\footnotesize\ttfamily \label{classblock_a137ce2b269fcecbc57dd1d668ce5cc37} 
+void block\+::rotateX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{block_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{block_8cpp_source}{block.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{block_8cpp_source_l00059}{update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classblock_a137ce2b269fcecbc57dd1d668ce5cc37_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classblock_a137ce2b269fcecbc57dd1d668ce5cc37_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classblock_aa6f2c154d03ae9bd4bd492c93568b23d}\index{block@{block}!rotateY@{rotateY}}
+\index{rotateY@{rotateY}!block@{block}}
+\doxysubsubsection{\texorpdfstring{rotateY()}{rotateY()}}
+{\footnotesize\ttfamily \label{classblock_aa6f2c154d03ae9bd4bd492c93568b23d} 
+void block\+::rotateY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{block_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{block_8cpp_source}{block.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{block_8cpp_source_l00059}{update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classblock_aa6f2c154d03ae9bd4bd492c93568b23d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classblock_aa6f2c154d03ae9bd4bd492c93568b23d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classblock_a135f43810aa943585a9e9bdc89af6aa5}\index{block@{block}!rotateZ@{rotateZ}}
+\index{rotateZ@{rotateZ}!block@{block}}
+\doxysubsubsection{\texorpdfstring{rotateZ()}{rotateZ()}}
+{\footnotesize\ttfamily \label{classblock_a135f43810aa943585a9e9bdc89af6aa5} 
+void block\+::rotateZ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{block_8cpp_source_l00050}{50}} of file \mbox{\hyperlink{block_8cpp_source}{block.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{block_8cpp_source_l00059}{update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classblock_a135f43810aa943585a9e9bdc89af6aa5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classblock_a135f43810aa943585a9e9bdc89af6aa5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classblock_aa9fcde09d74e682ad66b3a690568f4c0}\index{block@{block}!update@{update}}
+\index{update@{update}!block@{block}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classblock_aa9fcde09d74e682ad66b3a690568f4c0} 
+void block\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_widget_a8e413e1741376260287bc6f734661f25}{astra\+::ui\+::\+Widget}}.
+
+
+
+Definition at line \mbox{\hyperlink{block_8cpp_source_l00059}{59}} of file \mbox{\hyperlink{block_8cpp_source}{block.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classblock_aa9fcde09d74e682ad66b3a690568f4c0_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classblock_a9fa87cb7e491064242fd1779f7a61d1f}\index{block@{block}!d@{d}}
+\index{d@{d}!block@{block}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \label{classblock_a9fa87cb7e491064242fd1779f7a61d1f} 
+float block\+::d = 0.\+02\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{block_8h_source_l00013}{13}} of file \mbox{\hyperlink{block_8h_source}{block.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{block_8cpp_source_l00032}{rotate\+X()}}, \mbox{\hyperlink{block_8cpp_source_l00041}{rotate\+Y()}}, and \mbox{\hyperlink{block_8cpp_source_l00050}{rotate\+Z()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_item_ad09361e2680e77982dc5b9dec7826301}\index{block@{block}!parent@{parent}}
+\index{parent@{parent}!block@{block}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_item_ad09361e2680e77982dc5b9dec7826301} 
+\mbox{\hyperlink{classastra_1_1ui_1_1_item_ae1aaa5e034578e405a201e7558431b75}{Item}}\texorpdfstring{$\ast$}{*} astra\+::ui\+::\+Item\+::parent = nullptr\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_item_8h_source_l00026}{26}} of file \mbox{\hyperlink{_item_8h_source}{Item.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_8h_source_l00163}{astra\+::ui\+::\+List\+Menu\+::add()}}, \mbox{\hyperlink{_menu_8h_source_l00104}{astra\+::ui\+::\+Tile\+Menu\+::add()}}, and \mbox{\hyperlink{_menu_8h_source_l00078}{astra\+::ui\+::\+Menu\+::parent\+Item()}}.
+
+\Hypertarget{classblock_a7ca306abe8b3d6431fd4a4d3b8195fb0}\index{block@{block}!points@{points}}
+\index{points@{points}!block@{block}}
+\doxysubsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily \label{classblock_a7ca306abe8b3d6431fd4a4d3b8195fb0} 
+float block\+::points\mbox{[}8\mbox{]}\mbox{[}3\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{1,\ 1,\ -\/1\},\ \{1,\ -\/1,\ -\/1\},\ \{-\/1,\ -\/1,\ -\/1\},\ \{-\/1,\ 1,\ -\/1\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{1,\ 1,\ 1\},\ \{1,\ -\/1,\ 1\},\ \{-\/1,\ -\/1,\ 1\},\ \{-\/1,\ 1,\ 1\},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{block_8h_source_l00018}{18}} of file \mbox{\hyperlink{block_8h_source}{block.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{block_8cpp_source_l00032}{rotate\+X()}}, \mbox{\hyperlink{block_8cpp_source_l00041}{rotate\+Y()}}, \mbox{\hyperlink{block_8cpp_source_l00050}{rotate\+Z()}}, and \mbox{\hyperlink{block_8cpp_source_l00059}{update()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+astra/ui/element/widget/\mbox{\hyperlink{block_8h}{block.\+h}}\item 
+astra/ui/element/widget/\mbox{\hyperlink{block_8cpp}{block.\+cpp}}\end{DoxyCompactItemize}

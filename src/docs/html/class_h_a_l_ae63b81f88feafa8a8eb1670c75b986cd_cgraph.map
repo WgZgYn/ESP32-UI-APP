@@ -1,0 +1,7 @@
+<map id="HAL::delay" name="HAL::delay">
+<area shape="rect" id="Node000001" title="system timers." alt="" coords="5,31,92,57"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#a9990718b01d90c567a8baa1ecadc1ead" title=" " alt="" coords="140,5,233,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,33,124,27,125,33,93,39"/>
+<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="150,56,223,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="93,49,135,57,134,62,92,55"/>
+</map>

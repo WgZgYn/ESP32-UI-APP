@@ -1,0 +1,39 @@
+\doxysection{Arduino\+Bind.\+h}
+\hypertarget{_arduino_bind_8h_source}{}\label{_arduino_bind_8h_source}\index{hal/ArduinoBind.h@{hal/ArduinoBind.h}}
+\mbox{\hyperlink{_arduino_bind_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ 20495\ on\ 24-\/10-\/6.}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ ARDUINOBIND\_H}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00006}00006\ \textcolor{preprocessor}{\#define\ ARDUINOBIND\_H}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00008}\mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d}{ARDUINOBIND}}:\ \textcolor{keyword}{virtual}\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_h_a_l}{HAL}}\ \{}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00009}\mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_a776f082123c43cb31862c67b17f39568}{00009}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_a776f082123c43cb31862c67b17f39568}{\_delay}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \_mill)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00010}00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{::delay}}(\_mill);\ \textcolor{comment}{//\ specify\ the\ HAL's\ delay\ and\ Arduino's\ delay}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00011}00011\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00013}\mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_ae0203a3d9d51c2907b7b16c39b82b0da}{00013}}\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_ae0203a3d9d51c2907b7b16c39b82b0da}{\_millis}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_h_a_l_af52271a395ac72eef5b38128d8a7ce8a}{millis}}();}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00015}00015\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00017}\mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_a6ba3a8517d568888a7deaf641640b2a5}{00017}}\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_a6ba3a8517d568888a7deaf641640b2a5}{\_getTick}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ return\ millis();}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ micros()\ /\ 1000;}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00023}\mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_ada266b129169159817e28e2a9c35fe67}{00023}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_ada266b129169159817e28e2a9c35fe67}{\_setRandomSeed}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ randomSeed(analogRead(A0));}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00025}00025\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00027}\mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_ab845a6b738381f36f4eaaac8ab0076ed}{00027}}\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_ab845a6b738381f36f4eaaac8ab0076ed}{\_random}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ return\ ::random();}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00029}00029\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00032}00032\ \};}
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_arduino_bind_8h_source_l00034}00034\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//ARDUINOBIND\_H}}
+
+\end{DoxyCode}

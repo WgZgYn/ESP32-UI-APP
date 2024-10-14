@@ -1,0 +1,19 @@
+<map id="astra::ui::Camera::update" name="astra::ui::Camera::update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,105,136,148"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_selector.html#af0e3fcc19dcad6e3325eb60190a346a3" title=" " alt="" coords="190,5,314,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,103,182,58,191,53,193,58,185,62,108,107"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_camera.html#a2c84724a5acd5c3affdbfce9428520c8" title=" " alt="" coords="187,72,317,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,112,171,105,172,111,136,117"/>
+<area shape="rect" id="Node000007" href="$classastra_1_1ui_1_1_camera.html#aa10e35d5d332632d238a59542ff55c0f" title=" " alt="" coords="184,205,320,248"/>
+<area shape="poly" id="edge5_Node000001_Node000007" title=" " alt="" coords="108,146,185,191,193,195,191,200,182,196,105,151"/>
+<area shape="rect" id="Node000009" href="$classastra_1_1ui_1_1_camera.html#a455813d9fcd79e5ff21e3ecdbfb28980" title=" " alt="" coords="187,139,317,181"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="136,136,172,143,171,148,135,141"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_camera.html#a3067ed67e0760b4a1f6375ca472a6efb" title=" " alt="" coords="368,147,512,173"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="315,113,387,139,385,144,313,118"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1ui_1_1_animation.html#adbab0f44e4a9f9c34589bfbb1b38c075" title=" " alt="" coords="560,139,695,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="513,157,545,157,545,163,513,163"/>
+<area shape="poly" id="edge6_Node000007_Node000004" title=" " alt="" coords="313,202,385,176,387,181,315,207"/>
+<area shape="rect" id="Node000008" href="$classastra_1_1ui_1_1_camera.html#a2564d054f34cca0ae0c31de668662bf0" title=" " alt="" coords="375,205,505,248"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="320,224,359,224,359,229,320,229"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="318,157,352,157,352,163,318,163"/>
+</map>

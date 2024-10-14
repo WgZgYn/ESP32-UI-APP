@@ -1,0 +1,31 @@
+<map id="astra/ui" name="astra/ui">
+<area shape="rect" id="node1" href="dir_152e8efc48edd4dc54561aefd662e666.html" title="config" alt="" coords="42,213,99,240"/>
+<area shape="rect" id="node3" href="dir_5e5008310bebf81f7cb5dde0faf8d891.html" title="element" alt="" coords="37,139,104,165"/>
+<area shape="poly" id="edge2" href="dir_000013_000005.html" alt="" coords="86,91,79,124,74,123,80,90"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000013_000005.html" title="5" alt="" coords="82,114,89,130"/>
+<area shape="rect" id="node4" href="dir_37c6514aeece95293041e34c0f2e0784.html" title="game" alt="" coords="136,139,189,165"/>
+<area shape="poly" id="edge1" href="dir_000013_000007.html" alt="" coords="100,89,140,126,136,130,96,93"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000013_000007.html" title="1" alt="" coords="138,111,145,127"/>
+<area shape="rect" id="node7" href="dir_ba29d0dc2d78ce203ea842ae62826709.html" title="mqtt" alt="" coords="214,139,261,165"/>
+<area shape="poly" id="edge3" href="dir_000013_000010.html" alt="" coords="105,85,201,130,198,135,103,90"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000013_000010.html" title="1" alt="" coords="197,116,204,132"/>
+<area shape="rect" id="node9" href="dir_d422163b96683743ed3963d4aac17747.html" title="app" alt="" coords="286,139,328,165"/>
+<area shape="poly" id="edge4" href="dir_000013_000000.html" alt="" coords="105,82,272,135,270,141,103,87"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000013_000000.html" title="1" alt="" coords="267,121,274,137"/>
+<area shape="rect" id="node10" href="dir_d75c23162a2652451dce46d2e7e8aead.html" title="application" alt="" coords="352,139,435,165"/>
+<area shape="poly" id="edge5" href="dir_000013_000001.html" alt="" coords="105,80,337,135,336,140,104,86"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000013_000001.html" title="3" alt="" coords="332,120,339,136"/>
+<area shape="poly" id="edge6" href="dir_000005_000004.html" alt="" coords="73,166,73,198,68,198,68,166"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000005_000004.html" title="3" alt="" coords="76,187,83,203"/>
+<area shape="rect" id="node5" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html" title="hal" alt="" coords="135,213,174,240"/>
+<area shape="poly" id="edge8" href="dir_000005_000008.html" alt="" coords="87,164,130,201,127,205,84,168"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000005_000008.html" title="4" alt="" coords="128,187,135,203"/>
+<area shape="rect" id="node6" href="dir_745c5f185da8fd20979520266ee9ab8b.html" title="icon" alt="" coords="197,213,243,240"/>
+<area shape="poly" id="edge9" href="dir_000005_000009.html" alt="" coords="98,163,184,205,182,210,96,168"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000005_000009.html" title="1" alt="" coords="181,191,188,207"/>
+<area shape="rect" id="node8" href="dir_cbdb8362360e11eafe2fa3bc74cf0ffd.html" title="utils" alt="" coords="267,213,312,240"/>
+<area shape="poly" id="edge7" href="dir_000005_000014.html" alt="" coords="100,164,125,173,187,192,252,210,251,215,185,197,123,179,98,168"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000005_000014.html" title="1" alt="" coords="248,196,255,212"/>
+<area shape="rect" id="clust2" href="dir_5e410df022f35da4a008cdeb14435ca7.html" alt="" coords="27,53,115,176"/>
+<area shape="rect" id="clust1" href="dir_a6bd803b252435fee09dff9d0bdfe5e0.html" title="astra" alt="" coords="16,16,125,251"/>
+</map>

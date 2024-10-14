@@ -1,0 +1,99 @@
+\doxysection{app.\+cpp}
+\hypertarget{app_8cpp_source}{}\label{app_8cpp_source}\index{app/app.cpp@{app/app.cpp}}
+\mbox{\hyperlink{app_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{app_8h}{app.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_u_i___v_i_e_w_8h}{astra/ui/UI\_VIEW.h}}>}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{mqtt_8h}{mqtt/mqtt.h}}>}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{service_8h}{service/service.h}}>}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{myhal_8hpp}{hal/myhal.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00010}\mbox{\hyperlink{app_8cpp_a4fc01d736fe50cf5b977f755b675f11d}{00010}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{app_8cpp_a4fc01d736fe50cf5b977f755b675f11d}{setup}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00011}00011\ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_a2d9c793915f7ce9fb974d5487ff7c549}{app::App::getInstance}}().\mbox{\hyperlink{classapp_1_1_app_a007a523bd5d9d7e89c417664ca274c8c}{setup}}();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00012}00012\ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00014}\mbox{\hyperlink{app_8cpp_afe461d27b9c48d5921c00d521181f12f}{00014}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{app_8cpp_afe461d27b9c48d5921c00d521181f12f}{loop}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_a2d9c793915f7ce9fb974d5487ff7c549}{app::App::getInstance}}().\mbox{\hyperlink{classapp_1_1_app_a7d71aa5adf37670d8a989557cc2ad6f6}{loop}}();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00016}00016\ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00019}\mbox{\hyperlink{namespaceapp}{00019}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceapp}{app}}\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00020}\mbox{\hyperlink{classapp_1_1_app_a2d9c793915f7ce9fb974d5487ff7c549}{00020}}\ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app}{App}}\ \&\mbox{\hyperlink{classapp_1_1_app_a2d9c793915f7ce9fb974d5487ff7c549}{App::getInstance}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classapp_1_1_app}{App}}\ \mbox{\hyperlink{namespaceapp}{app}};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespaceapp}{app}};}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00023}00023\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00025}\mbox{\hyperlink{classapp_1_1_app_adf0a1ac8877d1d715827a286de986037}{00025}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classapp_1_1_app_adf0a1ac8877d1d715827a286de986037}{App::add}}(\mbox{\hyperlink{classapp_1_1_service}{Service}}\ *service)\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_a0822829174628a50fa6dcb2e974e77ec}{\_service\_list}}.push\_back(service);}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00029}\mbox{\hyperlink{classapp_1_1_app_a43b0c24c14cf08b53d3762c383aea315}{00029}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classapp_1_1_app_a43b0c24c14cf08b53d3762c383aea315}{App::HAL\_INIT}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a54a0dd3ada3025ef9f663a381d00713a}{HAL::inject}}(\&\mbox{\hyperlink{class_my_h_a_l_a09d246aae8f8959f7902cdbc20c413fc}{MyHAL::getInstance}}());}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Below\ is\ to\ test\ function}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{HAL::delay}}(200);}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}loading..."{}});}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{HAL::delay}}(200);}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}astra\ UI\ modified\ by\ wzy."{}});}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{HAL::delay}}(300);}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}If\ stuck\ on\ this\ page,"{}});}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{HAL::delay}}(300);}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}version\ 2.0.0"{}});}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{HAL::delay}}(300);}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ Serial.println(\textcolor{stringliteral}{"{}HAL\ ready"{}});}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00046}\mbox{\hyperlink{classapp_1_1_app_ab5b3902d38d7e469a706b81f4e739625}{00046}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classapp_1_1_app_ab5b3902d38d7e469a706b81f4e739625}{App::SERIAL\_INIT}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ Serial.begin(115200);}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ Serial.println();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ Serial.println(\textcolor{stringliteral}{"{}Serial\ initialized"{}});}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00052}\mbox{\hyperlink{namespaceapp_a5b72bcd3a5ec23ba3574e163ac117d15}{00052}}\ \ \ \ \ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceapp_a5b72bcd3a5ec23ba3574e163ac117d15}{UIConfig}}();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00053}\mbox{\hyperlink{classapp_1_1_app_a3b5f998b2825520d922cd163d7d54414}{00053}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classapp_1_1_app_a3b5f998b2825520d922cd163d7d54414}{App::UI\_INIT}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_adf0a1ac8877d1d715827a286de986037}{add}}(\&\mbox{\hyperlink{_u_i___v_i_e_w_8cpp_a32ec1d3d9ae2c74867245770c51ac86a}{astraLauncher}});}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00055}00055\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00057}\mbox{\hyperlink{classapp_1_1_app_ad071193fc74675a514d12f9f431166d9}{00057}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classapp_1_1_app_ad071193fc74675a514d12f9f431166d9}{App::WIFI\_INIT}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00059}00059\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00061}\mbox{\hyperlink{classapp_1_1_app_a4b57379528621766730f58ebfcff2c1e}{00061}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classapp_1_1_app_a4b57379528621766730f58ebfcff2c1e}{App::MQTT\_INIT}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_adf0a1ac8877d1d715827a286de986037}{add}}(\&\mbox{\hyperlink{classmqtt_1_1_mqtt_client_aa1dfa938c062cd022ede83fa7781bf35}{mqtt::MqttClient::getInstance}}());}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00063}00063\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00065}\mbox{\hyperlink{classapp_1_1_app_a8382c426c60afb9d65d0a7fbbb538ccc}{00065}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classapp_1_1_app_a8382c426c60afb9d65d0a7fbbb538ccc}{App::SERVICE\_INIT}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ pinMode(LED\_BUILTIN,\ OUTPUT);\ \textcolor{comment}{//\ 使用蓝色LED管脚}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ pinMode(RESET\_BUTTON\_PIN,\ INPUT\_PULLUP);\ //\ 按钮连接到GPIO0，低电平触发}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00068}00068\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00070}\mbox{\hyperlink{classapp_1_1_app_a4a289c6cb8f8d34895492cc66ed0be8e}{00070}}\ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_a4a289c6cb8f8d34895492cc66ed0be8e}{App::App}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_ab5b3902d38d7e469a706b81f4e739625}{SERIAL\_INIT}}();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_a43b0c24c14cf08b53d3762c383aea315}{HAL\_INIT}}();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_a3b5f998b2825520d922cd163d7d54414}{UI\_INIT}}();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_a4b57379528621766730f58ebfcff2c1e}{MQTT\_INIT}}();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classapp_1_1_app_a8382c426c60afb9d65d0a7fbbb538ccc}{SERVICE\_INIT}}();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00076}00076\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00078}\mbox{\hyperlink{classapp_1_1_app_a007a523bd5d9d7e89c417664ca274c8c}{00078}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classapp_1_1_app_a007a523bd5d9d7e89c417664ca274c8c}{App::setup}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{classapp_1_1_service}{Service}}\ *service:\ this-\/>\mbox{\hyperlink{classapp_1_1_app_a0822829174628a50fa6dcb2e974e77ec}{\_service\_list}})\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (service\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ service-\/>setup();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00084}00084\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00086}\mbox{\hyperlink{classapp_1_1_app_a7d71aa5adf37670d8a989557cc2ad6f6}{00086}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classapp_1_1_app_a7d71aa5adf37670d8a989557cc2ad6f6}{App::loop}}()\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00087}00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{classapp_1_1_service}{Service}}\ *service:\ this-\/>\mbox{\hyperlink{classapp_1_1_app_a0822829174628a50fa6dcb2e974e77ec}{\_service\_list}})\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (service\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ service-\/>loop();}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00092}00092\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{app_8cpp_source_l00093}00093\ \}}
+
+\end{DoxyCode}

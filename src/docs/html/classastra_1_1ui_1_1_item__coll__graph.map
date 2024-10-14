@@ -1,0 +1,4 @@
+<map id="astra::ui::Item" name="astra::ui::Item">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,99,117"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="99,38,117,44,123,51,125,61,123,72,117,79,113,75,118,69,120,61,118,54,114,48,98,43"/>
+</map>

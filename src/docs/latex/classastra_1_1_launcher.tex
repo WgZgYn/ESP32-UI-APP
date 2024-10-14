@@ -1,0 +1,331 @@
+\doxysection{astra\+::Launcher Class Reference}
+\hypertarget{classastra_1_1_launcher}{}\label{classastra_1_1_launcher}\index{astra::Launcher@{astra::Launcher}}
+
+
+{\ttfamily \#include $<$launcher.\+h$>$}
+
+
+
+Inheritance diagram for astra\+::Launcher\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classastra_1_1_launcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astra\+::Launcher\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1_launcher__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classastra_1_1_launcher_ac4d5ae4ef504f2137605437600f44a35}{Launcher}} (\mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item}{ui\+::\+Lifecycle\+Item}} \texorpdfstring{$\ast$}{*}menu)
+\item 
+\mbox{\hyperlink{classastra_1_1_launcher_a126926fa29ed4d79d688919dae8ddbf2}{\texorpdfstring{$\sim$}{\string~}\+Launcher}} () override
+\item 
+void \mbox{\hyperlink{classastra_1_1_launcher_ac24cb43a812f9ef48729946c094b5cc7}{pop\+Info}} (const char \texorpdfstring{$\ast$}{*}\+\_\+info, uint16\+\_\+t \+\_\+time)
+\item 
+bool \mbox{\hyperlink{classastra_1_1_launcher_af5200ca1754711c51f1576eaf9914543}{open}} ()
+\item 
+bool \mbox{\hyperlink{classastra_1_1_launcher_ad7823766875173d51ca21754448edc2a}{close}} ()
+\item 
+void \mbox{\hyperlink{classastra_1_1_launcher_a675f04557f2588a878aa362f227206cc}{setup}} () override
+\item 
+void \mbox{\hyperlink{classastra_1_1_launcher_a86f3a3e2e3c82715f5e428fea2f8c88c}{loop}} () override
+\item 
+virtual void \mbox{\hyperlink{classastra_1_1ui_1_1_animation_a611c90f81fbd3bccf92df19ace517175}{entry\+Animation}} ()
+\item 
+virtual void \mbox{\hyperlink{classastra_1_1ui_1_1_animation_a57363684c43afda80d55526e61c0529e}{exit\+Animation}} ()
+\item 
+virtual void \mbox{\hyperlink{classastra_1_1ui_1_1_animation_a22d977beba02dec35ab6e0f4e574b410}{blur}} ()
+\item 
+virtual void \mbox{\hyperlink{classastra_1_1ui_1_1_animation_adbab0f44e4a9f9c34589bfbb1b38c075}{animation}} (float \texorpdfstring{$\ast$}{*}\+\_\+pos, float \+\_\+pos\+Trg, float \+\_\+speed)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item}{ui\+::\+Lifecycle\+Item}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classastra_1_1_launcher_a8a48f9048543db409153778d7eddb91a}{app}}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classastra_1_1_launcher_a5221afd52c675bee318477dc2800ec6b}{time}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{launcher_8h_source_l00015}{15}} of file \mbox{\hyperlink{launcher_8h_source}{launcher.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classastra_1_1_launcher_ac4d5ae4ef504f2137605437600f44a35}\index{astra::Launcher@{astra::Launcher}!Launcher@{Launcher}}
+\index{Launcher@{Launcher}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{Launcher()}{Launcher()}}
+{\footnotesize\ttfamily \label{classastra_1_1_launcher_ac4d5ae4ef504f2137605437600f44a35} 
+astra\+::\+Launcher\+::\+Launcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item}{ui\+::\+Lifecycle\+Item}} \texorpdfstring{$\ast$}{*}}]{menu}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line \mbox{\hyperlink{launcher_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{launcher_8cpp_source}{launcher.\+cpp}}.
+
+\Hypertarget{classastra_1_1_launcher_a126926fa29ed4d79d688919dae8ddbf2}\index{astra::Launcher@{astra::Launcher}!````~Launcher@{\texorpdfstring{$\sim$}{\string~}Launcher}}
+\index{````~Launcher@{\texorpdfstring{$\sim$}{\string~}Launcher}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Launcher()}{\string~Launcher()}}
+{\footnotesize\ttfamily \label{classastra_1_1_launcher_a126926fa29ed4d79d688919dae8ddbf2} 
+astra\+::\+Launcher\+::\texorpdfstring{$\sim$}{\string~}\+Launcher (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classastra_1_1ui_1_1_animation_adbab0f44e4a9f9c34589bfbb1b38c075}\index{astra::Launcher@{astra::Launcher}!animation@{animation}}
+\index{animation@{animation}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{animation()}{animation()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_animation_adbab0f44e4a9f9c34589bfbb1b38c075} 
+void astra\+::ui\+::\+Animation\+::animation (\begin{DoxyParamCaption}\item[{float \texorpdfstring{$\ast$}{*}}]{\+\_\+pos}{, }\item[{float}]{\+\_\+pos\+Trg}{, }\item[{float}]{\+\_\+speed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_animation_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_animation_8cpp_source}{Animation.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_camera_8cpp_source_l00053}{astra\+::ui\+::\+Camera\+::go()}}, \mbox{\hyperlink{_camera_8cpp_source_l00065}{astra\+::ui\+::\+Camera\+::go\+Horizontal()}}, \mbox{\hyperlink{_camera_8cpp_source_l00077}{astra\+::ui\+::\+Camera\+::go\+To\+Next\+Page\+Item()}}, \mbox{\hyperlink{_camera_8cpp_source_l00083}{astra\+::ui\+::\+Camera\+::go\+To\+Preview\+Page\+Item()}}, \mbox{\hyperlink{_camera_8cpp_source_l00071}{astra\+::ui\+::\+Camera\+::go\+Vertical()}}, \mbox{\hyperlink{launcher_8cpp_source_l00021}{pop\+Info()}}, \mbox{\hyperlink{_menu_8cpp_source_l00131}{astra\+::ui\+::\+List\+Menu\+::render()}}, \mbox{\hyperlink{_selector_8cpp_source_l00085}{astra\+::ui\+::\+Selector\+::render()}}, \mbox{\hyperlink{_menu_8cpp_source_l00055}{astra\+::ui\+::\+Tile\+Menu\+::render()}}, and \mbox{\hyperlink{_camera_8cpp_source_l00150}{astra\+::ui\+::\+Camera\+::reset()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classastra_1_1ui_1_1_animation_adbab0f44e4a9f9c34589bfbb1b38c075_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_animation_adbab0f44e4a9f9c34589bfbb1b38c075_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_animation_a22d977beba02dec35ab6e0f4e574b410}\index{astra::Launcher@{astra::Launcher}!blur@{blur}}
+\index{blur@{blur}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{blur()}{blur()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_animation_a22d977beba02dec35ab6e0f4e574b410} 
+void astra\+::ui\+::\+Animation\+::blur (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_animation_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{_animation_8cpp_source}{Animation.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_animation_a22d977beba02dec35ab6e0f4e574b410_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1_launcher_ad7823766875173d51ca21754448edc2a}\index{astra::Launcher@{astra::Launcher}!close@{close}}
+\index{close@{close}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classastra_1_1_launcher_ad7823766875173d51ca21754448edc2a} 
+bool astra\+::\+Launcher\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{launcher_8cpp_source_l00099}{99}} of file \mbox{\hyperlink{launcher_8cpp_source}{launcher.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{launcher_8cpp_source_l00132}{loop()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1_launcher_ad7823766875173d51ca21754448edc2a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classastra_1_1_launcher_ad7823766875173d51ca21754448edc2a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_animation_a611c90f81fbd3bccf92df19ace517175}\index{astra::Launcher@{astra::Launcher}!entryAnimation@{entryAnimation}}
+\index{entryAnimation@{entryAnimation}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{entryAnimation()}{entryAnimation()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_animation_a611c90f81fbd3bccf92df19ace517175} 
+virtual void astra\+::ui\+::\+Animation\+::entry\+Animation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_animation_8h_source_l00013}{13}} of file \mbox{\hyperlink{_animation_8h_source}{Animation.\+h}}.
+
+\Hypertarget{classastra_1_1ui_1_1_animation_a57363684c43afda80d55526e61c0529e}\index{astra::Launcher@{astra::Launcher}!exitAnimation@{exitAnimation}}
+\index{exitAnimation@{exitAnimation}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{exitAnimation()}{exitAnimation()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_animation_a57363684c43afda80d55526e61c0529e} 
+void astra\+::ui\+::\+Animation\+::exit\+Animation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_animation_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{_animation_8cpp_source}{Animation.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_8h_source_l00072}{astra\+::ui\+::\+Menu\+::de\+Init()}}, and \mbox{\hyperlink{_menu_8h_source_l00063}{astra\+::ui\+::\+Menu\+::on\+Exit()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_animation_a57363684c43afda80d55526e61c0529e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classastra_1_1ui_1_1_animation_a57363684c43afda80d55526e61c0529e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1_launcher_a86f3a3e2e3c82715f5e428fea2f8c88c}\index{astra::Launcher@{astra::Launcher}!loop@{loop}}
+\index{loop@{loop}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily \label{classastra_1_1_launcher_a86f3a3e2e3c82715f5e428fea2f8c88c} 
+void astra\+::\+Launcher\+::loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classapp_1_1_service_ab6bd82eb2f1f3a59ed75a18f88629521}{app\+::\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{launcher_8cpp_source_l00132}{132}} of file \mbox{\hyperlink{launcher_8cpp_source}{launcher.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1_launcher_a86f3a3e2e3c82715f5e428fea2f8c88c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1_launcher_af5200ca1754711c51f1576eaf9914543}\index{astra::Launcher@{astra::Launcher}!open@{open}}
+\index{open@{open}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{classastra_1_1_launcher_af5200ca1754711c51f1576eaf9914543} 
+bool astra\+::\+Launcher\+::open (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{launcher_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{launcher_8cpp_source}{launcher.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{launcher_8cpp_source_l00132}{loop()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1_launcher_af5200ca1754711c51f1576eaf9914543_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classastra_1_1_launcher_af5200ca1754711c51f1576eaf9914543_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1_launcher_ac24cb43a812f9ef48729946c094b5cc7}\index{astra::Launcher@{astra::Launcher}!popInfo@{popInfo}}
+\index{popInfo@{popInfo}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{popInfo()}{popInfo()}}
+{\footnotesize\ttfamily \label{classastra_1_1_launcher_ac24cb43a812f9ef48729946c094b5cc7} 
+void astra\+::\+Launcher\+::pop\+Info (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+info}{, }\item[{uint16\+\_\+t}]{\+\_\+time}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{launcher_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{launcher_8cpp_source}{launcher.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{launcher_8cpp_source_l00099}{close()}}, and \mbox{\hyperlink{launcher_8cpp_source_l00061}{open()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1_launcher_ac24cb43a812f9ef48729946c094b5cc7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1_launcher_ac24cb43a812f9ef48729946c094b5cc7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1_launcher_a675f04557f2588a878aa362f227206cc}\index{astra::Launcher@{astra::Launcher}!setup@{setup}}
+\index{setup@{setup}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily \label{classastra_1_1_launcher_a675f04557f2588a878aa362f227206cc} 
+void astra\+::\+Launcher\+::setup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classapp_1_1_service_a2b5e5862cf9ba689e6d90728864db0ed}{app\+::\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{launcher_8cpp_source_l00126}{126}} of file \mbox{\hyperlink{launcher_8cpp_source}{launcher.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1_launcher_a675f04557f2588a878aa362f227206cc_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classastra_1_1_launcher_a8a48f9048543db409153778d7eddb91a}\index{astra::Launcher@{astra::Launcher}!app@{app}}
+\index{app@{app}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classastra_1_1_launcher_a8a48f9048543db409153778d7eddb91a} 
+\mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item}{ui\+::\+Lifecycle\+Item}}\texorpdfstring{$\ast$}{*} astra\+::\+Launcher\+::app\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{launcher_8h_source_l00016}{16}} of file \mbox{\hyperlink{launcher_8h_source}{launcher.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{launcher_8cpp_source_l00132}{loop()}}, and \mbox{\hyperlink{launcher_8cpp_source_l00061}{open()}}.
+
+\Hypertarget{classastra_1_1_launcher_a5221afd52c675bee318477dc2800ec6b}\index{astra::Launcher@{astra::Launcher}!time@{time}}
+\index{time@{time}!astra::Launcher@{astra::Launcher}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily \label{classastra_1_1_launcher_a5221afd52c675bee318477dc2800ec6b} 
+uint64\+\_\+t astra\+::\+Launcher\+::time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{launcher_8h_source_l00020}{20}} of file \mbox{\hyperlink{launcher_8h_source}{launcher.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{launcher_8cpp_source_l00021}{pop\+Info()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+astra/ui/\mbox{\hyperlink{launcher_8h}{launcher.\+h}}\item 
+astra/ui/\mbox{\hyperlink{launcher_8cpp}{launcher.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="astra::ui::Camera::reset" name="astra::ui::Camera::reset">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,136,48"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_animation.html#adbab0f44e4a9f9c34589bfbb1b38c075" title=" " alt="" coords="184,5,318,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,24,168,24,168,29,136,29"/>
+<area shape="rect" id="Node000003" href="$namespaceutils.html#aed633e275ed6f46b0091c74c388981d2" title=" " alt="" coords="366,13,464,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,24,351,24,351,29,318,29"/>
+</map>

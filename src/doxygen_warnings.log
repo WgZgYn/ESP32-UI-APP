@@ -1,0 +1,10 @@
+F:/CLionProjects/UI/src/hal/hal.cpp:70: warning: found documented return type for HAL::_keyScan that does not return anything
+F:/CLionProjects/UI/src/hal/hal.cpp:70: warning: found documented return type for HAL::_keyScan that does not return anything
+F:/CLionProjects/UI/src/hal/hal.cpp:70: warning: found documented return type for HAL::_keyScan that does not return anything
+F:/CLionProjects/UI/src/hal/hal.cpp:70: warning: found documented return type for HAL::_keyScan that does not return anything
+F:/CLionProjects/UI/src/astra/ui/element/page/Camera.cpp:47: warning: argument '_pos' of command @param is not found in the argument list of astra::ui::Camera::go(float _x, float _y)
+F:/CLionProjects/UI/src/astra/ui/element/page/Camera.cpp:47: warning: argument '_posTrg' of command @param is not found in the argument list of astra::ui::Camera::go(float _x, float _y)
+F:/CLionProjects/UI/src/astra/ui/element/page/Camera.cpp:47: warning: argument '_speed' of command @param is not found in the argument list of astra::ui::Camera::go(float _x, float _y)
+F:/CLionProjects/UI/src/astra/ui/element/page/Camera.cpp:47: warning: The following parameters of astra::ui::Camera::go(float _x, float _y) are not documented:
+  parameter '_x'
+  parameter '_y'

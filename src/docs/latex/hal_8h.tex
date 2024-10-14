@@ -1,0 +1,79 @@
+\doxysection{hal/hal.h File Reference}
+\hypertarget{hal_8h}{}\label{hal_8h}\index{hal/hal.h@{hal/hal.h}}
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+Include dependency graph for hal.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{hal_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hal_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsys_1_1config}{sys\+::config}}
+\item 
+class \mbox{\hyperlink{class_h_a_l}{HAL}}
+\begin{DoxyCompactList}\small\item\em hardware abstraction layer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacekey}{key}}
+\item 
+namespace \mbox{\hyperlink{namespacesys}{sys}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hal_8h_a153dd24cdd9c0b621e5e0239aec3c347}{ASTRA\+\_\+\+CORE\+\_\+\+SRC\+\_\+\+HAL\+\_\+\+HAL\+\_\+\+H\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{namespacekey_ad79a5e0b7aa1aaf77854efb11586f159}{key\+::key\+Filter}} \mbox{\hyperlink{namespacekey_ac442cd94fb1658c98ddfa9ce5c6f3dcc}{key\+::\+KEY\+\_\+\+FILTER}}
+\item 
+typedef enum \mbox{\hyperlink{namespacekey_aede8566aab31681ebcf4a1fda0ea4a80}{key\+::key\+Action}} \mbox{\hyperlink{namespacekey_a978e19c00fd109736696278d2f712c4f}{key\+::\+KEY\+\_\+\+ACTION}}
+\item 
+typedef enum \mbox{\hyperlink{namespacekey_ab9b0f4140bd82fa2aad1f4c616e2276e}{key\+::key\+Index}} \mbox{\hyperlink{namespacekey_a79225c4d3b8be48f70392dc18bf888f8}{key\+::\+KEY\+\_\+\+INDEX}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacekey_ad79a5e0b7aa1aaf77854efb11586f159}{key\+::key\+Filter}} \{ \mbox{\hyperlink{namespacekey_ad79a5e0b7aa1aaf77854efb11586f159a7019e9c65f839345ed6795f570acfa9f}{key\+::\+CHECKING}} = 0
+, \mbox{\hyperlink{namespacekey_ad79a5e0b7aa1aaf77854efb11586f159a6a17dadfc2065b45b7c2740aeae037a0}{key\+::\+KEY\+\_\+0\+\_\+\+CONFIRM}}
+, \mbox{\hyperlink{namespacekey_ad79a5e0b7aa1aaf77854efb11586f159ab6102662f9c8b8ebb6436207bfb7e7d6}{key\+::\+KEY\+\_\+1\+\_\+\+CONFIRM}}
+, \mbox{\hyperlink{namespacekey_ad79a5e0b7aa1aaf77854efb11586f159a8b93bfc4642f98e25d0e74de9758e788}{key\+::\+RELEASED}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacekey_aede8566aab31681ebcf4a1fda0ea4a80}{key\+::key\+Action}} \{ \mbox{\hyperlink{namespacekey_aede8566aab31681ebcf4a1fda0ea4a80acb89a742af458806a0a5e5d0e844fecb}{key\+::\+RELEASE}} = 0
+, \mbox{\hyperlink{namespacekey_aede8566aab31681ebcf4a1fda0ea4a80a00b692f97c706920b71d9402f86e7ba4}{key\+::\+CLICK}}
+, \mbox{\hyperlink{namespacekey_aede8566aab31681ebcf4a1fda0ea4a80a11b17454c789d20bf4f4bc8207c02345}{key\+::\+PRESS}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacekey_ab9b0f4140bd82fa2aad1f4c616e2276e}{key\+::key\+Index}} \{ \mbox{\hyperlink{namespacekey_ab9b0f4140bd82fa2aad1f4c616e2276eabd5cab79be452925f20704b1bbe9fe5d}{key\+::\+KEY\+\_\+0}} = 0
+, \mbox{\hyperlink{namespacekey_ab9b0f4140bd82fa2aad1f4c616e2276eafd33fca333587bd1138a22255f782d46}{key\+::\+KEY\+\_\+1}}
+, \mbox{\hyperlink{namespacekey_ab9b0f4140bd82fa2aad1f4c616e2276eae19233160e3111a25f36d82750f43478}{key\+::\+KEY\+\_\+\+NUM}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{hal_8h_a153dd24cdd9c0b621e5e0239aec3c347}\index{hal.h@{hal.h}!ASTRA\_CORE\_SRC\_HAL\_HAL\_H\_@{ASTRA\_CORE\_SRC\_HAL\_HAL\_H\_}}
+\index{ASTRA\_CORE\_SRC\_HAL\_HAL\_H\_@{ASTRA\_CORE\_SRC\_HAL\_HAL\_H\_}!hal.h@{hal.h}}
+\doxysubsubsection{\texorpdfstring{ASTRA\_CORE\_SRC\_HAL\_HAL\_H\_}{ASTRA\_CORE\_SRC\_HAL\_HAL\_H\_}}
+{\footnotesize\ttfamily \label{hal_8h_a153dd24cdd9c0b621e5e0239aec3c347} 
+\#define ASTRA\+\_\+\+CORE\+\_\+\+SRC\+\_\+\+HAL\+\_\+\+HAL\+\_\+\+H\+\_\+}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00003}{3}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+

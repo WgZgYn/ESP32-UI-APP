@@ -1,0 +1,7 @@
+<map id="WiFiScanItem" name="WiFiScanItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="21,368,135,587"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_lifecycle_item.html" title=" " alt="" coords="5,165,151,320"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,335,81,368,75,368,75,335"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_item.html" title=" " alt="" coords="31,5,125,117"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,132,81,165,75,165,75,132"/>
+</map>

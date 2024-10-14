@@ -1,0 +1,12 @@
+<map id="game" name="game">
+<area shape="rect" id="node1" href="dir_37c6514aeece95293041e34c0f2e0784.html" title="game" alt="" coords="62,5,115,32"/>
+<area shape="rect" id="node2" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html" title="hal" alt="" coords="5,80,44,107"/>
+<area shape="poly" id="edge1" href="dir_000007_000008.html" alt="" coords="79,34,48,70,44,66,75,31"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000007_000008.html" title="1" alt="" coords="50,64,57,80"/>
+<area shape="rect" id="node3" href="dir_d422163b96683743ed3963d4aac17747.html" title="app" alt="" coords="67,80,110,107"/>
+<area shape="poly" id="edge3" href="dir_000007_000000.html" alt="" coords="91,33,91,64,86,64,86,33"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000007_000000.html" title="1" alt="" coords="93,53,100,69"/>
+<area shape="rect" id="node4" href="dir_a6bd803b252435fee09dff9d0bdfe5e0.html" title="astra" alt="" coords="134,80,184,107"/>
+<area shape="poly" id="edge2" href="dir_000007_000002.html" alt="" coords="103,31,138,67,135,71,99,34"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000007_000002.html" title="1" alt="" coords="137,53,144,69"/>
+</map>

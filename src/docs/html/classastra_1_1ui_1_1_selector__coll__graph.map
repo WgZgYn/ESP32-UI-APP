@@ -1,0 +1,19 @@
+<map id="astra::ui::Selector" name="astra::ui::Selector">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,209,121,684"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_menu.html" title=" " alt="" coords="138,748,261,1095"/>
+<area shape="poly" id="edge10_Node000003_Node000001" title=" " alt="" coords="26,683,36,723,53,760,76,795,128,855,124,859,71,798,48,763,31,725,21,685"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_animation.html" title=" " alt="" coords="97,5,222,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,175,124,228,119,227,133,174"/>
+<area shape="poly" id="edge6_Node000003_Node000002" title=" " alt="" coords="165,175,187,684,191,748,186,749,182,684,160,175"/>
+<area shape="rect" id="Node000007" href="$classastra_1_1ui_1_1_camera.html" title=" " alt="" coords="197,209,359,684"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="191,173,203,209,198,210,186,175"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,815,115,771,98,725,91,701,96,700,103,723,120,769,141,813"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_lifecycle_item.html" title=" " alt="" coords="384,369,529,524"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="433,539,407,612,374,685,320,772,263,849,258,846,315,769,369,683,402,610,428,537"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1ui_1_1_item.html" title=" " alt="" coords="410,27,503,139"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="459,154,459,370,454,370,454,154"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="504,61,522,67,528,73,530,83,528,92,521,99,518,95,523,90,525,83,523,76,519,71,502,66"/>
+<area shape="rect" id="Node000006" href="$structastra_1_1ui_1_1_menu_1_1_position_foreground.html" title=" " alt="" coords="554,287,709,607"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="589,607,569,648,544,686,515,719,483,751,412,806,341,852,277,887,274,882,338,847,409,802,479,747,511,716,540,682,564,645,584,605"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="241,684,233,732,228,731,236,684"/>
+</map>

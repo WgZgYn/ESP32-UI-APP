@@ -1,0 +1,12 @@
+<map id="HAL::drawRFrame" name="HAL::drawRFrame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="605,31,736,57"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1_launcher.html#ac24cb43a812f9ef48729946c094b5cc7" title=" " alt="" coords="395,31,557,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="590,47,558,47,558,41,590,41"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1_launcher.html#ad7823766875173d51ca21754448edc2a" title=" " alt="" coords="197,5,347,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,35,347,31,348,25,380,29"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1_launcher.html#af5200ca1754711c51f1576eaf9914543" title=" " alt="" coords="198,56,346,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="380,59,346,63,346,58,379,53"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1_launcher.html#a86f3a3e2e3c82715f5e428fea2f8c88c" title=" " alt="" coords="5,31,149,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,33,150,37,149,32,181,28"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="182,60,149,56,150,51,183,55"/>
+</map>

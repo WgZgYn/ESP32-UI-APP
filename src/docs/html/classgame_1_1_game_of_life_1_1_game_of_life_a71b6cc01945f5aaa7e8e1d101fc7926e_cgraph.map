@@ -1,0 +1,9 @@
+<map id="game::GameOfLife::GameOfLife::setRandomSeed" name="game::GameOfLife::GameOfLife::setRandomSeed">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,194,65"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#a443e194e0658c251160796e2076d2b78" title=" " alt="" coords="242,31,394,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,41,226,41,226,47,194,47"/>
+<area shape="rect" id="Node000003" href="$class_h_a_l.html#a4117be433b4af64eb018342c9ed5cd92" title=" " alt="" coords="442,5,601,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="394,32,426,28,427,33,395,37"/>
+<area shape="rect" id="Node000004" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="485,56,558,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="395,51,470,60,469,66,394,56"/>
+</map>

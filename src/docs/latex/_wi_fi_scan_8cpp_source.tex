@@ -1,0 +1,209 @@
+\doxysection{Wi\+Fi\+Scan.\+cpp}
+\hypertarget{_wi_fi_scan_8cpp_source}{}\label{_wi_fi_scan_8cpp_source}\index{application/WiFiScan.cpp@{application/WiFiScan.cpp}}
+\mbox{\hyperlink{_wi_fi_scan_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ 20495\ on\ 24-\/10-\/11.}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_wi_fi_scan_8h}{./WiFiScan.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <WiFi.h>}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00009}\mbox{\hyperlink{_wi_fi_scan_8cpp_a15fed59d5b261565a4ed85bd9b97310a}{00009}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{_wi_fi_scan_8cpp_a15fed59d5b261565a4ed85bd9b97310a}{encryptionType}}(\textcolor{keyword}{const}\ wifi\_auth\_mode\_t\ \mbox{\hyperlink{_wi_fi_scan_8cpp_a15fed59d5b261565a4ed85bd9b97310a}{encryptionType}})\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00010}00010\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{_wi_fi_scan_8cpp_a15fed59d5b261565a4ed85bd9b97310a}{encryptionType}})\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WIFI\_AUTH\_OPEN:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00012}00012\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}OPEN"{}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WIFI\_AUTH\_WEP:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}WEP"{}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WIFI\_AUTH\_WPA\_PSK:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}WPA\_PSK"{}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WIFI\_AUTH\_WPA2\_PSK:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}WPA2\_PSK"{}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WIFI\_AUTH\_WPA\_WPA2\_PSK:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}WPA\_WPA2\_PSK"{}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WIFI\_AUTH\_WPA2\_ENTERPRISE:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}WPA2\_ENTERPRISE"{}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}UNKNOWN"{}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00025}00025\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00026}00026\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00028}\mbox{\hyperlink{class_wi_fi_scan_item_a56824ca390519d5e883cb648b95e52c0}{00028}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_scan_item_a56824ca390519d5e883cb648b95e52c0}{WiFiScanItem::onInit}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a59b91cca947308dbb01d69077db3adc2}{HAL::cleanInfo}}();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00030}00030\ \ \ \ \ WiFi.scanNetworks(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}Scanning..."{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00034}\mbox{\hyperlink{class_wi_fi_scan_item_a0500898b248722e09f20280cff2cbbdc}{00034}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_wi_fi_scan_item_a0500898b248722e09f20280cff2cbbdc}{WiFiScanItem::onOpen}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00035}00035\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_wi_fi_scan_item_af09668eb1825fdb53e79bfc67b5685ef}{inited}})\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_item_a56824ca390519d5e883cb648b95e52c0}{onInit}}();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_item_af09668eb1825fdb53e79bfc67b5685ef}{inited}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00040}00040\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00042}\mbox{\hyperlink{class_wi_fi_scan_item_ad76bec03ab24de41b12e024051ca6cb6}{00042}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_scan_item_ad76bec03ab24de41b12e024051ca6cb6}{WiFiScanItem::onLoop}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00043}00043\ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a6b4545a8451d53bd4bca5ba9d8192316}{HAL::showInfo}}();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_wi_fi_scan_item_a676e2305fe969dba697086e375eaf90d}{finish}})\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{HAL::delay}}(50);}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00048}00048\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ state\ =\ WiFi.scanComplete();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{keywordflow}{switch}\ (state)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WIFI\_SCAN\_RUNNING:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ uint8\_t\ time\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (time\ \%\ 4\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}|"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (time\ \%\ 4\ ==\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}/"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (time\ \%\ 4\ ==\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (time\ \%\ 4\ ==\ 3)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ time\ =\ (time\ +\ 1)\ \%\ 4;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{HAL::delay}}(50);}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_af47235ed8b44135e01d8648aec34ba6b}{HAL::cancelInfo}}();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WIFI\_SCAN\_FAILED:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_item_af09668eb1825fdb53e79bfc67b5685ef}{inited}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}Scan\ Over"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_item_a2ebd7c87c7c4449a3052baaab724106f}{nums}}\ =\ state;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_item_af09668eb1825fdb53e79bfc67b5685ef}{inited}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_item_a676e2305fe969dba697086e375eaf90d}{finish}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00077}00077\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00078}00078\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00080}\mbox{\hyperlink{class_wi_fi_scan_item_a41519fd27c3262c14386ac00f182808a}{00080}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_scan_item_a41519fd27c3262c14386ac00f182808a}{WiFiScanItem::onExit}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00081}00081\ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_item_af09668eb1825fdb53e79bfc67b5685ef}{inited}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00082}00082\ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_item_a676e2305fe969dba697086e375eaf90d}{finish}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00083}00083\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00085}\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a475916df33fb7d952d418cbc63d04f2a}{00085}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a475916df33fb7d952d418cbc63d04f2a}{WiFiInfoItem::ConnectTo::get\_password}}(\textcolor{keyword}{const}\ uint8\_t\ index)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00086}00086\ \ \ \ \ \textcolor{keywordflow}{if}\ (WiFi.encryptionType(\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_ad40ceea1e1c9afc9a85ffc833756f8b9}{index}})\ ==\ WIFI\_AUTH\_OPEN)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00087}00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{wifi_2config_8h_ad1db4a479f3557bad34872682ec6cec1}{EMPTY\_PASSWORD}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00088}00088\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&i:\ \mbox{\hyperlink{wifi_2config_8cpp_afc2a4d19030aa1620281e8e794b3a8a6}{wifiConfig}})\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(i.first,\ WiFi.SSID(\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_ad40ceea1e1c9afc9a85ffc833756f8b9}{index}}).c\_str())\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ i.second;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00093}00093\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00094}00094\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00095}00095\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00097}\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a6398e4451b74befd0a3a8474394bba5c}{00097}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a6398e4451b74befd0a3a8474394bba5c}{WiFiInfoItem::ConnectTo::setup}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00098}00098\ \ \ \ \ \textcolor{comment}{//\ Serial.println("{}ConnectTo\ Setup"{});}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00099}00099\ \ \ \ \ \textcolor{comment}{//\ if\ (WiFi.SSID()\ ==\ WiFi.SSID(index))\ \{}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00100}00100\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ connected\ =\ true;}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ return;}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00102}00102\ \ \ \ \ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00103}00103\ \ \ \ \ \textcolor{comment}{//\ if\ (get\_password(index)\ !=\ nullptr)\ \{}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00104}00104\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ WiFi.disconnect();}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00105}00105\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ WiFi.mode(WIFI\_MODE\_STA);}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00106}00106\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ WiFi.begin(WiFi.SSID(index),\ get\_password(index));}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00107}00107\ \ \ \ \ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00110}00110\ \ \ \ \ WiFi.begin(WiFi.SSID(index),\ get\_password(index));}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00111}00111\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00113}\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a91fe3570cf980215b7acba56ae76fbc9}{00113}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a91fe3570cf980215b7acba56ae76fbc9}{WiFiInfoItem::ConnectTo::update}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00114}00114\ \ \ \ \ \textcolor{comment}{//\ HAL::showInfo();}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00115}00115\ \ \ \ \ \textcolor{comment}{//\ static\ uint8\_t\ time\ =\ 0;}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00116}00116\ \ \ \ \ \textcolor{comment}{//\ if\ (time\ \%\ 4\ ==\ 0)\ \{}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00117}00117\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ HAL::printInfo("{}|"{});}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00118}00118\ \ \ \ \ \textcolor{comment}{//\ \}\ else\ if\ (time\ \%\ 4\ ==\ 1)\ \{}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00119}00119\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ HAL::printInfo("{}/"{});}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00120}00120\ \ \ \ \ \textcolor{comment}{//\ \}\ else\ if\ (time\ \%\ 4\ ==\ 2)\ \{}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00121}00121\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ HAL::printInfo("{}-\/"{});}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00122}00122\ \ \ \ \ \textcolor{comment}{//\ \}\ else\ if\ (time\ \%\ 4\ ==\ 3)\ \{}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00123}00123\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ HAL::printInfo("{}\(\backslash\)\(\backslash\)"{});}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00124}00124\ \ \ \ \ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00125}00125\ \ \ \ \ \textcolor{comment}{//\ time\ =\ (time\ +\ 1)\ \%\ 4;}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00126}00126\ \ \ \ \ \textcolor{comment}{//\ HAL::delay(50);}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00127}00127\ \ \ \ \ \textcolor{comment}{//\ HAL::cancelInfo();}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00128}00128\ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a6b4545a8451d53bd4bca5ba9d8192316}{HAL::showInfo}}();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00129}00129\ \ \ \ \ \textcolor{keywordflow}{if}\ (connected)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00130}00130\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{HAL::delay}}(50);}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00131}00131\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00132}00132\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00133}00133\ \ \ \ \ \textcolor{keywordflow}{if}\ (WiFi.status()\ !=\ WL\_CONNECTED)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00134}00134\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ uint8\_t\ time\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00135}00135\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (time\ \%\ 4\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}|"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00137}00137\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (time\ \%\ 4\ ==\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}/"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00139}00139\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (time\ \%\ 4\ ==\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00141}00141\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (time\ \%\ 4\ ==\ 3)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00142}00142\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00143}00143\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00144}00144\ \ \ \ \ \ \ \ \ time\ =\ (time\ +\ 1)\ \%\ 4;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00145}00145\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{HAL::delay}}(50);}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00146}00146\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_af47235ed8b44135e01d8648aec34ba6b}{HAL::cancelInfo}}();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00147}00147\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00148}00148\ \ \ \ \ \ \ \ \ connected\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00149}00149\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(\textcolor{stringliteral}{"{}Connected\ To"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00150}00150\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ String\ ssid\ =\ WiFi.SSID();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00151}00151\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(ssid.c\_str());}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00152}00152\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ String\ ip\ =\ WiFi.localIP().toString();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00153}00153\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{HAL::printInfo}}(ip);}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00154}00154\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00155}00155\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00156}00156\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00157}\mbox{\hyperlink{class_wi_fi_info_item_a778d3a7d8d438024e669812774d2d28e}{00157}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_info_item_a778d3a7d8d438024e669812774d2d28e}{WiFiInfoItem::add\_network\_info}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00158}00158\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_wi_fi_scan_item_a957a144ac96854f73b9e5567cb210df8}{WiFiScanItem::getInstance}}().finish)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00159}00159\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 没有经过扫描}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00160}00160\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classastra_1_1ui_1_1_list_menu_a566a18860038c127579ddfb7a72ff99a}{add}}(\textcolor{stringliteral}{"{}No\ WiFi"{}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00161}00161\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00162}00162\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00164}00164\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ n\ =\ \mbox{\hyperlink{class_wi_fi_scan_item_a957a144ac96854f73b9e5567cb210df8}{WiFiScanItem::getInstance}}().\mbox{\hyperlink{class_wi_fi_scan_item_a2ebd7c87c7c4449a3052baaab724106f}{nums}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00165}00165\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00166}00166\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ *connect\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to}{ConnectTo}}(i);}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00167}00167\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wi_fi_info_item_a32b6bee8101dfe2f2ed24dca701b2bfb}{connects}}.push\_back(connect);}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00168}00168\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classastra_1_1ui_1_1_list_menu_a566a18860038c127579ddfb7a72ff99a}{add}}(WiFi.SSID(i).c\_str(),\ connect);}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00169}00169\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00170}00170\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00172}\mbox{\hyperlink{class_wi_fi_info_item_ae777f11c09c444556c65227675879355}{00172}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_info_item_ae777f11c09c444556c65227675879355}{WiFiInfoItem::onInit}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00173}00173\ \ \ \ \ \mbox{\hyperlink{class_wi_fi_info_item_a778d3a7d8d438024e669812774d2d28e}{add\_network\_info}}();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00174}00174\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00175}00175\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00176}\mbox{\hyperlink{class_wi_fi_info_item_a8c2b11387f923c0b0a313ade589b7d26}{00176}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_wi_fi_info_item_a8c2b11387f923c0b0a313ade589b7d26}{WiFiInfoItem::onOpen}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00177}00177\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_wi_fi_info_item_a90677b317e3596ed03cf53ee7a1ac5d7}{inited}})\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00178}00178\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wi_fi_info_item_ae777f11c09c444556c65227675879355}{onInit}}();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00179}00179\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wi_fi_info_item_a90677b317e3596ed03cf53ee7a1ac5d7}{inited}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00180}00180\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00181}00181\ \ \ \ \ ListMenu::onOpen();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00182}00182\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00183}00183\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00184}00184\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00185}\mbox{\hyperlink{class_wi_fi_info_item_aff428934b90f6c12ee3c3fd1d8426ef1}{00185}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_info_item_aff428934b90f6c12ee3c3fd1d8426ef1}{WiFiInfoItem::onExit}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00186}00186\ \ \ \ \ \textcolor{comment}{//\ for\ (const\ auto\ connect:\ connects)\ \{}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00187}00187\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ delete\ connect;}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00188}00188\ \ \ \ \ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00189}00189\ \ \ \ \ \textcolor{comment}{//\ connects.clear();}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00190}00190\ \ \ \ \ \textcolor{comment}{//\ inited\ =\ false;}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00191}00191\ \ \ \ \ ListMenu::onExit();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00192}00192\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00193}00193\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00194}\mbox{\hyperlink{class_wi_fi_info_item_ad150d3e3a57a41c1c9b5b2d6a3021be9}{00194}}\ \mbox{\hyperlink{class_wi_fi_info_item_ad150d3e3a57a41c1c9b5b2d6a3021be9}{WiFiInfoItem::\string~WiFiInfoItem}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00195}00195\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ connect:\ \mbox{\hyperlink{class_wi_fi_info_item_a32b6bee8101dfe2f2ed24dca701b2bfb}{connects}})\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00196}00196\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ connect;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00197}00197\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00198}00198\ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00199}00199\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00200}\mbox{\hyperlink{class_wi_fi_scan_ae168ee0a2394c2c5bd23203451a645ae}{00200}}\ \mbox{\hyperlink{class_wi_fi_scan_ae168ee0a2394c2c5bd23203451a645ae}{WiFiScan::WiFiScan}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00201}00201\ \ \ \ \ \mbox{\hyperlink{classastra_1_1ui_1_1_list_menu_a566a18860038c127579ddfb7a72ff99a}{add}}(\textcolor{stringliteral}{"{}wifi\ scan"{}},\ \&\mbox{\hyperlink{class_wi_fi_scan_item_a957a144ac96854f73b9e5567cb210df8}{WiFiScanItem::getInstance}}());}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00202}00202\ \ \ \ \ \mbox{\hyperlink{classastra_1_1ui_1_1_list_menu_a566a18860038c127579ddfb7a72ff99a}{add}}(\textcolor{stringliteral}{"{}wifi\ connect"{}},\ \&\mbox{\hyperlink{class_wi_fi_info_item_a7c39af14c795565b379d2cd061893fb3}{WiFiInfoItem::getInstance}}());}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8cpp_source_l00203}00203\ \}}
+
+\end{DoxyCode}

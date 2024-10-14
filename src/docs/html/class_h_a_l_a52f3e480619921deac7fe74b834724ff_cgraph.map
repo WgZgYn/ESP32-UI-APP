@@ -1,0 +1,7 @@
+<map id="HAL::keyTest" name="HAL::keyTest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,107,57"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#acff0a399fc6960dc7e1fee7d3d9c50ba" title="default key tester. 默认按键测试函数" alt="" coords="155,5,263,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,33,139,27,140,33,107,38"/>
+<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="172,56,246,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,50,157,58,156,63,106,55"/>
+</map>

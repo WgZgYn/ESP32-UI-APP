@@ -1,0 +1,44 @@
+\doxysection{block.\+h}
+\hypertarget{block_8h_source}{}\label{block_8h_source}\index{astra/ui/element/widget/block.h@{astra/ui/element/widget/block.h}}
+\mbox{\hyperlink{block_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ 20495\ on\ 24-\/10-\/10.}}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ BLOCK\_H}}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00006}00006\ \textcolor{preprocessor}{\#define\ BLOCK\_H}}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{widget_8h}{widget.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00011}\mbox{\hyperlink{classblock}{00011}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classblock}{block}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classastra_1_1ui_1_1_widget}{astra::ui::Widget}}\ \{}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00012}00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00013}\mbox{\hyperlink{classblock_a9fa87cb7e491064242fd1779f7a61d1f}{00013}}\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classblock_a9fa87cb7e491064242fd1779f7a61d1f}{d}}\ =\ 0.02;}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00015}00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classblock_a804b5684d69ecadffd45c481f786003a}{drawLine}}();}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00017}00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00018}\mbox{\hyperlink{classblock_a7ca306abe8b3d6431fd4a4d3b8195fb0}{00018}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classblock_a7ca306abe8b3d6431fd4a4d3b8195fb0}{points}}[8][3]\{}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \{1,\ 1,\ -\/1\},\ \{1,\ -\/1,\ -\/1\},\ \{-\/1,\ -\/1,\ -\/1\},\ \{-\/1,\ 1,\ -\/1\},}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00020}00020\ \ \ \ \ \ \ \ \ \{1,\ 1,\ 1\},\ \{1,\ -\/1,\ 1\},\ \{-\/1,\ -\/1,\ 1\},\ \{-\/1,\ 1,\ 1\},}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00021}00021\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classblock_a137ce2b269fcecbc57dd1d668ce5cc37}{rotateX}}();}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00025}00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classblock_aa6f2c154d03ae9bd4bd492c93568b23d}{rotateY}}();}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00027}00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classblock_a135f43810aa943585a9e9bdc89af6aa5}{rotateZ}}();}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classblock_aa9fcde09d74e682ad66b3a690568f4c0}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00031}\mbox{\hyperlink{classblock_a2baad4419dfb653a015fef7ed3bb5c1a}{00031}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classblock}{block}}\ \&\mbox{\hyperlink{classblock_a2baad4419dfb653a015fef7ed3bb5c1a}{getInstance}}()\ \{}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classblock}{block}}\ instance;}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00035}00035\ \};}
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{block_8h_source_l00038}00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//BLOCK\_H}}
+
+\end{DoxyCode}

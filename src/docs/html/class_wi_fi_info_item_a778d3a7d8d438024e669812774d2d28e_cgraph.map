@@ -1,0 +1,9 @@
+<map id="WiFiInfoItem::add_network_info" name="WiFiInfoItem::add_network_info">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,212,65"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_list_menu.html#a566a18860038c127579ddfb7a72ff99a" title=" " alt="" coords="271,13,429,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,38,255,34,255,39,212,44"/>
+<area shape="rect" id="Node000004" href="$class_wi_fi_scan_item.html#a957a144ac96854f73b9e5567cb210df8" title=" " alt="" coords="260,64,440,91"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,60,245,64,244,69,212,66"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_list_menu.html#ac36e60e8edba67c1ebd2371ffe849bbc" title=" " alt="" coords="488,5,617,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="429,24,472,24,472,29,429,29"/>
+</map>

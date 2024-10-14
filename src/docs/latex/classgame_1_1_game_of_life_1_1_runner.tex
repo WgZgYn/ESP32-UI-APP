@@ -1,0 +1,324 @@
+\doxysection{game\+::Game\+Of\+Life\+::Runner Class Reference}
+\hypertarget{classgame_1_1_game_of_life_1_1_runner}{}\label{classgame_1_1_game_of_life_1_1_runner}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+
+
+Inheritance diagram for game\+::Game\+Of\+Life\+::Runner\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classgame_1_1_game_of_life_1_1_runner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for game\+::Game\+Of\+Life\+::Runner\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classgame_1_1_game_of_life_1_1_runner__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_a7349d8712e7b2a0d9f6435c7858d43c6}{restart}} () override
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_ab3258be0bfcf5743a52ab737ecd76276}{update}} () override
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_a7843ce61560f2b33ab056732976f4e9f}{setup}} () override
+\item 
+\mbox{\hyperlink{namespaceastra_1_1ui_ac3141ad4d0e4335a09fa5748fbe7a4e3}{astra\+::ui\+::\+Item\+Type}} \mbox{\hyperlink{classgame_1_1_game_a0c08c602d01b05495d4d277574566ba3}{get\+Type}} () const override
+\item 
+void \mbox{\hyperlink{classapp_1_1_activity_aa2dac425c15e76032ef96705cd637c59}{on\+Init}} () override
+\item 
+bool \mbox{\hyperlink{classapp_1_1_activity_a8a8c4ada857c9dfcdfc9a6108445cd28}{on\+Open}} () override
+\item 
+void \mbox{\hyperlink{classapp_1_1_activity_a13bb340074809977e0c2757c270f136e}{on\+Loop}} () override
+\item 
+void \mbox{\hyperlink{classapp_1_1_activity_a834d270b408de651e363bfbf2ada23f4}{on\+Exit}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner}{Runner}} \& \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_a05c12868775855a75ec8e3bac40042d9}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classastra_1_1ui_1_1_item_ae1aaa5e034578e405a201e7558431b75}{Item}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classastra_1_1ui_1_1_item_ad09361e2680e77982dc5b9dec7826301}{parent}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classgame_1_1_game_a9497163227f9666722d7cf4ef42557d0}{finish}} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_a03465faf801668b4e9f5ba9ba9bc6721}{GAME}} = \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{Game\+Of\+Life}}$<$\mbox{\hyperlink{namespacegame_1_1_game_of_life_a09c51569b55742889deabe58d6b7e287}{width}}, \mbox{\hyperlink{namespacegame_1_1_game_of_life_a7dbea809bfb9b7222ca03ba0465ebc95}{height}}$>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_affc632d1e0fc0e9a770ed5dcdf5388c7}{Runner}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_a03465faf801668b4e9f5ba9ba9bc6721}{GAME}} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_af183e39a6920e4b98fcea0708027ab50}{game}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_a5ac0b1ac7d1fa9491defa38138e913f7}{opened}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00138}{138}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{classgame_1_1_game_of_life_1_1_runner_a03465faf801668b4e9f5ba9ba9bc6721}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!GAME@{GAME}}
+\index{GAME@{GAME}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{GAME}{GAME}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_runner_a03465faf801668b4e9f5ba9ba9bc6721} 
+using \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_a03465faf801668b4e9f5ba9ba9bc6721}{game\+::\+Game\+Of\+Life\+::\+Runner\+::\+GAME}} = \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{Game\+Of\+Life}}$<$\mbox{\hyperlink{namespacegame_1_1_game_of_life_a09c51569b55742889deabe58d6b7e287}{width}}, \mbox{\hyperlink{namespacegame_1_1_game_of_life_a7dbea809bfb9b7222ca03ba0465ebc95}{height}}$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00141}{141}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgame_1_1_game_of_life_1_1_runner_affc632d1e0fc0e9a770ed5dcdf5388c7}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!Runner@{Runner}}
+\index{Runner@{Runner}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{Runner()}{Runner()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_runner_affc632d1e0fc0e9a770ed5dcdf5388c7} 
+game\+::\+Game\+Of\+Life\+::\+Runner\+::\+Runner (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgame_1_1_game_of_life_1_1_runner_a05c12868775855a75ec8e3bac40042d9}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_runner_a05c12868775855a75ec8e3bac40042d9} 
+static \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner}{Runner}} \& game\+::\+Game\+Of\+Life\+::\+Runner\+::get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00146}{146}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_u_i___v_i_e_w_8cpp_source_l00016}{UIConfig()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_runner_a05c12868775855a75ec8e3bac40042d9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgame_1_1_game_a0c08c602d01b05495d4d277574566ba3}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!getType@{getType}}
+\index{getType@{getType}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_a0c08c602d01b05495d4d277574566ba3} 
+\mbox{\hyperlink{namespaceastra_1_1ui_ac3141ad4d0e4335a09fa5748fbe7a4e3}{astra\+::ui\+::\+Item\+Type}} game\+::\+Game\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classapp_1_1_activity_a06d5e7c6ef5f84a10633137e3b84fe40}{app\+::\+Activity}}.
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00022}{22}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+\Hypertarget{classapp_1_1_activity_a834d270b408de651e363bfbf2ada23f4}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!onExit@{onExit}}
+\index{onExit@{onExit}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{onExit()}{onExit()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_a834d270b408de651e363bfbf2ada23f4} 
+void app\+::\+Activity\+::on\+Exit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a58641e6e5ec59eda96d3ff5cfeb7a3f1}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{app_8h_source_l00036}{36}} of file \mbox{\hyperlink{app_8h_source}{app.\+h}}.
+
+\Hypertarget{classapp_1_1_activity_aa2dac425c15e76032ef96705cd637c59}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!onInit@{onInit}}
+\index{onInit@{onInit}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{onInit()}{onInit()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_aa2dac425c15e76032ef96705cd637c59} 
+void app\+::\+Activity\+::on\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a1305ccdb52bc00ad74e192b621bc9447}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{app_8h_source_l00023}{23}} of file \mbox{\hyperlink{app_8h_source}{app.\+h}}.
+
+\Hypertarget{classapp_1_1_activity_a13bb340074809977e0c2757c270f136e}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!onLoop@{onLoop}}
+\index{onLoop@{onLoop}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{onLoop()}{onLoop()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_a13bb340074809977e0c2757c270f136e} 
+void app\+::\+Activity\+::on\+Loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a3d656063caf7d2922a111efc0a13bfc1}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{app_8h_source_l00032}{32}} of file \mbox{\hyperlink{app_8h_source}{app.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classapp_1_1_activity_a13bb340074809977e0c2757c270f136e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classapp_1_1_activity_a8a8c4ada857c9dfcdfc9a6108445cd28}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!onOpen@{onOpen}}
+\index{onOpen@{onOpen}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{onOpen()}{onOpen()}}
+{\footnotesize\ttfamily \label{classapp_1_1_activity_a8a8c4ada857c9dfcdfc9a6108445cd28} 
+bool app\+::\+Activity\+::on\+Open (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implements \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item_a450eb19717d4723a1e4609c79312eff4}{astra\+::ui\+::\+Lifecycle\+Item}}.
+
+
+
+Definition at line \mbox{\hyperlink{app_8h_source_l00027}{27}} of file \mbox{\hyperlink{app_8h_source}{app.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classapp_1_1_activity_a8a8c4ada857c9dfcdfc9a6108445cd28_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgame_1_1_game_of_life_1_1_runner_a7349d8712e7b2a0d9f6435c7858d43c6}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!restart@{restart}}
+\index{restart@{restart}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_runner_a7349d8712e7b2a0d9f6435c7858d43c6} 
+void game\+::\+Game\+Of\+Life\+::\+Runner\+::restart (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classgame_1_1_game_ab66690718ee66e7ed26e8846a1249e80}{game\+::\+Game}}.
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00151}{151}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+\Hypertarget{classgame_1_1_game_a7843ce61560f2b33ab056732976f4e9f}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!setup@{setup}}
+\index{setup@{setup}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_a7843ce61560f2b33ab056732976f4e9f} 
+void game\+::\+Game\+::setup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implements \mbox{\hyperlink{classapp_1_1_activity_aff8608b8ad302285db89fa5072246264}{app\+::\+Activity}}.
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00018}{18}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classgame_1_1_game_a7843ce61560f2b33ab056732976f4e9f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgame_1_1_game_of_life_1_1_runner_ab3258be0bfcf5743a52ab737ecd76276}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!update@{update}}
+\index{update@{update}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_runner_ab3258be0bfcf5743a52ab737ecd76276} 
+void game\+::\+Game\+Of\+Life\+::\+Runner\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classapp_1_1_activity_a38d7a487aade10767403818f3d19b005}{app\+::\+Activity}}.
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00160}{160}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_runner_ab3258be0bfcf5743a52ab737ecd76276_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgame_1_1_game_a9497163227f9666722d7cf4ef42557d0}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!finish@{finish}}
+\index{finish@{finish}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{finish}{finish}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_a9497163227f9666722d7cf4ef42557d0} 
+bool game\+::\+Game\+::finish = false\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00009}{9}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+\Hypertarget{classgame_1_1_game_of_life_1_1_runner_af183e39a6920e4b98fcea0708027ab50}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!game@{game}}
+\index{game@{game}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_runner_af183e39a6920e4b98fcea0708027ab50} 
+\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_runner_a03465faf801668b4e9f5ba9ba9bc6721}{GAME}} game\+::\+Game\+Of\+Life\+::\+Runner\+::game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00142}{142}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+\Hypertarget{classgame_1_1_game_of_life_1_1_runner_a5ac0b1ac7d1fa9491defa38138e913f7}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!opened@{opened}}
+\index{opened@{opened}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{opened}{opened}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_runner_a5ac0b1ac7d1fa9491defa38138e913f7} 
+bool game\+::\+Game\+Of\+Life\+::\+Runner\+::opened = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00143}{143}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+\Hypertarget{classastra_1_1ui_1_1_item_ad09361e2680e77982dc5b9dec7826301}\index{game::GameOfLife::Runner@{game::GameOfLife::Runner}!parent@{parent}}
+\index{parent@{parent}!game::GameOfLife::Runner@{game::GameOfLife::Runner}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_item_ad09361e2680e77982dc5b9dec7826301} 
+\mbox{\hyperlink{classastra_1_1ui_1_1_item_ae1aaa5e034578e405a201e7558431b75}{Item}}\texorpdfstring{$\ast$}{*} astra\+::ui\+::\+Item\+::parent = nullptr\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_item_8h_source_l00026}{26}} of file \mbox{\hyperlink{_item_8h_source}{Item.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_8h_source_l00163}{astra\+::ui\+::\+List\+Menu\+::add()}}, \mbox{\hyperlink{_menu_8h_source_l00104}{astra\+::ui\+::\+Tile\+Menu\+::add()}}, and \mbox{\hyperlink{_menu_8h_source_l00078}{astra\+::ui\+::\+Menu\+::parent\+Item()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game/\mbox{\hyperlink{game_8h}{game.\+h}}\item 
+game/\mbox{\hyperlink{game_8cpp}{game.\+cpp}}\end{DoxyCompactItemize}

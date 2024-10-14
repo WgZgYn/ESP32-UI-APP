@@ -1,0 +1,7 @@
+<map id="astra::ui::LifecycleItem::onOpen" name="astra::ui::LifecycleItem::onOpen">
+<area shape="rect" id="Node000001" title=" " alt="" coords="392,5,546,48"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1_launcher.html#af5200ca1754711c51f1576eaf9914543" title=" " alt="" coords="197,13,344,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="376,29,344,29,344,24,376,24"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1_launcher.html#a86f3a3e2e3c82715f5e428fea2f8c88c" title=" " alt="" coords="5,13,149,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="181,29,149,29,149,24,181,24"/>
+</map>

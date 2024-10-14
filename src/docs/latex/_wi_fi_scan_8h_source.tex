@@ -1,0 +1,95 @@
+\doxysection{Wi\+Fi\+Scan.\+h}
+\hypertarget{_wi_fi_scan_8h_source}{}\label{_wi_fi_scan_8h_source}\index{application/WiFiScan.h@{application/WiFiScan.h}}
+\mbox{\hyperlink{_wi_fi_scan_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ 20495\ on\ 24-\/10-\/11.}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ WIFISCAN\_H}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00006}00006\ \textcolor{preprocessor}{\#define\ WIFISCAN\_H}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <WiFi.h>}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_menu_8h}{astra/ui/element/page/Menu.h}}>}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{wifi_2config_8h}{wifi/config.h}}>}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{app_8h}{app/app.h}}>}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00014}\mbox{\hyperlink{class_wi_fi_scan_item}{00014}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_wi_fi_scan_item}{WiFiScanItem}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item}{astra::ui::LifecycleItem}}\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00015}\mbox{\hyperlink{class_wi_fi_scan_item_a95e2be7988791aaaee23647dd316895d}{00015}}\ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_item_a95e2be7988791aaaee23647dd316895d}{WiFiScanItem}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00017}00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00018}\mbox{\hyperlink{class_wi_fi_scan_item_af09668eb1825fdb53e79bfc67b5685ef}{00018}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_wi_fi_scan_item_af09668eb1825fdb53e79bfc67b5685ef}{inited}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00019}\mbox{\hyperlink{class_wi_fi_scan_item_a676e2305fe969dba697086e375eaf90d}{00019}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_wi_fi_scan_item_a676e2305fe969dba697086e375eaf90d}{finish}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00020}\mbox{\hyperlink{class_wi_fi_scan_item_a2ebd7c87c7c4449a3052baaab724106f}{00020}}\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{class_wi_fi_scan_item_a2ebd7c87c7c4449a3052baaab724106f}{nums}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00022}\mbox{\hyperlink{class_wi_fi_scan_item_a957a144ac96854f73b9e5567cb210df8}{00022}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_wi_fi_scan_item}{WiFiScanItem}}\ \&\mbox{\hyperlink{class_wi_fi_scan_item_a957a144ac96854f73b9e5567cb210df8}{getInstance}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_wi_fi_scan_item}{WiFiScanItem}}\ instance;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00025}00025\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00027}00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_scan_item_a56824ca390519d5e883cb648b95e52c0}{onInit}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_wi_fi_scan_item_a0500898b248722e09f20280cff2cbbdc}{onOpen}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_scan_item_ad76bec03ab24de41b12e024051ca6cb6}{onLoop}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00033}00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_scan_item_a41519fd27c3262c14386ac00f182808a}{onExit}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00034}00034\ \};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00037}\mbox{\hyperlink{class_wi_fi_info_item}{00037}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_wi_fi_info_item}{WiFiInfoItem}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classastra_1_1ui_1_1_list_menu}{astra::ui::ListMenu}}\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00038}\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to}{00038}}\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to}{ConnectTo}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classapp_1_1_activity}{app::Activity}}\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00039}\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_ad40ceea1e1c9afc9a85ffc833756f8b9}{00039}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_ad40ceea1e1c9afc9a85ffc833756f8b9}{index}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00040}\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a3bc6494e75af9d758bda8e0c432d4b39}{00040}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a3bc6494e75af9d758bda8e0c432d4b39}{connected}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a475916df33fb7d952d418cbc63d04f2a}{get\_password}}(uint8\_t\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_ad40ceea1e1c9afc9a85ffc833756f8b9}{index}});}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00044}00044\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00045}\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_abf876231872e3419dfbb1af0ed15f6f0}{00045}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_abf876231872e3419dfbb1af0ed15f6f0}{ConnectTo}}(\textcolor{keyword}{const}\ uint8\_t\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_ad40ceea1e1c9afc9a85ffc833756f8b9}{index}})\ :\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_ad40ceea1e1c9afc9a85ffc833756f8b9}{index}}(\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_ad40ceea1e1c9afc9a85ffc833756f8b9}{index}})\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a6398e4451b74befd0a3a8474394bba5c}{setup}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to_a91fe3570cf980215b7acba56ae76fbc9}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00051}00051\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00053}\mbox{\hyperlink{class_wi_fi_info_item_a90677b317e3596ed03cf53ee7a1ac5d7}{00053}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_wi_fi_info_item_a90677b317e3596ed03cf53ee7a1ac5d7}{inited}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00054}\mbox{\hyperlink{class_wi_fi_info_item_a32b6bee8101dfe2f2ed24dca701b2bfb}{00054}}\ \ \ \ \ std::vector<ConnectTo\ *>\ \mbox{\hyperlink{class_wi_fi_info_item_a32b6bee8101dfe2f2ed24dca701b2bfb}{connects}};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00056}\mbox{\hyperlink{class_wi_fi_info_item_a135146f63599803d8f4a6053b406bfeb}{00056}}\ \ \ \ \ \mbox{\hyperlink{class_wi_fi_info_item_a135146f63599803d8f4a6053b406bfeb}{WiFiInfoItem}}():\ \mbox{\hyperlink{class_wi_fi_info_item_a90677b317e3596ed03cf53ee7a1ac5d7}{inited}}(false),\ \mbox{\hyperlink{class_wi_fi_info_item_a32b6bee8101dfe2f2ed24dca701b2bfb}{connects}}(std::vector<\mbox{\hyperlink{class_wi_fi_info_item_1_1_connect_to}{ConnectTo}}\ *>())\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00057}00057\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00059}00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_info_item_a778d3a7d8d438024e669812774d2d28e}{add\_network\_info}}();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00061}00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_info_item_ae777f11c09c444556c65227675879355}{onInit}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00064}00064\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_wi_fi_info_item_a8c2b11387f923c0b0a313ade589b7d26}{onOpen}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00066}00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wi_fi_info_item_aff428934b90f6c12ee3c3fd1d8426ef1}{onExit}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{class_wi_fi_info_item_ad150d3e3a57a41c1c9b5b2d6a3021be9}{\string~WiFiInfoItem}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00070}\mbox{\hyperlink{class_wi_fi_info_item_a7c39af14c795565b379d2cd061893fb3}{00070}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_wi_fi_info_item}{WiFiInfoItem}}\ \&\mbox{\hyperlink{class_wi_fi_info_item_a7c39af14c795565b379d2cd061893fb3}{getInstance}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_wi_fi_info_item}{WiFiInfoItem}}\ instance;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00072}00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00073}00073\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00074}00074\ \};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00076}\mbox{\hyperlink{class_wi_fi_scan}{00076}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_wi_fi_scan}{WiFiScan}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classastra_1_1ui_1_1_list_menu}{astra::ui::ListMenu}}\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00077}00077\ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_ae168ee0a2394c2c5bd23203451a645ae}{WiFiScan}}();}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00079}\mbox{\hyperlink{class_wi_fi_scan_a58e65699737147bf78bf13350a54c4c6}{00079}}\ \ \ \ \ \mbox{\hyperlink{class_wi_fi_scan_a58e65699737147bf78bf13350a54c4c6}{\string~WiFiScan}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00081}00081\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00082}\mbox{\hyperlink{class_wi_fi_scan_a44ba4f3a1d2043b978083f876dde3841}{00082}}\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_wi_fi_scan}{WiFiScan}}\ \&\mbox{\hyperlink{class_wi_fi_scan_a44ba4f3a1d2043b978083f876dde3841}{getInstance}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00083}00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_wi_fi_scan}{WiFiScan}}\ instance;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00084}00084\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00085}00085\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00086}00086\ \};}
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{_wi_fi_scan_8h_source_l00089}00089\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//WIFISCAN\_H}}
+
+\end{DoxyCode}

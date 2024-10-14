@@ -1,0 +1,65 @@
+\doxysection{application/\+Network\+Manager.cpp File Reference}
+\hypertarget{_network_manager_8cpp}{}\label{_network_manager_8cpp}\index{application/NetworkManager.cpp@{application/NetworkManager.cpp}}
+{\ttfamily \#include "{}Network\+Manager.\+h"{}}\newline
+{\ttfamily \#include $<$EEPROM.\+h$>$}\newline
+{\ttfamily \#include $<$nvs\+\_\+flash.\+h$>$}\newline
+{\ttfamily \#include $<$Wi\+Fi.\+h$>$}\newline
+{\ttfamily \#include $<$hal/hal.\+h$>$}\newline
+Include dependency graph for Network\+Manager.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_network_manager_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int32\+\_\+t \mbox{\hyperlink{_network_manager_8cpp_abc9ad9d37bceb104a6968052e37dd7d1}{first\+\_\+char\+\_\+at}} (const char \texorpdfstring{$\ast$}{*}str, const size\+\_\+t len, const char c, size\+\_\+t begin=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr size\+\_\+t \mbox{\hyperlink{_network_manager_8cpp_a68f0d691961bde7ce241536691a51fb5}{EEPROM\+\_\+\+SIZE}} = 128
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_network_manager_8cpp_abc9ad9d37bceb104a6968052e37dd7d1}\index{NetworkManager.cpp@{NetworkManager.cpp}!first\_char\_at@{first\_char\_at}}
+\index{first\_char\_at@{first\_char\_at}!NetworkManager.cpp@{NetworkManager.cpp}}
+\doxysubsubsection{\texorpdfstring{first\_char\_at()}{first\_char\_at()}}
+{\footnotesize\ttfamily \label{_network_manager_8cpp_abc9ad9d37bceb104a6968052e37dd7d1} 
+int32\+\_\+t first\+\_\+char\+\_\+at (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{const size\+\_\+t}]{len}{, }\item[{const char}]{c}{, }\item[{size\+\_\+t}]{begin}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_network_manager_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{_network_manager_8cpp_source}{Network\+Manager.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_network_manager_8cpp_source_l00037}{Network\+Manager\+::update()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{_network_manager_8cpp_abc9ad9d37bceb104a6968052e37dd7d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_network_manager_8cpp_a68f0d691961bde7ce241536691a51fb5}\index{NetworkManager.cpp@{NetworkManager.cpp}!EEPROM\_SIZE@{EEPROM\_SIZE}}
+\index{EEPROM\_SIZE@{EEPROM\_SIZE}!NetworkManager.cpp@{NetworkManager.cpp}}
+\doxysubsubsection{\texorpdfstring{EEPROM\_SIZE}{EEPROM\_SIZE}}
+{\footnotesize\ttfamily \label{_network_manager_8cpp_a68f0d691961bde7ce241536691a51fb5} 
+size\+\_\+t EEPROM\+\_\+\+SIZE = 128\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Definition at line \mbox{\hyperlink{_network_manager_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_network_manager_8cpp_source}{Network\+Manager.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_network_manager_8cpp_source_l00019}{Network\+Manager\+::setup()}}.
+

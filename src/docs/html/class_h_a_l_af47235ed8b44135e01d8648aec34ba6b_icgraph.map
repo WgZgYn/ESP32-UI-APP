@@ -1,0 +1,9 @@
+<map id="HAL::cancelInfo" name="HAL::cancelInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,56,336,83"/>
+<area shape="rect" id="Node000002" href="$class_wi_fi_scan_item.html#ad76bec03ab24de41b12e024051ca6cb6" title=" " alt="" coords="12,5,166,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,54,141,35,142,30,212,49"/>
+<area shape="rect" id="Node000003" href="$class_network_manager.html#aa78e68868876c7a00727ad566c50f89e" title=" " alt="" coords="5,56,173,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,72,173,72,173,67,205,67"/>
+<area shape="rect" id="Node000004" href="$class_wi_fi_info_item_1_1_connect_to.html#a91fe3570cf980215b7acba56ae76fbc9" title=" " alt="" coords="5,107,173,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="219,90,161,109,159,104,218,85"/>
+</map>

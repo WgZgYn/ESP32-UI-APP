@@ -1,0 +1,24 @@
+<map id="astra::ui::Animation::exitAnimation" name="astra::ui::Animation::exitAnimation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,99,140,141"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#ae63b81f88feafa8a8eb1670c75b986cd" title="system timers." alt="" coords="228,31,314,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,96,187,67,212,58,214,63,189,72,121,100"/>
+<area shape="rect" id="Node000005" href="$class_h_a_l.html#af3736ee749e0efeb2e93b4c4685b49b5" title=" " alt="" coords="188,81,354,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="140,109,172,105,172,110,140,114"/>
+<area shape="rect" id="Node000007" href="$class_h_a_l.html#ae6f7071e74c4f7dd9e9843790d42b43b" title=" " alt="" coords="190,132,352,159"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="140,126,174,130,174,136,140,131"/>
+<area shape="rect" id="Node000009" href="$class_h_a_l.html#ae2ad7f9b0efcb75924a516de6b3222cf" title=" " alt="" coords="195,183,347,209"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="121,140,189,168,208,175,206,180,187,173,119,144"/>
+<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9990718b01d90c567a8baa1ecadc1ead" title=" " alt="" coords="442,5,535,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="314,36,426,23,427,28,314,42"/>
+<area shape="rect" id="Node000004" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="452,107,525,133"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="315,53,355,67,403,92,438,104,436,109,401,97,353,72,313,58"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="354,102,437,111,436,117,354,107"/>
+<area shape="rect" id="Node000006" href="$class_h_a_l.html#a45e2dd4cf44c81328e9234cb71df5845" title=" " alt="" coords="402,56,575,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="354,82,386,79,387,84,354,88"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="352,133,436,123,437,129,353,139"/>
+<area shape="rect" id="Node000008" href="$class_h_a_l.html#a50b68e8e0948f219edece61fc423278b" title=" " alt="" coords="404,157,573,184"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="353,152,389,156,388,162,352,157"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="322,180,353,168,401,143,436,131,438,136,403,148,355,173,323,185"/>
+<area shape="rect" id="Node000010" href="$class_h_a_l.html#a8c67787c17e84d8f8214188d97b08654" title=" " alt="" coords="409,208,568,235"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="348,202,394,208,393,213,347,208"/>
+</map>

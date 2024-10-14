@@ -1,0 +1,35 @@
+<map id="HAL::_canvasUpdate" name="HAL::_canvasUpdate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="829,208,975,235"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#aae293b287992a20d4a164b8b641f1677" title=" " alt="" coords="641,208,781,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="813,224,781,224,781,219,813,219"/>
+<area shape="rect" id="Node000003" href="$namespaceastra.html#acd0ea04a8b2ccb11d5a626d7ed38b204" title=" " alt="" coords="446,5,560,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="695,195,656,124,626,86,592,53,558,35,561,30,595,49,630,82,660,121,700,193"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1_launcher.html#a86f3a3e2e3c82715f5e428fea2f8c88c" title=" " alt="" coords="5,107,149,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="679,200,639,173,592,148,486,108,442,97,400,90,310,88,197,97,132,109,131,103,196,92,310,82,400,84,443,91,488,103,594,143,642,168,682,196"/>
+<area shape="rect" id="Node000006" href="$classastra_1_1_launcher.html#ac24cb43a812f9ef48729946c094b5cc7" title=" " alt="" coords="422,157,584,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="638,206,560,187,561,182,639,201"/>
+<area shape="rect" id="Node000009" href="$class_h_a_l.html#a6b4545a8451d53bd4bca5ba9d8192316" title=" " alt="" coords="448,208,557,235"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="626,224,557,224,557,219,626,219"/>
+<area shape="rect" id="Node000021" href="$classblock.html#aa9fcde09d74e682ad66b3a690568f4c0" title=" " alt="" coords="453,259,552,285"/>
+<area shape="poly" id="edge15_Node000002_Node000021" title=" " alt="" coords="639,242,554,263,552,257,637,236"/>
+<area shape="rect" id="Node000022" href="$classgame_1_1_game_of_life_1_1_runner.html#ab3258be0bfcf5743a52ab737ecd76276" title=" " alt="" coords="412,309,593,352"/>
+<area shape="poly" id="edge16_Node000002_Node000022" title=" " alt="" coords="680,246,640,273,595,300,569,311,567,306,592,295,638,269,677,242"/>
+<area shape="rect" id="Node000023" href="$classmqtt_1_1_mqtt_view.html#a4db7dd37724a8dc2798e080a8ac832a7" title=" " alt="" coords="424,376,581,403"/>
+<area shape="poly" id="edge17_Node000002_Node000023" title=" " alt="" coords="697,250,656,309,628,340,595,366,572,378,569,373,592,362,624,336,652,305,693,247"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1_launcher.html#a675f04557f2588a878aa362f227206cc" title=" " alt="" coords="205,5,356,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="430,21,357,21,357,16,430,16"/>
+<area shape="rect" id="Node000007" href="$classastra_1_1_launcher.html#ad7823766875173d51ca21754448edc2a" title=" " alt="" coords="205,107,356,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="425,156,341,137,343,131,426,151"/>
+<area shape="rect" id="Node000008" href="$classastra_1_1_launcher.html#af5200ca1754711c51f1576eaf9914543" title=" " alt="" coords="207,157,354,184"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="406,173,355,173,355,168,406,168"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="190,123,149,123,149,117,190,117"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="208,156,133,137,134,131,210,150"/>
+<area shape="rect" id="Node000010" href="$class_h_a_l.html#a3cefcc81caaec0f5066a310b9305a561" title=" " alt="" coords="226,208,335,235"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="433,224,335,224,335,219,433,219"/>
+<area shape="rect" id="Node000016" href="$class_wi_fi_scan_item.html#ad76bec03ab24de41b12e024051ca6cb6" title=" " alt="" coords="203,259,358,285"/>
+<area shape="poly" id="edge12_Node000009_Node000016" title=" " alt="" coords="434,240,343,261,342,255,433,234"/>
+<area shape="rect" id="Node000018" href="$class_network_manager.html#aa78e68868876c7a00727ad566c50f89e" title=" " alt="" coords="197,309,364,336"/>
+<area shape="poly" id="edge13_Node000009_Node000018" title=" " alt="" coords="435,239,413,249,399,261,390,273,381,287,365,300,342,311,339,306,363,295,377,283,386,270,395,257,411,244,432,234"/>
+<area shape="rect" id="Node000019" href="$class_wi_fi_info_item_1_1_connect_to.html#a91fe3570cf980215b7acba56ae76fbc9" title=" " alt="" coords="197,360,364,403"/>
+<area shape="poly" id="edge14_Node000009_Node000019" title=" " alt="" coords="435,236,414,249,403,260,396,272,390,297,384,323,377,337,366,350,350,362,347,357,362,346,373,334,379,321,385,296,391,270,398,257,410,245,432,231"/>
+</map>

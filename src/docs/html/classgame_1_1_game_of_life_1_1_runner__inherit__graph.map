@@ -1,0 +1,9 @@
+<map id="game::GameOfLife::Runner" name="game::GameOfLife::Runner">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,677,179,832"/>
+<area shape="rect" id="Node000002" href="$classgame_1_1_game.html" title=" " alt="" coords="48,475,136,629"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,644,95,678,89,678,89,644"/>
+<area shape="rect" id="Node000003" href="$classapp_1_1_activity.html" title=" " alt="" coords="49,208,135,427"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,442,95,475,89,475,89,442"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_lifecycle_item.html" title=" " alt="" coords="19,5,165,160"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="95,175,95,208,89,208,89,175"/>
+</map>

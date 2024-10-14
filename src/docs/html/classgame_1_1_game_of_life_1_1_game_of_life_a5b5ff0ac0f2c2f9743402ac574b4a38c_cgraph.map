@@ -1,0 +1,18 @@
+<map id="game::GameOfLife::GameOfLife::init" name="game::GameOfLife::GameOfLife::init">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,194,91"/>
+<area shape="rect" id="Node000002" href="$classgame_1_1_game_of_life_1_1_game_of_life.html#ae204d8f97cd975daecd57403d0dcf277" title=" " alt="" coords="242,15,430,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,53,226,49,227,54,195,59"/>
+<area shape="rect" id="Node000006" href="$classgame_1_1_game_of_life_1_1_game_of_life.html#a71b6cc01945f5aaa7e8e1d101fc7926e" title=" " alt="" coords="242,81,430,124"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="195,80,227,85,226,90,194,85"/>
+<area shape="rect" id="Node000003" href="$class_h_a_l.html#a47dc2d0783e90f651ba82441a9d00d11" title=" " alt="" coords="505,23,603,49"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,33,490,33,490,39,431,39"/>
+<area shape="rect" id="Node000004" href="$class_h_a_l.html#a2f5837de593e153580e66040ffec9488" title=" " alt="" coords="705,5,811,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="603,29,690,22,690,27,604,35"/>
+<area shape="rect" id="Node000005" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="721,56,795,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="604,41,706,58,705,64,603,47"/>
+<area shape="rect" id="Node000007" href="$class_h_a_l.html#a443e194e0658c251160796e2076d2b78" title=" " alt="" coords="478,89,630,116"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="431,100,462,100,462,105,431,105"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="631,88,705,75,706,80,631,93"/>
+<area shape="rect" id="Node000008" href="$class_h_a_l.html#a4117be433b4af64eb018342c9ed5cd92" title=" " alt="" coords="678,107,838,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="631,107,663,109,663,115,631,112"/>
+</map>

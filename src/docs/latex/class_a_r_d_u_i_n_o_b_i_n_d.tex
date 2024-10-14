@@ -1,0 +1,2296 @@
+\doxysection{ARDUINOBIND Class Reference}
+\hypertarget{class_a_r_d_u_i_n_o_b_i_n_d}{}\label{class_a_r_d_u_i_n_o_b_i_n_d}\index{ARDUINOBIND@{ARDUINOBIND}}
+
+
+{\ttfamily \#include $<$Arduino\+Bind.\+h$>$}
+
+
+
+Inheritance diagram for ARDUINOBIND\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_a_r_d_u_i_n_o_b_i_n_d__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ARDUINOBIND\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_a_r_d_u_i_n_o_b_i_n_d__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_h_a_l_ad6407c0b13fccff118875d9f703bbd58}{type}} ()
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a87a3593041afa3c7be384c70bc6cd5a1}{init}} ()
+\item 
+virtual void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_h_a_l_a8c67787c17e84d8f8214188d97b08654}{\+\_\+get\+Canvas\+Buffer}} ()=0
+\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_h_a_l_a45e2dd4cf44c81328e9234cb71df5845}{\+\_\+get\+Buffer\+Tile\+Height}} ()=0
+\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_h_a_l_a50b68e8e0948f219edece61fc423278b}{\+\_\+get\+Buffer\+Tile\+Width}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a6fa3ce5052ac2d845033494c38545459}{\+\_\+canvas\+Update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a331526846973dca2bde45baf1a2174af}{\+\_\+canvas\+Clear}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a5f77bcf6669b0122ea8c573117631e9f}{\+\_\+set\+Font}} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}\+\_\+font)=0
+\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_h_a_l_a6965b13ef8ac5740afa84f0b2edfa12f}{\+\_\+get\+Font\+Width}} (const char \texorpdfstring{$\ast$}{*}\+\_\+text)=0
+\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{class_h_a_l_a338ac5473f9fff152a6700ef53ecb006}{\+\_\+get\+Font\+Height}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a04ab7db4043ed43d64b0ff67b0c28b36}{\+\_\+set\+Draw\+Type}} (uint8\+\_\+t \+\_\+type)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a3d19353fdad528e57b33341730728db7}{\+\_\+draw\+Pixel}} (float \+\_\+x, float \+\_\+y)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a26d8b728aad695472b9b40f18c406451}{\+\_\+draw\+Line}} (float \+\_\+x, float \+\_\+y, float \+\_\+x2, float \+\_\+y2)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a3bd412c91f3b852f10fe47adeee484a4}{\+\_\+draw\+English}} (float \+\_\+x, float \+\_\+y, const char \texorpdfstring{$\ast$}{*}\+\_\+text)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a8badd143f569ab7e7d390cde55b76ce6}{\+\_\+draw\+Chinese}} (float \+\_\+x, float \+\_\+y, const char \texorpdfstring{$\ast$}{*}\+\_\+text)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a0d38b2b370fbdba19174c760a4ee02c2}{\+\_\+draw\+VDotted\+Line}} (float \+\_\+x, float \+\_\+y, float \+\_\+h)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a60ee4dcbb05b1b50cd84dd1dfd60a605}{\+\_\+draw\+HDotted\+Line}} (float \+\_\+x, float \+\_\+y, float \+\_\+l)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a3ecde6fc121b144aa936a60f46fab4b3}{\+\_\+draw\+VLine}} (float \+\_\+x, float \+\_\+y, float \+\_\+h)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a854d8f58ddf7d554554b96e6ebbf6ac4}{\+\_\+draw\+HLine}} (float \+\_\+x, float \+\_\+y, float \+\_\+l)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_aec90a16c10a5f4884b8fa1f4956ba713}{\+\_\+draw\+BMP}} (float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}\+\_\+bit\+Map)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_ae21a0c13cdca093c7cef29d087f113b5}{\+\_\+draw\+Box}} (float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_aa1aa27b38bc99460d965314b197ea4e6}{\+\_\+draw\+RBox}} (float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h, float \+\_\+r)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_aa06891253d5636e314fca7fa83eefae2}{\+\_\+draw\+Frame}} (float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a39dd078aa1cb8ed4f9d397244847cc6e}{\+\_\+draw\+RFrame}} (float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h, float \+\_\+r)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a3cefcc81caaec0f5066a310b9305a561}{\+\_\+print\+Info}} (const char \texorpdfstring{$\ast$}{*}\+\_\+msg)
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a629d66763368eb51a6a9563cb0c7dddd}{\+\_\+beep}} (float \+\_\+freq)=0
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a3310dd87960ac06e96f112a42b4b93f4}{\+\_\+beep\+Stop}} ()
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_afff94770aceb94ac5587356c2e37d11d}{\+\_\+set\+Beep\+Vol}} (uint8\+\_\+t \+\_\+vol)
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a593a0bfa30bfb38c9332b797c8a7de7a}{\+\_\+screen\+On}} ()
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_aaaa4bb3a970464da5a4c0514f2326a23}{\+\_\+screen\+Off}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_h_a_l_a70e9782318d77388a3c4fe2934706255}{\+\_\+get\+Key}} (\mbox{\hyperlink{namespacekey_a79225c4d3b8be48f70392dc18bf888f8}{key\+::\+KEY\+\_\+\+INDEX}} \+\_\+key\+Index)
+\item 
+virtual bool \mbox{\hyperlink{class_h_a_l_a11d0de7cdec97a0623e978b22851c7c0}{\+\_\+get\+Any\+Key}} ()
+\item 
+virtual void \mbox{\hyperlink{class_h_a_l_a2cc043eef9d7028003bb3cae9a7020d7}{\+\_\+key\+Scan}} ()
+\begin{DoxyCompactList}\small\item\em key scanner default. 默认按键扫描函数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_h_a_l_acff0a399fc6960dc7e1fee7d3d9c50ba}{\+\_\+key\+Test}} ()
+\begin{DoxyCompactList}\small\item\em default key tester. 默认按键测试函数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_h_a_l_af8a8c58f842229a7162b73454d425778}{\+\_\+update\+Config}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_h_a_l}{HAL}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_h_a_l_a9a66283b8e193c0d49986f0f39a5e8c6}{get}} ()
+\item 
+static bool \mbox{\hyperlink{class_h_a_l_ad430540da1fec789ba85ed5eda4005b1}{check}} ()
+\item 
+static bool \mbox{\hyperlink{class_h_a_l_a54a0dd3ada3025ef9f663a381d00713a}{inject}} (\mbox{\hyperlink{class_h_a_l}{HAL}} \texorpdfstring{$\ast$}{*}\+\_\+hal)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a1c565a014bc283c89362af6e6aceaeee}{destroy}} ()
+\item 
+static void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_h_a_l_ae2ad7f9b0efcb75924a516de6b3222cf}{get\+Canvas\+Buffer}} ()
+\item 
+static uint8\+\_\+t \mbox{\hyperlink{class_h_a_l_af3736ee749e0efeb2e93b4c4685b49b5}{get\+Buffer\+Tile\+Height}} ()
+\item 
+static uint8\+\_\+t \mbox{\hyperlink{class_h_a_l_ae6f7071e74c4f7dd9e9843790d42b43b}{get\+Buffer\+Tile\+Width}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_aae293b287992a20d4a164b8b641f1677}{canvas\+Update}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_ab3dc484ade3ceddefb7f9a0d721c7060}{canvas\+Clear}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_aee501e8a32605d70a7eedf4ede709eb0}{set\+Font}} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}\+\_\+font)
+\item 
+static uint8\+\_\+t \mbox{\hyperlink{class_h_a_l_af5d3dcbea67cb40ede8c7db60df027db}{get\+Font\+Width}} (const char \texorpdfstring{$\ast$}{*}\+\_\+text)
+\item 
+static uint8\+\_\+t \mbox{\hyperlink{class_h_a_l_a4d7c6e5ced87dfdb336c2b9ea787f8c8}{get\+Font\+Height}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_ae01f62e0cafc63dc95a4b70d92e88eb1}{set\+Draw\+Type}} (uint8\+\_\+t \+\_\+type)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a50dd62d0aca57e96ae7a8c16d162843f}{draw\+Pixel}} (float \+\_\+x, float \+\_\+y)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_ac47f62fe2c8497c9198d83e9455f2314}{draw\+Line}} (float \+\_\+x, float \+\_\+y, float \+\_\+x2, float \+\_\+y2)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_afb48124e7adf314b098f58e775f1e8fc}{draw\+English}} (float \+\_\+x, float \+\_\+y, const char \texorpdfstring{$\ast$}{*}\+\_\+text)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_ad0a3da5981d4cef340f739f43c703107}{draw\+Chinese}} (float \+\_\+x, float \+\_\+y, const char \texorpdfstring{$\ast$}{*}\+\_\+text)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a47215480617a93915276b6247e42b605}{draw\+VDotted\+Line}} (float \+\_\+x, float \+\_\+y, float \+\_\+h)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_ab23694a7295e287b3c9fd12d48bb51b1}{draw\+HDotted\+Line}} (float \+\_\+x, float \+\_\+y, float \+\_\+l)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a524da988ada9aef88a00d2669fcf9546}{draw\+VLine}} (float \+\_\+x, float \+\_\+y, float \+\_\+h)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a2eebd98fb0b84a58a20b4fb6c14dc845}{draw\+HLine}} (float \+\_\+x, float \+\_\+y, float \+\_\+l)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a2231c6c94a3468e66d945d7a6dff4eaf}{draw\+BMP}} (float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}\+\_\+bit\+Map)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a155d0d75dc41ec1c291a5f52fd45744a}{draw\+Box}} (float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a450514fd38ce44e484c3c6e84600907d}{draw\+RBox}} (float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h, float \+\_\+r)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a5bcab2d8036eaf9f4d76b01f1572618b}{draw\+Frame}} (float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a2f2447b48eca2a34a8b18b4baf77b2b2}{draw\+RFrame}} (float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h, float \+\_\+r)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}{print\+Info}} (const char \texorpdfstring{$\ast$}{*}\+\_\+msg)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_ab4b89819dd5f856b9802b2807cc9aee8}{print\+Info}} (const String \&\+\_\+msg)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a6b4545a8451d53bd4bca5ba9d8192316}{show\+Info}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a59b91cca947308dbb01d69077db3adc2}{clean\+Info}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_af47235ed8b44135e01d8648aec34ba6b}{cancel\+Info}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}{delay}} (unsigned long \+\_\+mill)
+\begin{DoxyCompactList}\small\item\em system timers. \end{DoxyCompactList}\item 
+static unsigned long \mbox{\hyperlink{class_h_a_l_af52271a395ac72eef5b38128d8a7ce8a}{millis}} ()
+\item 
+static unsigned long \mbox{\hyperlink{class_h_a_l_a7a9d8410509ea2fbe5398fc8a47f325e}{get\+Tick}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a443e194e0658c251160796e2076d2b78}{set\+Random\+Seed}} ()
+\item 
+static unsigned long \mbox{\hyperlink{class_h_a_l_a47dc2d0783e90f651ba82441a9d00d11}{random}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a0d7be02f788f9aa399a1c873ee6ff72a}{beep}} (float \+\_\+freq)
+\begin{DoxyCompactList}\small\item\em buzzer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_h_a_l_aba2f6a4fc62df301eeb023a97d7e9f7b}{beep\+Stop}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_aa77ffe7a69c775efab758ef6c7b5a5f4}{set\+Beep\+Vol}} (uint8\+\_\+t \+\_\+vol)
+\item 
+static void \mbox{\hyperlink{class_h_a_l_afcab4b3cff6aaa8e3ca8dbc346fdc18a}{screen\+On}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_ad2d0186d96c9561b0ee34bc5149ce11a}{screen\+Off}} ()
+\item 
+static bool \mbox{\hyperlink{class_h_a_l_a4b818da0ba0a772a436332dbad9b91c7}{get\+Key}} (\mbox{\hyperlink{namespacekey_a79225c4d3b8be48f70392dc18bf888f8}{key\+::\+KEY\+\_\+\+INDEX}} \+\_\+key\+Index)
+\begin{DoxyCompactList}\small\item\em key. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_h_a_l_a0d57c38939864631e7220251bad6621a}{get\+Any\+Key}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a5722e8739e8d2a08d402444babee524c}{key\+Scan}} ()
+\item 
+static void \mbox{\hyperlink{class_h_a_l_a52f3e480619921deac7fe74b834724ff}{key\+Test}} ()
+\item 
+static const \mbox{\hyperlink{structsys_1_1config}{sys\+::config}} \& \mbox{\hyperlink{class_h_a_l_a69524fe0b9c868103aba8d611fdacdd9}{get\+System\+Config}} ()
+\begin{DoxyCompactList}\small\item\em system config. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_h_a_l_a0af4c0179df9d3b8960a5d51954ba21e}{update\+Config}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacekey_aede8566aab31681ebcf4a1fda0ea4a80}{key\+::key\+Action}} \mbox{\hyperlink{class_h_a_l_a9bfc9becf0de4135c6b1fe8f4af36e7d}{key}} \mbox{[}\mbox{\hyperlink{namespacekey_ab9b0f4140bd82fa2aad1f4c616e2276eae19233160e3111a25f36d82750f43478}{key\+::\+KEY\+\_\+\+NUM}}\mbox{]} \{static\+\_\+cast$<$\mbox{\hyperlink{namespacekey_aede8566aab31681ebcf4a1fda0ea4a80}{key\+::key\+Action}}$>$(0)\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_a776f082123c43cb31862c67b17f39568}{\+\_\+delay}} (unsigned long \+\_\+mill) override
+\item 
+unsigned long \mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_ae0203a3d9d51c2907b7b16c39b82b0da}{\+\_\+millis}} () override
+\item 
+unsigned long \mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_a6ba3a8517d568888a7deaf641640b2a5}{\+\_\+get\+Tick}} () override
+\item 
+void \mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_ada266b129169159817e28e2a9c35fe67}{\+\_\+set\+Random\+Seed}} () override
+\item 
+unsigned long \mbox{\hyperlink{class_a_r_d_u_i_n_o_b_i_n_d_ab845a6b738381f36f4eaaac8ab0076ed}{\+\_\+random}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_h_a_l}{HAL}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_h_a_l_af09e889fb69288e989995967ff12c710}{hal}} = nullptr
+\item 
+static std\+::deque$<$ std\+::string $>$ \mbox{\hyperlink{class_h_a_l_a094da48e900007790d642ff77a69f82b}{queue}}
+\begin{DoxyCompactList}\small\item\em log printer. 自动换行的日志输出 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_arduino_bind_8h_source_l00008}{8}} of file \mbox{\hyperlink{_arduino_bind_8h_source}{Arduino\+Bind.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_h_a_l_a629d66763368eb51a6a9563cb0c7dddd}\index{ARDUINOBIND@{ARDUINOBIND}!\_beep@{\_beep}}
+\index{\_beep@{\_beep}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_beep()}{\_beep()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a629d66763368eb51a6a9563cb0c7dddd} 
+virtual void HAL\+::\+\_\+beep (\begin{DoxyParamCaption}\item[{float}]{\+\_\+freq}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_my_h_a_l_a0473872cfb435ee75a20c719a0c1d9b5}{My\+HAL}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00250}{HAL\+::beep()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_h_a_l_a629d66763368eb51a6a9563cb0c7dddd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a3310dd87960ac06e96f112a42b4b93f4}\index{ARDUINOBIND@{ARDUINOBIND}!\_beepStop@{\_beepStop}}
+\index{\_beepStop@{\_beepStop}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_beepStop()}{\_beepStop()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a3310dd87960ac06e96f112a42b4b93f4} 
+virtual void HAL\+::\+\_\+beep\+Stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_h_a_l_a2a7aa99027f9b65f36b25a0e3f8a11e1}{My\+HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00256}{256}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00254}{HAL\+::beep\+Stop()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_h_a_l_a3310dd87960ac06e96f112a42b4b93f4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a331526846973dca2bde45baf1a2174af}\index{ARDUINOBIND@{ARDUINOBIND}!\_canvasClear@{\_canvasClear}}
+\index{\_canvasClear@{\_canvasClear}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_canvasClear()}{\_canvasClear()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a331526846973dca2bde45baf1a2174af} 
+virtual void HAL\+::\+\_\+canvas\+Clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_a1cccf78661b735b2d394439a01d2afa3}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00108}{HAL\+::canvas\+Clear()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a331526846973dca2bde45baf1a2174af_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a6fa3ce5052ac2d845033494c38545459}\index{ARDUINOBIND@{ARDUINOBIND}!\_canvasUpdate@{\_canvasUpdate}}
+\index{\_canvasUpdate@{\_canvasUpdate}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_canvasUpdate()}{\_canvasUpdate()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a6fa3ce5052ac2d845033494c38545459} 
+virtual void HAL\+::\+\_\+canvas\+Update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_a0872e312c13543b8eedd48bb92bfc332}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00104}{HAL\+::canvas\+Update()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a6fa3ce5052ac2d845033494c38545459_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_r_d_u_i_n_o_b_i_n_d_a776f082123c43cb31862c67b17f39568}\index{ARDUINOBIND@{ARDUINOBIND}!\_delay@{\_delay}}
+\index{\_delay@{\_delay}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_delay()}{\_delay()}}
+{\footnotesize\ttfamily \label{class_a_r_d_u_i_n_o_b_i_n_d_a776f082123c43cb31862c67b17f39568} 
+void ARDUINOBIND\+::\+\_\+delay (\begin{DoxyParamCaption}\item[{unsigned long}]{\+\_\+mill}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_h_a_l_a9990718b01d90c567a8baa1ecadc1ead}{HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{_arduino_bind_8h_source_l00009}{9}} of file \mbox{\hyperlink{_arduino_bind_8h_source}{Arduino\+Bind.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_r_d_u_i_n_o_b_i_n_d_a776f082123c43cb31862c67b17f39568_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_aec90a16c10a5f4884b8fa1f4956ba713}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawBMP@{\_drawBMP}}
+\index{\_drawBMP@{\_drawBMP}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawBMP()}{\_drawBMP()}}
+{\footnotesize\ttfamily \label{class_h_a_l_aec90a16c10a5f4884b8fa1f4956ba713} 
+virtual void HAL\+::\+\_\+draw\+BMP (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{\+\_\+bit\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00163}{HAL\+::draw\+BMP()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_aec90a16c10a5f4884b8fa1f4956ba713_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ae21a0c13cdca093c7cef29d087f113b5}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawBox@{\_drawBox}}
+\index{\_drawBox@{\_drawBox}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawBox()}{\_drawBox()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ae21a0c13cdca093c7cef29d087f113b5} 
+virtual void HAL\+::\+\_\+draw\+Box (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_ab36bf0cf13e735e513331eea79a2cd37}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00173}{HAL\+::draw\+Box()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ae21a0c13cdca093c7cef29d087f113b5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a8badd143f569ab7e7d390cde55b76ce6}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawChinese@{\_drawChinese}}
+\index{\_drawChinese@{\_drawChinese}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawChinese()}{\_drawChinese()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a8badd143f569ab7e7d390cde55b76ce6} 
+virtual void HAL\+::\+\_\+draw\+Chinese (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_a2540f5f3243e1211a4134bc5f7271366}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00143}{HAL\+::draw\+Chinese()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a8badd143f569ab7e7d390cde55b76ce6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a3bd412c91f3b852f10fe47adeee484a4}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawEnglish@{\_drawEnglish}}
+\index{\_drawEnglish@{\_drawEnglish}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawEnglish()}{\_drawEnglish()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a3bd412c91f3b852f10fe47adeee484a4} 
+virtual void HAL\+::\+\_\+draw\+English (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_ae3a00abebf5cbf20f878fafc426cbbd5}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00139}{HAL\+::draw\+English()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a3bd412c91f3b852f10fe47adeee484a4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_aa06891253d5636e314fca7fa83eefae2}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawFrame@{\_drawFrame}}
+\index{\_drawFrame@{\_drawFrame}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawFrame()}{\_drawFrame()}}
+{\footnotesize\ttfamily \label{class_h_a_l_aa06891253d5636e314fca7fa83eefae2} 
+virtual void HAL\+::\+\_\+draw\+Frame (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_a9c2d79cf6a637e69e6316e81c7c450bf}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00187}{HAL\+::draw\+Frame()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_h_a_l_aa06891253d5636e314fca7fa83eefae2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a60ee4dcbb05b1b50cd84dd1dfd60a605}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawHDottedLine@{\_drawHDottedLine}}
+\index{\_drawHDottedLine@{\_drawHDottedLine}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawHDottedLine()}{\_drawHDottedLine()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a60ee4dcbb05b1b50cd84dd1dfd60a605} 
+virtual void HAL\+::\+\_\+draw\+HDotted\+Line (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+l}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_a575d1cf1697c49108d851b186efedc1a}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00151}{HAL\+::draw\+HDotted\+Line()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a60ee4dcbb05b1b50cd84dd1dfd60a605_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a854d8f58ddf7d554554b96e6ebbf6ac4}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawHLine@{\_drawHLine}}
+\index{\_drawHLine@{\_drawHLine}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawHLine()}{\_drawHLine()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a854d8f58ddf7d554554b96e6ebbf6ac4} 
+virtual void HAL\+::\+\_\+draw\+HLine (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+l}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_a6544544e2c302cf195f3f6852e499ac8}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00159}{HAL\+::draw\+HLine()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a854d8f58ddf7d554554b96e6ebbf6ac4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a26d8b728aad695472b9b40f18c406451}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawLine@{\_drawLine}}
+\index{\_drawLine@{\_drawLine}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawLine()}{\_drawLine()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a26d8b728aad695472b9b40f18c406451} 
+virtual void HAL\+::\+\_\+draw\+Line (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+x2}{, }\item[{float}]{\+\_\+y2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_ae23433ca7395f683ad4c5d1682f2910c}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00133}{HAL\+::draw\+Line()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a26d8b728aad695472b9b40f18c406451_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a3d19353fdad528e57b33341730728db7}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawPixel@{\_drawPixel}}
+\index{\_drawPixel@{\_drawPixel}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawPixel()}{\_drawPixel()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a3d19353fdad528e57b33341730728db7} 
+virtual void HAL\+::\+\_\+draw\+Pixel (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_ac258728629b82bb59fb30b0e31b9302d}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00129}{HAL\+::draw\+Pixel()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a3d19353fdad528e57b33341730728db7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_aa1aa27b38bc99460d965314b197ea4e6}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawRBox@{\_drawRBox}}
+\index{\_drawRBox@{\_drawRBox}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawRBox()}{\_drawRBox()}}
+{\footnotesize\ttfamily \label{class_h_a_l_aa1aa27b38bc99460d965314b197ea4e6} 
+virtual void HAL\+::\+\_\+draw\+RBox (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{, }\item[{float}]{\+\_\+r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_af290eba78f425c9a4e7c03c4d62b3fda}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00177}{HAL\+::draw\+RBox()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_aa1aa27b38bc99460d965314b197ea4e6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a39dd078aa1cb8ed4f9d397244847cc6e}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawRFrame@{\_drawRFrame}}
+\index{\_drawRFrame@{\_drawRFrame}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawRFrame()}{\_drawRFrame()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a39dd078aa1cb8ed4f9d397244847cc6e} 
+virtual void HAL\+::\+\_\+draw\+RFrame (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{, }\item[{float}]{\+\_\+r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_ab9bb8723b08256045badd18ebbb5d182}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00191}{HAL\+::draw\+RFrame()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a39dd078aa1cb8ed4f9d397244847cc6e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a0d38b2b370fbdba19174c760a4ee02c2}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawVDottedLine@{\_drawVDottedLine}}
+\index{\_drawVDottedLine@{\_drawVDottedLine}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawVDottedLine()}{\_drawVDottedLine()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a0d38b2b370fbdba19174c760a4ee02c2} 
+virtual void HAL\+::\+\_\+draw\+VDotted\+Line (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_a7477936c61c4ce65823251dc75d4fd8e}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00147}{HAL\+::draw\+VDotted\+Line()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a0d38b2b370fbdba19174c760a4ee02c2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a3ecde6fc121b144aa936a60f46fab4b3}\index{ARDUINOBIND@{ARDUINOBIND}!\_drawVLine@{\_drawVLine}}
+\index{\_drawVLine@{\_drawVLine}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_drawVLine()}{\_drawVLine()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a3ecde6fc121b144aa936a60f46fab4b3} 
+virtual void HAL\+::\+\_\+draw\+VLine (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_a04c14f08d5ac0a1b44c6fa15a0e70839}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00155}{HAL\+::draw\+VLine()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a3ecde6fc121b144aa936a60f46fab4b3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a11d0de7cdec97a0623e978b22851c7c0}\index{ARDUINOBIND@{ARDUINOBIND}!\_getAnyKey@{\_getAnyKey}}
+\index{\_getAnyKey@{\_getAnyKey}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_getAnyKey()}{\_getAnyKey()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a11d0de7cdec97a0623e978b22851c7c0} 
+bool HAL\+::\+\_\+get\+Any\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8cpp_source_l00060}{60}} of file \mbox{\hyperlink{hal_8cpp_source}{hal.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00281}{HAL\+::get\+Any\+Key()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a11d0de7cdec97a0623e978b22851c7c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a11d0de7cdec97a0623e978b22851c7c0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a45e2dd4cf44c81328e9234cb71df5845}\index{ARDUINOBIND@{ARDUINOBIND}!\_getBufferTileHeight@{\_getBufferTileHeight}}
+\index{\_getBufferTileHeight@{\_getBufferTileHeight}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_getBufferTileHeight()}{\_getBufferTileHeight()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a45e2dd4cf44c81328e9234cb71df5845} 
+virtual uint8\+\_\+t HAL\+::\+\_\+get\+Buffer\+Tile\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_ad1373f59871c9bb91cf6ba7523902af2}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00096}{HAL\+::get\+Buffer\+Tile\+Height()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a45e2dd4cf44c81328e9234cb71df5845_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a50b68e8e0948f219edece61fc423278b}\index{ARDUINOBIND@{ARDUINOBIND}!\_getBufferTileWidth@{\_getBufferTileWidth}}
+\index{\_getBufferTileWidth@{\_getBufferTileWidth}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_getBufferTileWidth()}{\_getBufferTileWidth()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a50b68e8e0948f219edece61fc423278b} 
+virtual uint8\+\_\+t HAL\+::\+\_\+get\+Buffer\+Tile\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_aa10fcb880ba807efb97f8d02b1e76f5b}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00100}{HAL\+::get\+Buffer\+Tile\+Width()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a50b68e8e0948f219edece61fc423278b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a8c67787c17e84d8f8214188d97b08654}\index{ARDUINOBIND@{ARDUINOBIND}!\_getCanvasBuffer@{\_getCanvasBuffer}}
+\index{\_getCanvasBuffer@{\_getCanvasBuffer}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_getCanvasBuffer()}{\_getCanvasBuffer()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a8c67787c17e84d8f8214188d97b08654} 
+virtual void \texorpdfstring{$\ast$}{*} HAL\+::\+\_\+get\+Canvas\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_a9dfcf4ad697e302f99fe86dc18c2eeb3}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00092}{HAL\+::get\+Canvas\+Buffer()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a8c67787c17e84d8f8214188d97b08654_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a338ac5473f9fff152a6700ef53ecb006}\index{ARDUINOBIND@{ARDUINOBIND}!\_getFontHeight@{\_getFontHeight}}
+\index{\_getFontHeight@{\_getFontHeight}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_getFontHeight()}{\_getFontHeight()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a338ac5473f9fff152a6700ef53ecb006} 
+virtual uint8\+\_\+t HAL\+::\+\_\+get\+Font\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_afe04be27ce7dcf4b3a7ad57906bd39c4}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00120}{HAL\+::get\+Font\+Height()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a338ac5473f9fff152a6700ef53ecb006_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a6965b13ef8ac5740afa84f0b2edfa12f}\index{ARDUINOBIND@{ARDUINOBIND}!\_getFontWidth@{\_getFontWidth}}
+\index{\_getFontWidth@{\_getFontWidth}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_getFontWidth()}{\_getFontWidth()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a6965b13ef8ac5740afa84f0b2edfa12f} 
+virtual uint8\+\_\+t HAL\+::\+\_\+get\+Font\+Width (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_acf5e3f138174a28140edec6d38876e49}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00116}{HAL\+::get\+Font\+Width()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a6965b13ef8ac5740afa84f0b2edfa12f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a70e9782318d77388a3c4fe2934706255}\index{ARDUINOBIND@{ARDUINOBIND}!\_getKey@{\_getKey}}
+\index{\_getKey@{\_getKey}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_getKey()}{\_getKey()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a70e9782318d77388a3c4fe2934706255} 
+virtual bool HAL\+::\+\_\+get\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekey_a79225c4d3b8be48f70392dc18bf888f8}{key\+::\+KEY\+\_\+\+INDEX}}}]{\+\_\+key\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_h_a_l_a7950aa6f02a2468aba91f10e22c575b2}{My\+HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00279}{279}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00278}{HAL\+::get\+Key()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a70e9782318d77388a3c4fe2934706255_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_r_d_u_i_n_o_b_i_n_d_a6ba3a8517d568888a7deaf641640b2a5}\index{ARDUINOBIND@{ARDUINOBIND}!\_getTick@{\_getTick}}
+\index{\_getTick@{\_getTick}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_getTick()}{\_getTick()}}
+{\footnotesize\ttfamily \label{class_a_r_d_u_i_n_o_b_i_n_d_a6ba3a8517d568888a7deaf641640b2a5} 
+unsigned long ARDUINOBIND\+::\+\_\+get\+Tick (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_h_a_l_a418a2b3804578d1239dd1e67eb2cca52}{HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{_arduino_bind_8h_source_l00017}{17}} of file \mbox{\hyperlink{_arduino_bind_8h_source}{Arduino\+Bind.\+h}}.
+
+\Hypertarget{class_h_a_l_a2cc043eef9d7028003bb3cae9a7020d7}\index{ARDUINOBIND@{ARDUINOBIND}!\_keyScan@{\_keyScan}}
+\index{\_keyScan@{\_keyScan}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_keyScan()}{\_keyScan()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a2cc043eef9d7028003bb3cae9a7020d7} 
+void HAL\+::\+\_\+key\+Scan (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+key scanner default. 默认按键扫描函数 
+
+\begin{DoxyNote}{Note}
+run per 5 ms. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+key\+::key\+Value 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]test this fucking function. \end{DoxyRefDesc}
+
+
+Definition at line \mbox{\hyperlink{hal_8cpp_source_l00074}{74}} of file \mbox{\hyperlink{hal_8cpp_source}{hal.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00289}{HAL\+::key\+Scan()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a2cc043eef9d7028003bb3cae9a7020d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_h_a_l_a2cc043eef9d7028003bb3cae9a7020d7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_acff0a399fc6960dc7e1fee7d3d9c50ba}\index{ARDUINOBIND@{ARDUINOBIND}!\_keyTest@{\_keyTest}}
+\index{\_keyTest@{\_keyTest}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_keyTest()}{\_keyTest()}}
+{\footnotesize\ttfamily \label{class_h_a_l_acff0a399fc6960dc7e1fee7d3d9c50ba} 
+void HAL\+::\+\_\+key\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+default key tester. 默认按键测试函数 
+
+
+
+Definition at line \mbox{\hyperlink{hal_8cpp_source_l00135}{135}} of file \mbox{\hyperlink{hal_8cpp_source}{hal.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00293}{HAL\+::key\+Test()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_h_a_l_acff0a399fc6960dc7e1fee7d3d9c50ba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_r_d_u_i_n_o_b_i_n_d_ae0203a3d9d51c2907b7b16c39b82b0da}\index{ARDUINOBIND@{ARDUINOBIND}!\_millis@{\_millis}}
+\index{\_millis@{\_millis}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_millis()}{\_millis()}}
+{\footnotesize\ttfamily \label{class_a_r_d_u_i_n_o_b_i_n_d_ae0203a3d9d51c2907b7b16c39b82b0da} 
+unsigned long ARDUINOBIND\+::\+\_\+millis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_h_a_l_ac3f0dd20852ec02bc98e83d437703ba9}{HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{_arduino_bind_8h_source_l00013}{13}} of file \mbox{\hyperlink{_arduino_bind_8h_source}{Arduino\+Bind.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_r_d_u_i_n_o_b_i_n_d_ae0203a3d9d51c2907b7b16c39b82b0da_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a3cefcc81caaec0f5066a310b9305a561}\index{ARDUINOBIND@{ARDUINOBIND}!\_printInfo@{\_printInfo}}
+\index{\_printInfo@{\_printInfo}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_printInfo()}{\_printInfo()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a3cefcc81caaec0f5066a310b9305a561} 
+void HAL\+::\+\_\+print\+Info (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{hal_8cpp_source}{hal.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00201}{HAL\+::print\+Info()}}, and \mbox{\hyperlink{hal_8h_source_l00205}{HAL\+::print\+Info()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a3cefcc81caaec0f5066a310b9305a561_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a3cefcc81caaec0f5066a310b9305a561_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_r_d_u_i_n_o_b_i_n_d_ab845a6b738381f36f4eaaac8ab0076ed}\index{ARDUINOBIND@{ARDUINOBIND}!\_random@{\_random}}
+\index{\_random@{\_random}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_random()}{\_random()}}
+{\footnotesize\ttfamily \label{class_a_r_d_u_i_n_o_b_i_n_d_ab845a6b738381f36f4eaaac8ab0076ed} 
+unsigned long ARDUINOBIND\+::\+\_\+random (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_h_a_l_a2f5837de593e153580e66040ffec9488}{HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{_arduino_bind_8h_source_l00027}{27}} of file \mbox{\hyperlink{_arduino_bind_8h_source}{Arduino\+Bind.\+h}}.
+
+\Hypertarget{class_h_a_l_aaaa4bb3a970464da5a4c0514f2326a23}\index{ARDUINOBIND@{ARDUINOBIND}!\_screenOff@{\_screenOff}}
+\index{\_screenOff@{\_screenOff}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_screenOff()}{\_screenOff()}}
+{\footnotesize\ttfamily \label{class_h_a_l_aaaa4bb3a970464da5a4c0514f2326a23} 
+virtual void HAL\+::\+\_\+screen\+Off (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_h_a_l_a3260a1062719d4a47850de22ea4bc668}{My\+HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00271}{271}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00269}{HAL\+::screen\+Off()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_h_a_l_aaaa4bb3a970464da5a4c0514f2326a23_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a593a0bfa30bfb38c9332b797c8a7de7a}\index{ARDUINOBIND@{ARDUINOBIND}!\_screenOn@{\_screenOn}}
+\index{\_screenOn@{\_screenOn}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_screenOn()}{\_screenOn()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a593a0bfa30bfb38c9332b797c8a7de7a} 
+virtual void HAL\+::\+\_\+screen\+On (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_h_a_l_a5b2cda5f2b10611abae4124c61672757}{My\+HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00266}{266}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00264}{HAL\+::screen\+On()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_h_a_l_a593a0bfa30bfb38c9332b797c8a7de7a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_afff94770aceb94ac5587356c2e37d11d}\index{ARDUINOBIND@{ARDUINOBIND}!\_setBeepVol@{\_setBeepVol}}
+\index{\_setBeepVol@{\_setBeepVol}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_setBeepVol()}{\_setBeepVol()}}
+{\footnotesize\ttfamily \label{class_h_a_l_afff94770aceb94ac5587356c2e37d11d} 
+virtual void HAL\+::\+\_\+set\+Beep\+Vol (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+vol}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_h_a_l_af5cd8cbe811b1f46358ae9733afc182f}{My\+HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00261}{261}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00259}{HAL\+::set\+Beep\+Vol()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_h_a_l_afff94770aceb94ac5587356c2e37d11d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a04ab7db4043ed43d64b0ff67b0c28b36}\index{ARDUINOBIND@{ARDUINOBIND}!\_setDrawType@{\_setDrawType}}
+\index{\_setDrawType@{\_setDrawType}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_setDrawType()}{\_setDrawType()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a04ab7db4043ed43d64b0ff67b0c28b36} 
+virtual void HAL\+::\+\_\+set\+Draw\+Type (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_a64767a0ad6f25fe5ad1013abedb247e3}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00124}{HAL\+::set\+Draw\+Type()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a04ab7db4043ed43d64b0ff67b0c28b36_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a5f77bcf6669b0122ea8c573117631e9f}\index{ARDUINOBIND@{ARDUINOBIND}!\_setFont@{\_setFont}}
+\index{\_setFont@{\_setFont}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_setFont()}{\_setFont()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a5f77bcf6669b0122ea8c573117631e9f} 
+virtual void HAL\+::\+\_\+set\+Font (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{\+\_\+font}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_u8_g2_b_i_n_d_acd8d1772ef3a56a718cc03589c790f2f}{U8\+G2\+BIND}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00112}{HAL\+::set\+Font()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a5f77bcf6669b0122ea8c573117631e9f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_r_d_u_i_n_o_b_i_n_d_ada266b129169159817e28e2a9c35fe67}\index{ARDUINOBIND@{ARDUINOBIND}!\_setRandomSeed@{\_setRandomSeed}}
+\index{\_setRandomSeed@{\_setRandomSeed}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_setRandomSeed()}{\_setRandomSeed()}}
+{\footnotesize\ttfamily \label{class_a_r_d_u_i_n_o_b_i_n_d_ada266b129169159817e28e2a9c35fe67} 
+void ARDUINOBIND\+::\+\_\+set\+Random\+Seed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+optional 
+
+Reimplemented from \mbox{\hyperlink{class_h_a_l_a4117be433b4af64eb018342c9ed5cd92}{HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{_arduino_bind_8h_source_l00023}{23}} of file \mbox{\hyperlink{_arduino_bind_8h_source}{Arduino\+Bind.\+h}}.
+
+\Hypertarget{class_h_a_l_af8a8c58f842229a7162b73454d425778}\index{ARDUINOBIND@{ARDUINOBIND}!\_updateConfig@{\_updateConfig}}
+\index{\_updateConfig@{\_updateConfig}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{\_updateConfig()}{\_updateConfig()}}
+{\footnotesize\ttfamily \label{class_h_a_l_af8a8c58f842229a7162b73454d425778} 
+virtual void HAL\+::\+\_\+update\+Config (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_h_a_l_a7ae0cfcc36e0c9598c21879e4ce85068}{My\+HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00306}{306}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00304}{HAL\+::update\+Config()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_h_a_l_af8a8c58f842229a7162b73454d425778_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a0d7be02f788f9aa399a1c873ee6ff72a}\index{ARDUINOBIND@{ARDUINOBIND}!beep@{beep}}
+\index{beep@{beep}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{beep()}{beep()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a0d7be02f788f9aa399a1c873ee6ff72a} 
+static void HAL\+::beep (\begin{DoxyParamCaption}\item[{float}]{\+\_\+freq}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+buzzer. 
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00250}{250}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_h_a_l_a0d7be02f788f9aa399a1c873ee6ff72a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_aba2f6a4fc62df301eeb023a97d7e9f7b}\index{ARDUINOBIND@{ARDUINOBIND}!beepStop@{beepStop}}
+\index{beepStop@{beepStop}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{beepStop()}{beepStop()}}
+{\footnotesize\ttfamily \label{class_h_a_l_aba2f6a4fc62df301eeb023a97d7e9f7b} 
+static void HAL\+::beep\+Stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00254}{254}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_h_a_l_aba2f6a4fc62df301eeb023a97d7e9f7b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_af47235ed8b44135e01d8648aec34ba6b}\index{ARDUINOBIND@{ARDUINOBIND}!cancelInfo@{cancelInfo}}
+\index{cancelInfo@{cancelInfo}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{cancelInfo()}{cancelInfo()}}
+{\footnotesize\ttfamily \label{class_h_a_l_af47235ed8b44135e01d8648aec34ba6b} 
+void HAL\+::cancel\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{hal_8cpp_source}{hal.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_wi_fi_scan_8cpp_source_l00042}{Wi\+Fi\+Scan\+Item\+::on\+Loop()}}, \mbox{\hyperlink{_network_manager_8cpp_source_l00037}{Network\+Manager\+::update()}}, and \mbox{\hyperlink{_wi_fi_scan_8cpp_source_l00113}{Wi\+Fi\+Info\+Item\+::\+Connect\+To\+::update()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_h_a_l_af47235ed8b44135e01d8648aec34ba6b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ab3dc484ade3ceddefb7f9a0d721c7060}\index{ARDUINOBIND@{ARDUINOBIND}!canvasClear@{canvasClear}}
+\index{canvasClear@{canvasClear}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{canvasClear()}{canvasClear()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ab3dc484ade3ceddefb7f9a0d721c7060} 
+static void HAL\+::canvas\+Clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00108}{108}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}, \mbox{\hyperlink{launcher_8cpp_source_l00132}{astra\+::\+Launcher\+::loop()}}, \mbox{\hyperlink{launcher_8cpp_source_l00021}{astra\+::\+Launcher\+::pop\+Info()}}, \mbox{\hyperlink{hal_8cpp_source_l00024}{HAL\+::show\+Info()}}, \mbox{\hyperlink{block_8cpp_source_l00059}{block\+::update()}}, \mbox{\hyperlink{game_8h_source_l00160}{game\+::\+Game\+Of\+Life\+::\+Runner\+::update()}}, and \mbox{\hyperlink{_mqtt_view_8cpp_source_l00009}{mqtt\+::\+Mqtt\+View\+::update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_h_a_l_ab3dc484ade3ceddefb7f9a0d721c7060_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ab3dc484ade3ceddefb7f9a0d721c7060_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_aae293b287992a20d4a164b8b641f1677}\index{ARDUINOBIND@{ARDUINOBIND}!canvasUpdate@{canvasUpdate}}
+\index{canvasUpdate@{canvasUpdate}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{canvasUpdate()}{canvasUpdate()}}
+{\footnotesize\ttfamily \label{class_h_a_l_aae293b287992a20d4a164b8b641f1677} 
+static void HAL\+::canvas\+Update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00104}{104}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}, \mbox{\hyperlink{launcher_8cpp_source_l00132}{astra\+::\+Launcher\+::loop()}}, \mbox{\hyperlink{launcher_8cpp_source_l00021}{astra\+::\+Launcher\+::pop\+Info()}}, \mbox{\hyperlink{hal_8cpp_source_l00024}{HAL\+::show\+Info()}}, \mbox{\hyperlink{block_8cpp_source_l00059}{block\+::update()}}, \mbox{\hyperlink{game_8h_source_l00160}{game\+::\+Game\+Of\+Life\+::\+Runner\+::update()}}, and \mbox{\hyperlink{_mqtt_view_8cpp_source_l00009}{mqtt\+::\+Mqtt\+View\+::update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_h_a_l_aae293b287992a20d4a164b8b641f1677_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_aae293b287992a20d4a164b8b641f1677_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ad430540da1fec789ba85ed5eda4005b1}\index{ARDUINOBIND@{ARDUINOBIND}!check@{check}}
+\index{check@{check}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ad430540da1fec789ba85ed5eda4005b1} 
+static bool HAL\+::check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00066}{66}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+\Hypertarget{class_h_a_l_a59b91cca947308dbb01d69077db3adc2}\index{ARDUINOBIND@{ARDUINOBIND}!cleanInfo@{cleanInfo}}
+\index{cleanInfo@{cleanInfo}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{cleanInfo()}{cleanInfo()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a59b91cca947308dbb01d69077db3adc2} 
+void HAL\+::clean\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{hal_8cpp_source}{hal.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_wi_fi_scan_8cpp_source_l00028}{Wi\+Fi\+Scan\+Item\+::on\+Init()}}, \mbox{\hyperlink{_device_info_8cpp_source_l00062}{Device\+Info\+::setup()}}, and \mbox{\hyperlink{_network_manager_8cpp_source_l00019}{Network\+Manager\+::setup()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a59b91cca947308dbb01d69077db3adc2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd}\index{ARDUINOBIND@{ARDUINOBIND}!delay@{delay}}
+\index{delay@{delay}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd} 
+static void HAL\+::delay (\begin{DoxyParamCaption}\item[{unsigned long}]{\+\_\+mill}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+system timers. 
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00221}{221}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_arduino_bind_8h_source_l00009}{\+\_\+delay()}}, \mbox{\hyperlink{_animation_8cpp_source_l00014}{astra\+::ui\+::\+Animation\+::exit\+Animation()}}, \mbox{\hyperlink{app_8cpp_source_l00029}{app\+::\+App\+::\+HAL\+\_\+\+INIT()}}, \mbox{\hyperlink{_wi_fi_scan_8cpp_source_l00042}{Wi\+Fi\+Scan\+Item\+::on\+Loop()}}, \mbox{\hyperlink{block_8cpp_source_l00059}{block\+::update()}}, \mbox{\hyperlink{_device_info_8cpp_source_l00066}{Device\+Info\+::update()}}, \mbox{\hyperlink{game_8h_source_l00160}{game\+::\+Game\+Of\+Life\+::\+Runner\+::update()}}, \mbox{\hyperlink{_network_manager_8cpp_source_l00037}{Network\+Manager\+::update()}}, and \mbox{\hyperlink{_wi_fi_scan_8cpp_source_l00113}{Wi\+Fi\+Info\+Item\+::\+Connect\+To\+::update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ae63b81f88feafa8a8eb1670c75b986cd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a1c565a014bc283c89362af6e6aceaeee}\index{ARDUINOBIND@{ARDUINOBIND}!destroy@{destroy}}
+\index{destroy@{destroy}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a1c565a014bc283c89362af6e6aceaeee} 
+void HAL\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{hal_8cpp_source}{hal.\+cpp}}.
+
+\Hypertarget{class_h_a_l_a2231c6c94a3468e66d945d7a6dff4eaf}\index{ARDUINOBIND@{ARDUINOBIND}!drawBMP@{drawBMP}}
+\index{drawBMP@{drawBMP}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawBMP()}{drawBMP()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a2231c6c94a3468e66d945d7a6dff4eaf} 
+static void HAL\+::draw\+BMP (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{, }\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{\+\_\+bit\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00163}{163}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_8cpp_source_l00055}{astra\+::ui\+::\+Tile\+Menu\+::render()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_h_a_l_a2231c6c94a3468e66d945d7a6dff4eaf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_h_a_l_a2231c6c94a3468e66d945d7a6dff4eaf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a155d0d75dc41ec1c291a5f52fd45744a}\index{ARDUINOBIND@{ARDUINOBIND}!drawBox@{drawBox}}
+\index{drawBox@{drawBox}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawBox()}{drawBox()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a155d0d75dc41ec1c291a5f52fd45744a} 
+static void HAL\+::draw\+Box (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00173}{173}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}, \mbox{\hyperlink{_menu_8cpp_source_l00131}{astra\+::ui\+::\+List\+Menu\+::render()}}, and \mbox{\hyperlink{_menu_8cpp_source_l00055}{astra\+::ui\+::\+Tile\+Menu\+::render()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_h_a_l_a155d0d75dc41ec1c291a5f52fd45744a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a155d0d75dc41ec1c291a5f52fd45744a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ad0a3da5981d4cef340f739f43c703107}\index{ARDUINOBIND@{ARDUINOBIND}!drawChinese@{drawChinese}}
+\index{drawChinese@{drawChinese}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawChinese()}{drawChinese()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ad0a3da5981d4cef340f739f43c703107} 
+static void HAL\+::draw\+Chinese (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00143}{143}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_8cpp_source_l00131}{astra\+::ui\+::\+List\+Menu\+::render()}}, \mbox{\hyperlink{_selector_8cpp_source_l00085}{astra\+::ui\+::\+Selector\+::render()}}, and \mbox{\hyperlink{_mqtt_view_8cpp_source_l00009}{mqtt\+::\+Mqtt\+View\+::update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_h_a_l_ad0a3da5981d4cef340f739f43c703107_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ad0a3da5981d4cef340f739f43c703107_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_afb48124e7adf314b098f58e775f1e8fc}\index{ARDUINOBIND@{ARDUINOBIND}!drawEnglish@{drawEnglish}}
+\index{drawEnglish@{drawEnglish}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawEnglish()}{drawEnglish()}}
+{\footnotesize\ttfamily \label{class_h_a_l_afb48124e7adf314b098f58e775f1e8fc} 
+static void HAL\+::draw\+English (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00139}{139}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}, \mbox{\hyperlink{launcher_8cpp_source_l00021}{astra\+::\+Launcher\+::pop\+Info()}}, and \mbox{\hyperlink{hal_8cpp_source_l00024}{HAL\+::show\+Info()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{class_h_a_l_afb48124e7adf314b098f58e775f1e8fc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_afb48124e7adf314b098f58e775f1e8fc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a5bcab2d8036eaf9f4d76b01f1572618b}\index{ARDUINOBIND@{ARDUINOBIND}!drawFrame@{drawFrame}}
+\index{drawFrame@{drawFrame}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawFrame()}{drawFrame()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a5bcab2d8036eaf9f4d76b01f1572618b} 
+static void HAL\+::draw\+Frame (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00187}{187}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_h_a_l_a5bcab2d8036eaf9f4d76b01f1572618b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ab23694a7295e287b3c9fd12d48bb51b1}\index{ARDUINOBIND@{ARDUINOBIND}!drawHDottedLine@{drawHDottedLine}}
+\index{drawHDottedLine@{drawHDottedLine}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawHDottedLine()}{drawHDottedLine()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ab23694a7295e287b3c9fd12d48bb51b1} 
+static void HAL\+::draw\+HDotted\+Line (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+l}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00151}{151}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_8cpp_source_l00055}{astra\+::ui\+::\+Tile\+Menu\+::render()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ab23694a7295e287b3c9fd12d48bb51b1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_h_a_l_ab23694a7295e287b3c9fd12d48bb51b1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a2eebd98fb0b84a58a20b4fb6c14dc845}\index{ARDUINOBIND@{ARDUINOBIND}!drawHLine@{drawHLine}}
+\index{drawHLine@{drawHLine}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawHLine()}{drawHLine()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a2eebd98fb0b84a58a20b4fb6c14dc845} 
+static void HAL\+::draw\+HLine (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+l}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00159}{159}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}, \mbox{\hyperlink{_menu_8cpp_source_l00131}{astra\+::ui\+::\+List\+Menu\+::render()}}, \mbox{\hyperlink{_selector_8cpp_source_l00085}{astra\+::ui\+::\+Selector\+::render()}}, and \mbox{\hyperlink{_menu_8cpp_source_l00055}{astra\+::ui\+::\+Tile\+Menu\+::render()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_h_a_l_a2eebd98fb0b84a58a20b4fb6c14dc845_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a2eebd98fb0b84a58a20b4fb6c14dc845_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ac47f62fe2c8497c9198d83e9455f2314}\index{ARDUINOBIND@{ARDUINOBIND}!drawLine@{drawLine}}
+\index{drawLine@{drawLine}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawLine()}{drawLine()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ac47f62fe2c8497c9198d83e9455f2314} 
+static void HAL\+::draw\+Line (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+x2}{, }\item[{float}]{\+\_\+y2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00133}{133}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{block_8cpp_source_l00059}{block\+::update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_h_a_l_ac47f62fe2c8497c9198d83e9455f2314_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{class_h_a_l_ac47f62fe2c8497c9198d83e9455f2314_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a50dd62d0aca57e96ae7a8c16d162843f}\index{ARDUINOBIND@{ARDUINOBIND}!drawPixel@{drawPixel}}
+\index{drawPixel@{drawPixel}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawPixel()}{drawPixel()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a50dd62d0aca57e96ae7a8c16d162843f} 
+static void HAL\+::draw\+Pixel (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00129}{129}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00085}{astra\+::ui\+::\+Selector\+::render()}}, \mbox{\hyperlink{_menu_8cpp_source_l00055}{astra\+::ui\+::\+Tile\+Menu\+::render()}}, and \mbox{\hyperlink{game_8h_source_l00160}{game\+::\+Game\+Of\+Life\+::\+Runner\+::update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_h_a_l_a50dd62d0aca57e96ae7a8c16d162843f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a50dd62d0aca57e96ae7a8c16d162843f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a450514fd38ce44e484c3c6e84600907d}\index{ARDUINOBIND@{ARDUINOBIND}!drawRBox@{drawRBox}}
+\index{drawRBox@{drawRBox}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawRBox()}{drawRBox()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a450514fd38ce44e484c3c6e84600907d} 
+static void HAL\+::draw\+RBox (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{, }\item[{float}]{\+\_\+r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00177}{177}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{launcher_8cpp_source_l00021}{astra\+::\+Launcher\+::pop\+Info()}}, and \mbox{\hyperlink{_selector_8cpp_source_l00085}{astra\+::ui\+::\+Selector\+::render()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_h_a_l_a450514fd38ce44e484c3c6e84600907d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a450514fd38ce44e484c3c6e84600907d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a2f2447b48eca2a34a8b18b4baf77b2b2}\index{ARDUINOBIND@{ARDUINOBIND}!drawRFrame@{drawRFrame}}
+\index{drawRFrame@{drawRFrame}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawRFrame()}{drawRFrame()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a2f2447b48eca2a34a8b18b4baf77b2b2} 
+static void HAL\+::draw\+RFrame (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{, }\item[{float}]{\+\_\+r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00191}{191}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{launcher_8cpp_source_l00021}{astra\+::\+Launcher\+::pop\+Info()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{class_h_a_l_a2f2447b48eca2a34a8b18b4baf77b2b2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a2f2447b48eca2a34a8b18b4baf77b2b2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a47215480617a93915276b6247e42b605}\index{ARDUINOBIND@{ARDUINOBIND}!drawVDottedLine@{drawVDottedLine}}
+\index{drawVDottedLine@{drawVDottedLine}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawVDottedLine()}{drawVDottedLine()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a47215480617a93915276b6247e42b605} 
+static void HAL\+::draw\+VDotted\+Line (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00147}{147}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a47215480617a93915276b6247e42b605_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a524da988ada9aef88a00d2669fcf9546}\index{ARDUINOBIND@{ARDUINOBIND}!drawVLine@{drawVLine}}
+\index{drawVLine@{drawVLine}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{drawVLine()}{drawVLine()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a524da988ada9aef88a00d2669fcf9546} 
+static void HAL\+::draw\+VLine (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00155}{155}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}, \mbox{\hyperlink{_menu_8cpp_source_l00131}{astra\+::ui\+::\+List\+Menu\+::render()}}, and \mbox{\hyperlink{_selector_8cpp_source_l00085}{astra\+::ui\+::\+Selector\+::render()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_h_a_l_a524da988ada9aef88a00d2669fcf9546_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a524da988ada9aef88a00d2669fcf9546_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a9a66283b8e193c0d49986f0f39a5e8c6}\index{ARDUINOBIND@{ARDUINOBIND}!get@{get}}
+\index{get@{get}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a9a66283b8e193c0d49986f0f39a5e8c6} 
+static \mbox{\hyperlink{class_h_a_l}{HAL}} \texorpdfstring{$\ast$}{*} HAL\+::get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00062}{62}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00250}{HAL\+::beep()}}, \mbox{\hyperlink{hal_8h_source_l00254}{HAL\+::beep\+Stop()}}, \mbox{\hyperlink{hal_8h_source_l00108}{HAL\+::canvas\+Clear()}}, \mbox{\hyperlink{hal_8h_source_l00104}{HAL\+::canvas\+Update()}}, \mbox{\hyperlink{hal_8h_source_l00221}{HAL\+::delay()}}, \mbox{\hyperlink{hal_8h_source_l00163}{HAL\+::draw\+BMP()}}, \mbox{\hyperlink{hal_8h_source_l00173}{HAL\+::draw\+Box()}}, \mbox{\hyperlink{hal_8h_source_l00143}{HAL\+::draw\+Chinese()}}, \mbox{\hyperlink{hal_8h_source_l00139}{HAL\+::draw\+English()}}, \mbox{\hyperlink{hal_8h_source_l00187}{HAL\+::draw\+Frame()}}, \mbox{\hyperlink{hal_8h_source_l00151}{HAL\+::draw\+HDotted\+Line()}}, \mbox{\hyperlink{hal_8h_source_l00159}{HAL\+::draw\+HLine()}}, \mbox{\hyperlink{hal_8h_source_l00133}{HAL\+::draw\+Line()}}, \mbox{\hyperlink{hal_8h_source_l00129}{HAL\+::draw\+Pixel()}}, \mbox{\hyperlink{hal_8h_source_l00177}{HAL\+::draw\+RBox()}}, \mbox{\hyperlink{hal_8h_source_l00191}{HAL\+::draw\+RFrame()}}, \mbox{\hyperlink{hal_8h_source_l00147}{HAL\+::draw\+VDotted\+Line()}}, \mbox{\hyperlink{hal_8h_source_l00155}{HAL\+::draw\+VLine()}}, \mbox{\hyperlink{hal_8h_source_l00281}{HAL\+::get\+Any\+Key()}}, \mbox{\hyperlink{hal_8h_source_l00096}{HAL\+::get\+Buffer\+Tile\+Height()}}, \mbox{\hyperlink{hal_8h_source_l00100}{HAL\+::get\+Buffer\+Tile\+Width()}}, \mbox{\hyperlink{hal_8h_source_l00092}{HAL\+::get\+Canvas\+Buffer()}}, \mbox{\hyperlink{hal_8h_source_l00120}{HAL\+::get\+Font\+Height()}}, \mbox{\hyperlink{hal_8h_source_l00116}{HAL\+::get\+Font\+Width()}}, \mbox{\hyperlink{hal_8h_source_l00278}{HAL\+::get\+Key()}}, \mbox{\hyperlink{hal_8h_source_l00232}{HAL\+::get\+Tick()}}, \mbox{\hyperlink{hal_8h_source_l00289}{HAL\+::key\+Scan()}}, \mbox{\hyperlink{hal_8h_source_l00293}{HAL\+::key\+Test()}}, \mbox{\hyperlink{hal_8h_source_l00228}{HAL\+::millis()}}, \mbox{\hyperlink{hal_8h_source_l00201}{HAL\+::print\+Info()}}, \mbox{\hyperlink{hal_8h_source_l00205}{HAL\+::print\+Info()}}, \mbox{\hyperlink{hal_8h_source_l00241}{HAL\+::random()}}, \mbox{\hyperlink{hal_8h_source_l00269}{HAL\+::screen\+Off()}}, \mbox{\hyperlink{hal_8h_source_l00264}{HAL\+::screen\+On()}}, \mbox{\hyperlink{hal_8h_source_l00259}{HAL\+::set\+Beep\+Vol()}}, \mbox{\hyperlink{hal_8h_source_l00124}{HAL\+::set\+Draw\+Type()}}, \mbox{\hyperlink{hal_8h_source_l00112}{HAL\+::set\+Font()}}, \mbox{\hyperlink{hal_8h_source_l00236}{HAL\+::set\+Random\+Seed()}}, and \mbox{\hyperlink{hal_8h_source_l00304}{HAL\+::update\+Config()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_h_a_l_a9a66283b8e193c0d49986f0f39a5e8c6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a0d57c38939864631e7220251bad6621a}\index{ARDUINOBIND@{ARDUINOBIND}!getAnyKey@{getAnyKey}}
+\index{getAnyKey@{getAnyKey}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{getAnyKey()}{getAnyKey()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a0d57c38939864631e7220251bad6621a} 
+static bool HAL\+::get\+Any\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00281}{281}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8cpp_source_l00074}{HAL\+::\+\_\+key\+Scan()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a0d57c38939864631e7220251bad6621a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a0d57c38939864631e7220251bad6621a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_af3736ee749e0efeb2e93b4c4685b49b5}\index{ARDUINOBIND@{ARDUINOBIND}!getBufferTileHeight@{getBufferTileHeight}}
+\index{getBufferTileHeight@{getBufferTileHeight}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{getBufferTileHeight()}{getBufferTileHeight()}}
+{\footnotesize\ttfamily \label{class_h_a_l_af3736ee749e0efeb2e93b4c4685b49b5} 
+static uint8\+\_\+t HAL\+::get\+Buffer\+Tile\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00096}{96}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_animation_8cpp_source_l00041}{astra\+::ui\+::\+Animation\+::blur()}}, and \mbox{\hyperlink{_animation_8cpp_source_l00014}{astra\+::ui\+::\+Animation\+::exit\+Animation()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_af3736ee749e0efeb2e93b4c4685b49b5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_af3736ee749e0efeb2e93b4c4685b49b5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ae6f7071e74c4f7dd9e9843790d42b43b}\index{ARDUINOBIND@{ARDUINOBIND}!getBufferTileWidth@{getBufferTileWidth}}
+\index{getBufferTileWidth@{getBufferTileWidth}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{getBufferTileWidth()}{getBufferTileWidth()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ae6f7071e74c4f7dd9e9843790d42b43b} 
+static uint8\+\_\+t HAL\+::get\+Buffer\+Tile\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00100}{100}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_animation_8cpp_source_l00041}{astra\+::ui\+::\+Animation\+::blur()}}, and \mbox{\hyperlink{_animation_8cpp_source_l00014}{astra\+::ui\+::\+Animation\+::exit\+Animation()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ae6f7071e74c4f7dd9e9843790d42b43b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ae6f7071e74c4f7dd9e9843790d42b43b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ae2ad7f9b0efcb75924a516de6b3222cf}\index{ARDUINOBIND@{ARDUINOBIND}!getCanvasBuffer@{getCanvasBuffer}}
+\index{getCanvasBuffer@{getCanvasBuffer}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{getCanvasBuffer()}{getCanvasBuffer()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ae2ad7f9b0efcb75924a516de6b3222cf} 
+static void \texorpdfstring{$\ast$}{*} HAL\+::get\+Canvas\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00092}{92}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_animation_8cpp_source_l00041}{astra\+::ui\+::\+Animation\+::blur()}}, and \mbox{\hyperlink{_animation_8cpp_source_l00014}{astra\+::ui\+::\+Animation\+::exit\+Animation()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ae2ad7f9b0efcb75924a516de6b3222cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ae2ad7f9b0efcb75924a516de6b3222cf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a4d7c6e5ced87dfdb336c2b9ea787f8c8}\index{ARDUINOBIND@{ARDUINOBIND}!getFontHeight@{getFontHeight}}
+\index{getFontHeight@{getFontHeight}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{getFontHeight()}{getFontHeight()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a4d7c6e5ced87dfdb336c2b9ea787f8c8} 
+static uint8\+\_\+t HAL\+::get\+Font\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00120}{120}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8cpp_source_l00048}{HAL\+::\+\_\+print\+Info()}}, \mbox{\hyperlink{launcher_8cpp_source_l00021}{astra\+::\+Launcher\+::pop\+Info()}}, \mbox{\hyperlink{hal_8cpp_source_l00024}{HAL\+::show\+Info()}}, and \mbox{\hyperlink{_mqtt_view_8cpp_source_l00009}{mqtt\+::\+Mqtt\+View\+::update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_h_a_l_a4d7c6e5ced87dfdb336c2b9ea787f8c8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a4d7c6e5ced87dfdb336c2b9ea787f8c8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_af5d3dcbea67cb40ede8c7db60df027db}\index{ARDUINOBIND@{ARDUINOBIND}!getFontWidth@{getFontWidth}}
+\index{getFontWidth@{getFontWidth}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{getFontWidth()}{getFontWidth()}}
+{\footnotesize\ttfamily \label{class_h_a_l_af5d3dcbea67cb40ede8c7db60df027db} 
+static uint8\+\_\+t HAL\+::get\+Font\+Width (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00116}{116}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}, \mbox{\hyperlink{_selector_8cpp_source_l00009}{astra\+::ui\+::\+Selector\+::go()}}, \mbox{\hyperlink{launcher_8cpp_source_l00021}{astra\+::\+Launcher\+::pop\+Info()}}, \mbox{\hyperlink{_selector_8cpp_source_l00085}{astra\+::ui\+::\+Selector\+::render()}}, and \mbox{\hyperlink{_device_info_8cpp_source_l00042}{wrap\+Text()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_h_a_l_af5d3dcbea67cb40ede8c7db60df027db_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_af5d3dcbea67cb40ede8c7db60df027db_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a4b818da0ba0a772a436332dbad9b91c7}\index{ARDUINOBIND@{ARDUINOBIND}!getKey@{getKey}}
+\index{getKey@{getKey}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a4b818da0ba0a772a436332dbad9b91c7} 
+static bool HAL\+::get\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacekey_a79225c4d3b8be48f70392dc18bf888f8}{key\+::\+KEY\+\_\+\+INDEX}}}]{\+\_\+key\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+key. 
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00278}{278}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8cpp_source_l00060}{HAL\+::\+\_\+get\+Any\+Key()}}, and \mbox{\hyperlink{hal_8cpp_source_l00074}{HAL\+::\+\_\+key\+Scan()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_h_a_l_a4b818da0ba0a772a436332dbad9b91c7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a4b818da0ba0a772a436332dbad9b91c7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a69524fe0b9c868103aba8d611fdacdd9}\index{ARDUINOBIND@{ARDUINOBIND}!getSystemConfig@{getSystemConfig}}
+\index{getSystemConfig@{getSystemConfig}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{getSystemConfig()}{getSystemConfig()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a69524fe0b9c868103aba8d611fdacdd9} 
+static const \mbox{\hyperlink{structsys_1_1config}{sys\+::config}} \& HAL\+::get\+System\+Config (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+system config. 
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00301}{301}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8cpp_source_l00048}{HAL\+::\+\_\+print\+Info()}}, and \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a69524fe0b9c868103aba8d611fdacdd9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a7a9d8410509ea2fbe5398fc8a47f325e}\index{ARDUINOBIND@{ARDUINOBIND}!getTick@{getTick}}
+\index{getTick@{getTick}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{getTick()}{getTick()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a7a9d8410509ea2fbe5398fc8a47f325e} 
+static unsigned long HAL\+::get\+Tick (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00232}{232}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{class_h_a_l_a7a9d8410509ea2fbe5398fc8a47f325e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a87a3593041afa3c7be384c70bc6cd5a1}\index{ARDUINOBIND@{ARDUINOBIND}!init@{init}}
+\index{init@{init}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a87a3593041afa3c7be384c70bc6cd5a1} 
+virtual void HAL\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_h_a_l_a0fa888574e9a82f03b3f8d471515bd5f}{My\+HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00088}{88}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00070}{HAL\+::inject()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a87a3593041afa3c7be384c70bc6cd5a1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a54a0dd3ada3025ef9f663a381d00713a}\index{ARDUINOBIND@{ARDUINOBIND}!inject@{inject}}
+\index{inject@{inject}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{inject()}{inject()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a54a0dd3ada3025ef9f663a381d00713a} 
+static bool HAL\+::inject (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_h_a_l}{HAL}} \texorpdfstring{$\ast$}{*}}]{\+\_\+hal}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00070}{70}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{app_8cpp_source_l00029}{app\+::\+App\+::\+HAL\+\_\+\+INIT()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_h_a_l_a54a0dd3ada3025ef9f663a381d00713a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a54a0dd3ada3025ef9f663a381d00713a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a5722e8739e8d2a08d402444babee524c}\index{ARDUINOBIND@{ARDUINOBIND}!keyScan@{keyScan}}
+\index{keyScan@{keyScan}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{keyScan()}{keyScan()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a5722e8739e8d2a08d402444babee524c} 
+static void HAL\+::key\+Scan (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00289}{289}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a5722e8739e8d2a08d402444babee524c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a52f3e480619921deac7fe74b834724ff}\index{ARDUINOBIND@{ARDUINOBIND}!keyTest@{keyTest}}
+\index{keyTest@{keyTest}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{keyTest()}{keyTest()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a52f3e480619921deac7fe74b834724ff} 
+static void HAL\+::key\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00293}{293}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_h_a_l_a52f3e480619921deac7fe74b834724ff_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_af52271a395ac72eef5b38128d8a7ce8a}\index{ARDUINOBIND@{ARDUINOBIND}!millis@{millis}}
+\index{millis@{millis}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{millis()}{millis()}}
+{\footnotesize\ttfamily \label{class_h_a_l_af52271a395ac72eef5b38128d8a7ce8a} 
+static unsigned long HAL\+::millis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00228}{228}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_arduino_bind_8h_source_l00013}{\+\_\+millis()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{class_h_a_l_af52271a395ac72eef5b38128d8a7ce8a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_h_a_l_af52271a395ac72eef5b38128d8a7ce8a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96}\index{ARDUINOBIND@{ARDUINOBIND}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96} 
+static void HAL\+::print\+Info (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00201}{201}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{app_8cpp_source_l00029}{app\+::\+App\+::\+HAL\+\_\+\+INIT()}}, \mbox{\hyperlink{_wi_fi_scan_8cpp_source_l00028}{Wi\+Fi\+Scan\+Item\+::on\+Init()}}, \mbox{\hyperlink{_wi_fi_scan_8cpp_source_l00042}{Wi\+Fi\+Scan\+Item\+::on\+Loop()}}, \mbox{\hyperlink{_device_info_8cpp_source_l00066}{Device\+Info\+::update()}}, \mbox{\hyperlink{_network_manager_8cpp_source_l00037}{Network\+Manager\+::update()}}, and \mbox{\hyperlink{_wi_fi_scan_8cpp_source_l00113}{Wi\+Fi\+Info\+Item\+::\+Connect\+To\+::update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a30256dd9718cc0bfa99a3b808848af96_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ab4b89819dd5f856b9802b2807cc9aee8}\index{ARDUINOBIND@{ARDUINOBIND}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_h_a_l_ab4b89819dd5f856b9802b2807cc9aee8} 
+static void HAL\+::print\+Info (\begin{DoxyParamCaption}\item[{const String \&}]{\+\_\+msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00205}{205}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ab4b89819dd5f856b9802b2807cc9aee8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a47dc2d0783e90f651ba82441a9d00d11}\index{ARDUINOBIND@{ARDUINOBIND}!random@{random}}
+\index{random@{random}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{random()}{random()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a47dc2d0783e90f651ba82441a9d00d11} 
+static unsigned long HAL\+::random (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00241}{241}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}, and \mbox{\hyperlink{game_8h_source_l00053}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::random()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{class_h_a_l_a47dc2d0783e90f651ba82441a9d00d11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a47dc2d0783e90f651ba82441a9d00d11_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ad2d0186d96c9561b0ee34bc5149ce11a}\index{ARDUINOBIND@{ARDUINOBIND}!screenOff@{screenOff}}
+\index{screenOff@{screenOff}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{screenOff()}{screenOff()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ad2d0186d96c9561b0ee34bc5149ce11a} 
+static void HAL\+::screen\+Off (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00269}{269}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_h_a_l_ad2d0186d96c9561b0ee34bc5149ce11a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_afcab4b3cff6aaa8e3ca8dbc346fdc18a}\index{ARDUINOBIND@{ARDUINOBIND}!screenOn@{screenOn}}
+\index{screenOn@{screenOn}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{screenOn()}{screenOn()}}
+{\footnotesize\ttfamily \label{class_h_a_l_afcab4b3cff6aaa8e3ca8dbc346fdc18a} 
+static void HAL\+::screen\+On (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00264}{264}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_h_a_l_afcab4b3cff6aaa8e3ca8dbc346fdc18a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_aa77ffe7a69c775efab758ef6c7b5a5f4}\index{ARDUINOBIND@{ARDUINOBIND}!setBeepVol@{setBeepVol}}
+\index{setBeepVol@{setBeepVol}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{setBeepVol()}{setBeepVol()}}
+{\footnotesize\ttfamily \label{class_h_a_l_aa77ffe7a69c775efab758ef6c7b5a5f4} 
+static void HAL\+::set\+Beep\+Vol (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+vol}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00259}{259}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_h_a_l_aa77ffe7a69c775efab758ef6c7b5a5f4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ae01f62e0cafc63dc95a4b70d92e88eb1}\index{ARDUINOBIND@{ARDUINOBIND}!setDrawType@{setDrawType}}
+\index{setDrawType@{setDrawType}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{setDrawType()}{setDrawType()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ae01f62e0cafc63dc95a4b70d92e88eb1} 
+static void HAL\+::set\+Draw\+Type (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00124}{124}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}, \mbox{\hyperlink{launcher_8cpp_source_l00021}{astra\+::\+Launcher\+::pop\+Info()}}, \mbox{\hyperlink{_menu_8cpp_source_l00131}{astra\+::ui\+::\+List\+Menu\+::render()}}, \mbox{\hyperlink{_selector_8cpp_source_l00085}{astra\+::ui\+::\+Selector\+::render()}}, \mbox{\hyperlink{_menu_8cpp_source_l00055}{astra\+::ui\+::\+Tile\+Menu\+::render()}}, and \mbox{\hyperlink{hal_8cpp_source_l00024}{HAL\+::show\+Info()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_h_a_l_ae01f62e0cafc63dc95a4b70d92e88eb1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_ae01f62e0cafc63dc95a4b70d92e88eb1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_aee501e8a32605d70a7eedf4ede709eb0}\index{ARDUINOBIND@{ARDUINOBIND}!setFont@{setFont}}
+\index{setFont@{setFont}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{setFont()}{setFont()}}
+{\footnotesize\ttfamily \label{class_h_a_l_aee501e8a32605d70a7eedf4ede709eb0} 
+static void HAL\+::set\+Font (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{\+\_\+font}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00112}{112}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_h_a_l_aee501e8a32605d70a7eedf4ede709eb0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_aee501e8a32605d70a7eedf4ede709eb0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a443e194e0658c251160796e2076d2b78}\index{ARDUINOBIND@{ARDUINOBIND}!setRandomSeed@{setRandomSeed}}
+\index{setRandomSeed@{setRandomSeed}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{setRandomSeed()}{setRandomSeed()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a443e194e0658c251160796e2076d2b78} 
+static void HAL\+::set\+Random\+Seed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00236}{236}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{astra__logo_8cpp_source_l00017}{astra\+::draw\+Logo()}}, and \mbox{\hyperlink{game_8h_source_l00048}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::set\+Random\+Seed()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a443e194e0658c251160796e2076d2b78_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a443e194e0658c251160796e2076d2b78_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_a6b4545a8451d53bd4bca5ba9d8192316}\index{ARDUINOBIND@{ARDUINOBIND}!showInfo@{showInfo}}
+\index{showInfo@{showInfo}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{showInfo()}{showInfo()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a6b4545a8451d53bd4bca5ba9d8192316} 
+void HAL\+::show\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{hal_8cpp_source}{hal.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8cpp_source_l00048}{HAL\+::\+\_\+print\+Info()}}, \mbox{\hyperlink{_wi_fi_scan_8cpp_source_l00042}{Wi\+Fi\+Scan\+Item\+::on\+Loop()}}, \mbox{\hyperlink{_network_manager_8cpp_source_l00037}{Network\+Manager\+::update()}}, and \mbox{\hyperlink{_wi_fi_scan_8cpp_source_l00113}{Wi\+Fi\+Info\+Item\+::\+Connect\+To\+::update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a6b4545a8451d53bd4bca5ba9d8192316_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_h_a_l_a6b4545a8451d53bd4bca5ba9d8192316_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_h_a_l_ad6407c0b13fccff118875d9f703bbd58}\index{ARDUINOBIND@{ARDUINOBIND}!type@{type}}
+\index{type@{type}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \label{class_h_a_l_ad6407c0b13fccff118875d9f703bbd58} 
+virtual const char \texorpdfstring{$\ast$}{*} HAL\+::type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_my_h_a_l_a9ed7b18720cb22534ad993f4733c5a8f}{My\+HAL}}.
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00086}{86}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+\Hypertarget{class_h_a_l_a0af4c0179df9d3b8960a5d51954ba21e}\index{ARDUINOBIND@{ARDUINOBIND}!updateConfig@{updateConfig}}
+\index{updateConfig@{updateConfig}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{updateConfig()}{updateConfig()}}
+{\footnotesize\ttfamily \label{class_h_a_l_a0af4c0179df9d3b8960a5d51954ba21e} 
+static void HAL\+::update\+Config (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00304}{304}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_h_a_l_a0af4c0179df9d3b8960a5d51954ba21e_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_h_a_l_af09e889fb69288e989995967ff12c710}\index{ARDUINOBIND@{ARDUINOBIND}!hal@{hal}}
+\index{hal@{hal}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{hal}{hal}}
+{\footnotesize\ttfamily \label{class_h_a_l_af09e889fb69288e989995967ff12c710} 
+\mbox{\hyperlink{class_h_a_l}{HAL}} \texorpdfstring{$\ast$}{*} HAL\+::hal = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00058}{58}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8h_source_l00066}{HAL\+::check()}}, \mbox{\hyperlink{hal_8cpp_source_l00006}{HAL\+::destroy()}}, \mbox{\hyperlink{hal_8h_source_l00062}{HAL\+::get()}}, and \mbox{\hyperlink{hal_8h_source_l00070}{HAL\+::inject()}}.
+
+\Hypertarget{class_h_a_l_a9bfc9becf0de4135c6b1fe8f4af36e7d}\index{ARDUINOBIND@{ARDUINOBIND}!key@{key}}
+\index{key@{key}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily \label{class_h_a_l_a9bfc9becf0de4135c6b1fe8f4af36e7d} 
+\mbox{\hyperlink{namespacekey_aede8566aab31681ebcf4a1fda0ea4a80}{key\+::key\+Action}} HAL\+::key\mbox{[}\mbox{\hyperlink{namespacekey_ab9b0f4140bd82fa2aad1f4c616e2276eae19233160e3111a25f36d82750f43478}{key\+::\+KEY\+\_\+\+NUM}}\mbox{]} \{static\+\_\+cast$<$\mbox{\hyperlink{namespacekey_aede8566aab31681ebcf4a1fda0ea4a80}{key\+::key\+Action}}$>$(0)\}\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00286}{286}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+\Hypertarget{class_h_a_l_a094da48e900007790d642ff77a69f82b}\index{ARDUINOBIND@{ARDUINOBIND}!queue@{queue}}
+\index{queue@{queue}!ARDUINOBIND@{ARDUINOBIND}}
+\doxysubsubsection{\texorpdfstring{queue}{queue}}
+{\footnotesize\ttfamily \label{class_h_a_l_a094da48e900007790d642ff77a69f82b} 
+std\+::deque$<$ std\+::string $>$ HAL\+::queue\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+log printer. 自动换行的日志输出 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+msg} & message want to print. 要输出的信息 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+cannot execute within a loop. 不能在循环内执行 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{hal_8h_source_l00059}{59}} of file \mbox{\hyperlink{hal_8h_source}{hal.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{hal_8cpp_source_l00048}{HAL\+::\+\_\+print\+Info()}}, \mbox{\hyperlink{hal_8cpp_source_l00044}{HAL\+::cancel\+Info()}}, \mbox{\hyperlink{hal_8cpp_source_l00040}{HAL\+::clean\+Info()}}, and \mbox{\hyperlink{hal_8cpp_source_l00024}{HAL\+::show\+Info()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+hal/\mbox{\hyperlink{_arduino_bind_8h}{Arduino\+Bind.\+h}}\end{DoxyCompactItemize}

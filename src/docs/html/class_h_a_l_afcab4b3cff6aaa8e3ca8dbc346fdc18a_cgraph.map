@@ -1,0 +1,7 @@
+<map id="HAL::screenOn" name="HAL::screenOn">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,117,57"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#a593a0bfa30bfb38c9332b797c8a7de7a" title=" " alt="" coords="165,5,283,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,33,149,28,150,33,117,38"/>
+<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="187,56,260,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,50,172,59,172,64,117,55"/>
+</map>

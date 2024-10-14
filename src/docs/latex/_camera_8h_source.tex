@@ -1,0 +1,74 @@
+\doxysection{Camera.\+h}
+\hypertarget{_camera_8h_source}{}\label{_camera_8h_source}\index{astra/ui/element/page/Camera.h@{astra/ui/element/page/Camera.h}}
+\mbox{\hyperlink{_camera_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ 20495\ on\ 24-\/10-\/7.}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ CAMERA\_H}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00006}00006\ \textcolor{preprocessor}{\#define\ CAMERA\_H}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_animation_8h}{Animation.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00013}00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceastra}{astra}}\ \{}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00014}00014\ \ \ \ \ \textcolor{keyword}{namespace\ }ui\ \{}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Selector;}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00016}00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }Menu;}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00018}\mbox{\hyperlink{classastra_1_1ui_1_1_camera}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classastra_1_1ui_1_1_camera}{Camera}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classastra_1_1ui_1_1_animation}{Animation}}\ \{}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00019}\mbox{\hyperlink{classastra_1_1ui_1_1_camera_a21415aa2bbf685a67029e75de4425b76}{00019}}\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a21415aa2bbf685a67029e75de4425b76}{xInit}},\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a858c62e3200d878766f06b4f798f1ff6}{yInit}};}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_abf3c34c99eb797ce052376d45600160d}{Camera}}(\textcolor{keywordtype}{float}\ \_x,\ \textcolor{keywordtype}{float}\ \_y);\ \textcolor{comment}{//build\ a\ camera\ instance\ with\ position.}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00023}\mbox{\hyperlink{classastra_1_1ui_1_1_camera_a555a7e8a4fc960ba8f134e02f0cd4908}{00023}}\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a555a7e8a4fc960ba8f134e02f0cd4908}{x}},\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_af06a35663987209110549d5c9bb1345a}{y}};}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00024}\mbox{\hyperlink{classastra_1_1ui_1_1_camera_a6e758e9fb97826ce053bc05b4a439d3c}{00024}}\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a6e758e9fb97826ce053bc05b4a439d3c}{moving}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a2564d054f34cca0ae0c31de668662bf0}{outOfView}}(\textcolor{keywordtype}{float}\ \_x,\ \textcolor{keywordtype}{float}\ \_y)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<float>\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a3e4a0c5760601e4b9a14cc3e6e7ddc49}{getPosition}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//在启动器中新建selector和camera\ 然后注入menu\ render}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//在启动器中执行下述方法即可实现视角移动}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//启动器要判断是否超过视角范围\ 若超过则移动摄像机}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//所有过程中\ 渲染好的元素绝对坐标都是不变的\ 只有摄像机的坐标在变}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a3067ed67e0760b4a1f6375ca472a6efb}{go}}(\textcolor{keywordtype}{float}\ \_x,\ \textcolor{keywordtype}{float}\ \_y);}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_ac6e3e3c3d46d500f2c25fcb4444d376b}{goDirect}}(\textcolor{keywordtype}{float}\ \_x,\ \textcolor{keywordtype}{float}\ \_y);}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a6987582678ae18410602b28305ffdca4}{goHorizontal}}(\textcolor{keywordtype}{float}\ \_x);}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a6c61ed1517d17a5a1acaec8e138424e6}{goVertical}}(\textcolor{keywordtype}{float}\ \_y);}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a6f430957c63c015b476b8bb9a298aea6}{goToNextPageItem}}();}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_af209b7df4bac413ec6079615a694c0bf}{goToPreviewPageItem}}();}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a2c84724a5acd5c3affdbfce9428520c8}{goToListItemPage}}(uint8\_t\ \_index);}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_aa10e35d5d332632d238a59542ff55c0f}{goToListItemRolling}}(\textcolor{keyword}{const}\ std::vector<float>\ \&\_posSelector);}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a455813d9fcd79e5ff21e3ecdbfb28980}{goToTileItem}}(uint8\_t\ \_index);}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_ae613a2ad48c47c93ecec4ac162c4b141}{isMoving}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_a23fd25a8ecb5bf46bb7645bfaca8ee1d}{reset}}();}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera_aa2f5ef925af5c65d685e743307b54a30}{update}}(\mbox{\hyperlink{classastra_1_1ui_1_1_menu}{Menu}}\ *\_menu,\ \mbox{\hyperlink{classastra_1_1ui_1_1_selector}{Selector}}\ *\_selector);}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00059}\mbox{\hyperlink{classastra_1_1ui_1_1_camera_aa4ac03d58f78a011917e35702109b99b}{00059}}\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera}{Camera}}\ \&\mbox{\hyperlink{classastra_1_1ui_1_1_camera_aa4ac03d58f78a011917e35702109b99b}{getInstance}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classastra_1_1ui_1_1_camera}{Camera}}\ camera(0.0,\ 0.0);}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ camera;}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00063}00063\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00064}00064\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00065}00065\ \}}
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_camera_8h_source_l00068}00068\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CAMERA\_H}}
+
+\end{DoxyCode}

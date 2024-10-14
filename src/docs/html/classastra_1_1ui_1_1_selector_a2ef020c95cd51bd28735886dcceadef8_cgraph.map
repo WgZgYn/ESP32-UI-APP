@@ -1,0 +1,14 @@
+<map id="astra::ui::Selector::last" name="astra::ui::Selector::last">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,130,91"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_selector.html#a91c490f3e877fc3ec394b68f90ba701a" title=" " alt="" coords="178,31,324,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,58,162,54,162,59,130,63"/>
+<area shape="rect" id="Node000006" href="$classastra_1_1ui_1_1_menu.html#a5566cad96dba95ccfe79b007a12f68b4" title=" " alt="" coords="372,81,539,108"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="130,71,357,86,356,91,130,76"/>
+<area shape="rect" id="Node000003" href="$class_h_a_l.html#af5d3dcbea67cb40ede8c7db60df027db" title=" " alt="" coords="389,31,522,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,41,373,41,373,47,325,47"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="309,55,385,74,383,80,307,61"/>
+<area shape="rect" id="Node000004" href="$class_h_a_l.html#a6965b13ef8ac5740afa84f0b2edfa12f" title=" " alt="" coords="587,5,728,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="522,33,572,27,572,32,523,38"/>
+<area shape="rect" id="Node000005" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="621,56,694,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="523,50,606,60,605,66,522,55"/>
+</map>

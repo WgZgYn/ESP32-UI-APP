@@ -1,0 +1,5 @@
+<map id="WiFiInfoItem::onInit" name="WiFiInfoItem::onInit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="203,5,339,32"/>
+<area shape="rect" id="Node000002" href="$class_wi_fi_info_item.html#a8c2b11387f923c0b0a313ade589b7d26" title=" " alt="" coords="5,5,155,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,21,155,21,155,16,187,16"/>
+</map>

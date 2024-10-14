@@ -1,0 +1,525 @@
+\doxysection{astra\+::ui\+::Selector Class Reference}
+\hypertarget{classastra_1_1ui_1_1_selector}{}\label{classastra_1_1ui_1_1_selector}\index{astra::ui::Selector@{astra::ui::Selector}}
+
+
+{\ttfamily \#include $<$Selector.\+h$>$}
+
+
+
+Inheritance diagram for astra\+::ui\+::Selector\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classastra_1_1ui_1_1_selector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astra\+::ui\+::Selector\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_selector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classastra_1_1ui_1_1_selector_af0e3fcc19dcad6e3325eb60190a346a3}{get\+Position}} ()
+\item 
+void \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a2ef020c95cd51bd28735886dcceadef8}{last}} ()
+\item 
+void \mbox{\hyperlink{classastra_1_1ui_1_1_selector_ac55db779df7e9bfe6901ff2823506b45}{next}} ()
+\item 
+void \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a91c490f3e877fc3ec394b68f90ba701a}{go}} (uint8\+\_\+t \+\_\+index)
+\item 
+bool \mbox{\hyperlink{classastra_1_1ui_1_1_selector_aa297cf9235cb6bbc502e87ddb28eb92b}{inject}} (\mbox{\hyperlink{classastra_1_1ui_1_1_menu}{Menu}} \texorpdfstring{$\ast$}{*}\+\_\+menu)
+\item 
+bool \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a313892d984ae82dc363b306f2ee9033c}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a6751b40a06b9b48e2598c62489957610}{render}} (const std\+::vector$<$ float $>$ \&\+\_\+camera)
+\item 
+virtual void \mbox{\hyperlink{classastra_1_1ui_1_1_animation_a611c90f81fbd3bccf92df19ace517175}{entry\+Animation}} ()
+\item 
+virtual void \mbox{\hyperlink{classastra_1_1ui_1_1_animation_a57363684c43afda80d55526e61c0529e}{exit\+Animation}} ()
+\item 
+virtual void \mbox{\hyperlink{classastra_1_1ui_1_1_animation_a22d977beba02dec35ab6e0f4e574b410}{blur}} ()
+\item 
+virtual void \mbox{\hyperlink{classastra_1_1ui_1_1_animation_adbab0f44e4a9f9c34589bfbb1b38c075}{animation}} (float \texorpdfstring{$\ast$}{*}\+\_\+pos, float \+\_\+pos\+Trg, float \+\_\+speed)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classastra_1_1ui_1_1_selector}{Selector}} \& \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a462819c66ee5d5dc031b53fcb0fe7c6a}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a7760fb76fe9febb612806c44ad0653d1}{x}} = 0
+\item 
+float \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a711d752d2aaf648e792f163e8d52df20}{x\+Trg}} = 0
+\item 
+float \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a06b20e1e19ac7db1247f9df106636b82}{y}} = 0
+\item 
+float \mbox{\hyperlink{classastra_1_1ui_1_1_selector_ac41f0d31aa0800778d4687a8a012c622}{y\+Trg}} = 0
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>float \mbox{\hyperlink{classastra_1_1ui_1_1_selector_aac28582596161ac858fa406d449f0cd6}{w}} = 0\\
+\>float \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a8ebcf755cca762c75cf3d9fadde61693}{wTrg}} = 0\\
+\>float \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a92bc449885bd2c9e9b3c79a7cee2ea83}{h}} = 0\\
+\>float \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a153f8adfcf00864c8a972310cf764296}{hTrg}} = 0\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>float \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a0c26e4fcbb253c8157cd1c4490c00baf}{yText}} = 0\\
+\>float \mbox{\hyperlink{classastra_1_1ui_1_1_selector_a11582c660774603609da00fbfadcaddf}{yTextTrg}} = 0\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classastra_1_1ui_1_1_selector_a654b3ee933e8191e53d33d0dd347923d}{Selector}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classastra_1_1ui_1_1_menu}{Menu}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classastra_1_1ui_1_1_selector_ae173495a5f24bfa8657c0a61d51ad2d2}{menu}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00015}{15}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classastra_1_1ui_1_1_selector_a654b3ee933e8191e53d33d0dd347923d}\index{astra::ui::Selector@{astra::ui::Selector}!Selector@{Selector}}
+\index{Selector@{Selector}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{Selector()}{Selector()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a654b3ee933e8191e53d33d0dd347923d} 
+astra\+::ui\+::\+Selector\+::\+Selector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classastra_1_1ui_1_1_animation_adbab0f44e4a9f9c34589bfbb1b38c075}\index{astra::ui::Selector@{astra::ui::Selector}!animation@{animation}}
+\index{animation@{animation}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{animation()}{animation()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_animation_adbab0f44e4a9f9c34589bfbb1b38c075} 
+void astra\+::ui\+::\+Animation\+::animation (\begin{DoxyParamCaption}\item[{float \texorpdfstring{$\ast$}{*}}]{\+\_\+pos}{, }\item[{float}]{\+\_\+pos\+Trg}{, }\item[{float}]{\+\_\+speed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_animation_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_animation_8cpp_source}{Animation.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_camera_8cpp_source_l00053}{astra\+::ui\+::\+Camera\+::go()}}, \mbox{\hyperlink{_camera_8cpp_source_l00065}{astra\+::ui\+::\+Camera\+::go\+Horizontal()}}, \mbox{\hyperlink{_camera_8cpp_source_l00077}{astra\+::ui\+::\+Camera\+::go\+To\+Next\+Page\+Item()}}, \mbox{\hyperlink{_camera_8cpp_source_l00083}{astra\+::ui\+::\+Camera\+::go\+To\+Preview\+Page\+Item()}}, \mbox{\hyperlink{_camera_8cpp_source_l00071}{astra\+::ui\+::\+Camera\+::go\+Vertical()}}, \mbox{\hyperlink{launcher_8cpp_source_l00021}{astra\+::\+Launcher\+::pop\+Info()}}, \mbox{\hyperlink{_menu_8cpp_source_l00131}{astra\+::ui\+::\+List\+Menu\+::render()}}, \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}, \mbox{\hyperlink{_menu_8cpp_source_l00055}{astra\+::ui\+::\+Tile\+Menu\+::render()}}, and \mbox{\hyperlink{_camera_8cpp_source_l00150}{astra\+::ui\+::\+Camera\+::reset()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classastra_1_1ui_1_1_animation_adbab0f44e4a9f9c34589bfbb1b38c075_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_animation_adbab0f44e4a9f9c34589bfbb1b38c075_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_animation_a22d977beba02dec35ab6e0f4e574b410}\index{astra::ui::Selector@{astra::ui::Selector}!blur@{blur}}
+\index{blur@{blur}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{blur()}{blur()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_animation_a22d977beba02dec35ab6e0f4e574b410} 
+void astra\+::ui\+::\+Animation\+::blur (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_animation_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{_animation_8cpp_source}{Animation.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_animation_a22d977beba02dec35ab6e0f4e574b410_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_selector_a313892d984ae82dc363b306f2ee9033c}\index{astra::ui::Selector@{astra::ui::Selector}!destroy@{destroy}}
+\index{destroy@{destroy}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a313892d984ae82dc363b306f2ee9033c} 
+bool astra\+::ui\+::\+Selector\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{_selector_8cpp_source}{Selector.\+cpp}}.
+
+\Hypertarget{classastra_1_1ui_1_1_animation_a611c90f81fbd3bccf92df19ace517175}\index{astra::ui::Selector@{astra::ui::Selector}!entryAnimation@{entryAnimation}}
+\index{entryAnimation@{entryAnimation}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{entryAnimation()}{entryAnimation()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_animation_a611c90f81fbd3bccf92df19ace517175} 
+virtual void astra\+::ui\+::\+Animation\+::entry\+Animation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_animation_8h_source_l00013}{13}} of file \mbox{\hyperlink{_animation_8h_source}{Animation.\+h}}.
+
+\Hypertarget{classastra_1_1ui_1_1_animation_a57363684c43afda80d55526e61c0529e}\index{astra::ui::Selector@{astra::ui::Selector}!exitAnimation@{exitAnimation}}
+\index{exitAnimation@{exitAnimation}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{exitAnimation()}{exitAnimation()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_animation_a57363684c43afda80d55526e61c0529e} 
+void astra\+::ui\+::\+Animation\+::exit\+Animation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \mbox{\hyperlink{_animation_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{_animation_8cpp_source}{Animation.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_8h_source_l00072}{astra\+::ui\+::\+Menu\+::de\+Init()}}, and \mbox{\hyperlink{_menu_8h_source_l00063}{astra\+::ui\+::\+Menu\+::on\+Exit()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_animation_a57363684c43afda80d55526e61c0529e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classastra_1_1ui_1_1_animation_a57363684c43afda80d55526e61c0529e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_selector_a462819c66ee5d5dc031b53fcb0fe7c6a}\index{astra::ui::Selector@{astra::ui::Selector}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a462819c66ee5d5dc031b53fcb0fe7c6a} 
+static \mbox{\hyperlink{classastra_1_1ui_1_1_selector}{Selector}} \& astra\+::ui\+::\+Selector\+::get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00053}{53}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_af0e3fcc19dcad6e3325eb60190a346a3}\index{astra::ui::Selector@{astra::ui::Selector}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_af0e3fcc19dcad6e3325eb60190a346a3} 
+std\+::vector$<$ float $>$ astra\+::ui\+::\+Selector\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8cpp_source_l00140}{140}} of file \mbox{\hyperlink{_selector_8cpp_source}{Selector.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_camera_8cpp_source_l00157}{astra\+::ui\+::\+Camera\+::update()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_selector_af0e3fcc19dcad6e3325eb60190a346a3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_selector_a91c490f3e877fc3ec394b68f90ba701a}\index{astra::ui::Selector@{astra::ui::Selector}!go@{go}}
+\index{go@{go}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{go()}{go()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a91c490f3e877fc3ec394b68f90ba701a} 
+void astra\+::ui\+::\+Selector\+::go (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+index}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_selector_8cpp_source}{Selector.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00069}{inject()}}, \mbox{\hyperlink{_selector_8cpp_source_l00144}{last()}}, and \mbox{\hyperlink{_selector_8cpp_source_l00156}{next()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_selector_a91c490f3e877fc3ec394b68f90ba701a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_selector_a91c490f3e877fc3ec394b68f90ba701a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_selector_aa297cf9235cb6bbc502e87ddb28eb92b}\index{astra::ui::Selector@{astra::ui::Selector}!inject@{inject}}
+\index{inject@{inject}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{inject()}{inject()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_aa297cf9235cb6bbc502e87ddb28eb92b} 
+bool astra\+::ui\+::\+Selector\+::inject (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classastra_1_1ui_1_1_menu}{Menu}} \texorpdfstring{$\ast$}{*}}]{\+\_\+menu}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{_selector_8cpp_source}{Selector.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_8cpp_source_l00014}{astra\+::ui\+::\+Menu\+::on\+Open()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_selector_aa297cf9235cb6bbc502e87ddb28eb92b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classastra_1_1ui_1_1_selector_aa297cf9235cb6bbc502e87ddb28eb92b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_selector_a2ef020c95cd51bd28735886dcceadef8}\index{astra::ui::Selector@{astra::ui::Selector}!last@{last}}
+\index{last@{last}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a2ef020c95cd51bd28735886dcceadef8} 
+void astra\+::ui\+::\+Selector\+::last (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8cpp_source_l00144}{144}} of file \mbox{\hyperlink{_selector_8cpp_source}{Selector.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_selector_a2ef020c95cd51bd28735886dcceadef8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_selector_ac55db779df7e9bfe6901ff2823506b45}\index{astra::ui::Selector@{astra::ui::Selector}!next@{next}}
+\index{next@{next}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_ac55db779df7e9bfe6901ff2823506b45} 
+void astra\+::ui\+::\+Selector\+::next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8cpp_source_l00156}{156}} of file \mbox{\hyperlink{_selector_8cpp_source}{Selector.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_selector_ac55db779df7e9bfe6901ff2823506b45_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classastra_1_1ui_1_1_selector_a6751b40a06b9b48e2598c62489957610}\index{astra::ui::Selector@{astra::ui::Selector}!render@{render}}
+\index{render@{render}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a6751b40a06b9b48e2598c62489957610} 
+void astra\+::ui\+::\+Selector\+::render (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ float $>$ \&}]{\+\_\+camera}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8cpp_source_l00085}{85}} of file \mbox{\hyperlink{_selector_8cpp_source}{Selector.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{_menu_8cpp_source_l00023}{astra\+::ui\+::\+Menu\+::on\+Loop()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastra_1_1ui_1_1_selector_a6751b40a06b9b48e2598c62489957610_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classastra_1_1ui_1_1_selector_a6751b40a06b9b48e2598c62489957610_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classastra_1_1ui_1_1_selector_af0ba2815b4891a8a15070e42a68729ec}\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_af0ba2815b4891a8a15070e42a68729ec} 
+struct  \{ ... \}  \mbox{\hyperlink{classastra_1_1ui_1_1_selector}{astra\+::ui\+::\+Selector}}}
+
+\Hypertarget{classastra_1_1ui_1_1_selector_a5de493abaeea49d6ccbb23d05a28efd1}\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a5de493abaeea49d6ccbb23d05a28efd1} 
+struct  \{ ... \}  \mbox{\hyperlink{classastra_1_1ui_1_1_selector}{astra\+::ui\+::\+Selector}}}
+
+\Hypertarget{classastra_1_1ui_1_1_selector_a92bc449885bd2c9e9b3c79a7cee2ea83}\index{astra::ui::Selector@{astra::ui::Selector}!h@{h}}
+\index{h@{h}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a92bc449885bd2c9e9b3c79a7cee2ea83} 
+float astra\+::ui\+::\+Selector\+::h = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00026}{26}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_a153f8adfcf00864c8a972310cf764296}\index{astra::ui::Selector@{astra::ui::Selector}!hTrg@{hTrg}}
+\index{hTrg@{hTrg}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{hTrg}{hTrg}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a153f8adfcf00864c8a972310cf764296} 
+float astra\+::ui\+::\+Selector\+::h\+Trg = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00026}{26}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00009}{go()}}, and \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_ae173495a5f24bfa8657c0a61d51ad2d2}\index{astra::ui::Selector@{astra::ui::Selector}!menu@{menu}}
+\index{menu@{menu}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_ae173495a5f24bfa8657c0a61d51ad2d2} 
+\mbox{\hyperlink{classastra_1_1ui_1_1_menu}{Menu}}\texorpdfstring{$\ast$}{*} astra\+::ui\+::\+Selector\+::menu = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00016}{16}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00079}{destroy()}}, \mbox{\hyperlink{_selector_8cpp_source_l00009}{go()}}, \mbox{\hyperlink{_selector_8cpp_source_l00069}{inject()}}, \mbox{\hyperlink{_selector_8cpp_source_l00144}{last()}}, \mbox{\hyperlink{_selector_8cpp_source_l00156}{next()}}, and \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_aac28582596161ac858fa406d449f0cd6}\index{astra::ui::Selector@{astra::ui::Selector}!w@{w}}
+\index{w@{w}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_aac28582596161ac858fa406d449f0cd6} 
+float astra\+::ui\+::\+Selector\+::w = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00025}{25}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_a8ebcf755cca762c75cf3d9fadde61693}\index{astra::ui::Selector@{astra::ui::Selector}!wTrg@{wTrg}}
+\index{wTrg@{wTrg}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{wTrg}{wTrg}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a8ebcf755cca762c75cf3d9fadde61693} 
+float astra\+::ui\+::\+Selector\+::w\+Trg = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00025}{25}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00009}{go()}}, and \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_a7760fb76fe9febb612806c44ad0653d1}\index{astra::ui::Selector@{astra::ui::Selector}!x@{x}}
+\index{x@{x}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a7760fb76fe9febb612806c44ad0653d1} 
+float astra\+::ui\+::\+Selector\+::x = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00021}{21}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_a711d752d2aaf648e792f163e8d52df20}\index{astra::ui::Selector@{astra::ui::Selector}!xTrg@{xTrg}}
+\index{xTrg@{xTrg}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{xTrg}{xTrg}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a711d752d2aaf648e792f163e8d52df20} 
+float astra\+::ui\+::\+Selector\+::x\+Trg = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00021}{21}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00140}{get\+Position()}}, \mbox{\hyperlink{_selector_8cpp_source_l00009}{go()}}, and \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_a06b20e1e19ac7db1247f9df106636b82}\index{astra::ui::Selector@{astra::ui::Selector}!y@{y}}
+\index{y@{y}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a06b20e1e19ac7db1247f9df106636b82} 
+float astra\+::ui\+::\+Selector\+::y = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00022}{22}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_a0c26e4fcbb253c8157cd1c4490c00baf}\index{astra::ui::Selector@{astra::ui::Selector}!yText@{yText}}
+\index{yText@{yText}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{yText}{yText}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a0c26e4fcbb253c8157cd1c4490c00baf} 
+float astra\+::ui\+::\+Selector\+::y\+Text = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00031}{31}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00009}{go()}}, and \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_a11582c660774603609da00fbfadcaddf}\index{astra::ui::Selector@{astra::ui::Selector}!yTextTrg@{yTextTrg}}
+\index{yTextTrg@{yTextTrg}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{yTextTrg}{yTextTrg}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_a11582c660774603609da00fbfadcaddf} 
+float astra\+::ui\+::\+Selector\+::y\+Text\+Trg = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00031}{31}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00009}{go()}}, and \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+\Hypertarget{classastra_1_1ui_1_1_selector_ac41f0d31aa0800778d4687a8a012c622}\index{astra::ui::Selector@{astra::ui::Selector}!yTrg@{yTrg}}
+\index{yTrg@{yTrg}!astra::ui::Selector@{astra::ui::Selector}}
+\doxysubsubsection{\texorpdfstring{yTrg}{yTrg}}
+{\footnotesize\ttfamily \label{classastra_1_1ui_1_1_selector_ac41f0d31aa0800778d4687a8a012c622} 
+float astra\+::ui\+::\+Selector\+::y\+Trg = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_selector_8h_source_l00022}{22}} of file \mbox{\hyperlink{_selector_8h_source}{Selector.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_selector_8cpp_source_l00140}{get\+Position()}}, \mbox{\hyperlink{_selector_8cpp_source_l00009}{go()}}, and \mbox{\hyperlink{_selector_8cpp_source_l00085}{render()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+astra/ui/element/page/\mbox{\hyperlink{_selector_8h}{Selector.\+h}}\item 
+astra/ui/element/page/\mbox{\hyperlink{_selector_8cpp}{Selector.\+cpp}}\end{DoxyCompactItemize}

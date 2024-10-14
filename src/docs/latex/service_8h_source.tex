@@ -1,0 +1,125 @@
+\doxysection{service.\+h}
+\hypertarget{service_8h_source}{}\label{service_8h_source}\index{service/service.h@{service/service.h}}
+\mbox{\hyperlink{service_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00004}00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ SERVICE\_H}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00006}00006\ \textcolor{preprocessor}{\#define\ SERVICE\_H}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <WiFi.h>}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <nvs\_flash.h>}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00011}00011\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00012}00012\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00013}00013\ \textcolor{comment}{//\#define\ EEPROM\_SIZE\ 512\ \ \ \ //\ EEPROM大小\ (根据需要设置)}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00014}00014\ \textcolor{comment}{//\#define\ COUNTER\_ADDR\ 0\ \ \ \ \ //\ 数据存储的起始地址}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00015}00015\ \textcolor{comment}{//\#define\ RESET\_BUTTON\_PIN\ 0\ //\ 按钮引脚，使用GPIO\ 0}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00016}00016\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00019}00019\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00022}00022\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00023}00023\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00024}00024\ \textcolor{comment}{//constexpr\ static\ int\ host\_port\ =\ 45677;}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00025}00025\ \textcolor{comment}{//constexpr\ static\ int\ serv\_port\ =\ 45678;}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00026}00026\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00027}00027\ \textcolor{comment}{//constexpr\ static\ unsigned\ long\ baud\ =\ 115200;}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00028}00028\ \textcolor{comment}{//const\ static\ uint64\_t\ ID\ =\ ESP.getEfuseMac();\ //\ 162756773954388\ 1.}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00029}00029\ \textcolor{comment}{//const\ String\ uuid\ =\ String(ESP.getEfuseMac());}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00030}00030\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00031}00031\ \textcolor{comment}{//const\ char\ *name\ =\ "{}ESP32"{};}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00032}00032\ \textcolor{comment}{//const\ char\ *pasw\ =\ uuid.c\_str();}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00033}00033\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00034}00034\ \textcolor{comment}{//enum\ State\ \{}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00035}00035\ \textcolor{comment}{//\ \ \ \ Ok,}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00036}00036\ \textcolor{comment}{//\ \ \ \ AskForConfig,}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00037}00037\ \textcolor{comment}{//\ \ \ \ MessageError,}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00038}00038\ \textcolor{comment}{//\ \ \ \ WiFiConnectError,}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00039}00039\ \textcolor{comment}{//\ \ \ \ HostConnectError,}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00040}00040\ \textcolor{comment}{//\ \ \ \ Success,}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00041}00041\ \textcolor{comment}{//\};}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00042}00042\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00043}00043\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00044}00044\ \textcolor{comment}{//class\ Controller\ \{}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00045}00045\ \textcolor{comment}{//\ \ \ \ WiFiServer\ server\{serv\_port\};}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00046}00046\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00047}00047\ \textcolor{comment}{//\ \ \ \ String\ host;\ //\ 16}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00048}00048\ \textcolor{comment}{//\ \ \ \ String\ ssid;\ //\ 20}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00049}00049\ \textcolor{comment}{//\ \ \ \ String\ token;\ //\ 20}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00050}00050\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00051}00051\ \textcolor{comment}{//\ \ \ \ WiFiClient\ client;}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00052}00052\ \textcolor{comment}{//\ \ \ \ bool\ light\ =\ false;\ //\ TODO:\ store\ the\ light\ status}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00053}00053\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00054}00054\ \textcolor{comment}{//public:}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00055}00055\ \textcolor{comment}{//\ \ \ \ Controller();}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00056}00056\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00057}00057\ \textcolor{comment}{//\ \ \ \ static\ void\ handleInput(const\ String\ \&s,\ WiFiClient\ \&client);}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00058}00058\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00059}00059\ \textcolor{comment}{//\ \ \ \ void\ loadState();}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00060}00060\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00061}00061\ \textcolor{comment}{//\ \ \ \ void\ saveState()\ const;}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00062}00062\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00063}00063\ \textcolor{comment}{//\ \ \ \ static\ void\ clearState();}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00064}00064\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00065}00065\ \textcolor{comment}{//\ \ \ \ void\ printConfig()\ const;}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00066}00066\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00067}00067\ \textcolor{comment}{//\ \ \ \ void\ configAP();}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00068}00068\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00069}00069\ \textcolor{comment}{//\ \ \ \ //\ First\ use\ it\ will\ stuck\ here\ to\ make\ a\ bind\ with\ the\ center\ host}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00070}00070\ \textcolor{comment}{//\ \ \ \ int\ parseMessage(String\ \&msg);}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00071}00071\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00072}00072\ \textcolor{comment}{//\ \ \ \ int\ connectToWiFi()\ const;}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00073}00073\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00074}00074\ \textcolor{comment}{//\ \ \ \ int\ connectToHost()\ const;}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00075}00075\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00076}00076\ \textcolor{comment}{//\ \ \ \ void\ config();}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00077}00077\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00078}00078\ \textcolor{comment}{//\ \ \ \ void\ serve();}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00079}00079\ \textcolor{comment}{//\};}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00080}00080\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00081}00081\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00082}\mbox{\hyperlink{class_service}{00082}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_service}{Service}}\ \{}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00083}\mbox{\hyperlink{class_service_acea0c37931ecfc8b751195fac0ab3a32}{00083}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_service_acea0c37931ecfc8b751195fac0ab3a32}{light}};}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00085}\mbox{\hyperlink{class_service_af07a5f8f11210a23ef23f0812632b818}{00085}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_service_af07a5f8f11210a23ef23f0812632b818}{openLight}}()\ \{}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00086}00086\ \ \ \ \ \ \ \ \ digitalWrite(LED\_BUILTIN,\ HIGH);}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00087}00087\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_service_acea0c37931ecfc8b751195fac0ab3a32}{light}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00088}00088\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00090}\mbox{\hyperlink{class_service_a75c98dab2695799d71a054426475d305}{00090}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_service_a75c98dab2695799d71a054426475d305}{closeLight}}()\ \{}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00091}00091\ \ \ \ \ \ \ \ \ digitalWrite(LED\_BUILTIN,\ LOW);}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00092}00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_service_acea0c37931ecfc8b751195fac0ab3a32}{light}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00093}00093\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00095}\mbox{\hyperlink{class_service_a87d41879e019adc4cf82d7da0c212437}{00095}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_service_a87d41879e019adc4cf82d7da0c212437}{switchLight}}()\ \{}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00096}00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_service_acea0c37931ecfc8b751195fac0ab3a32}{light}}\ ?\ \mbox{\hyperlink{class_service_a75c98dab2695799d71a054426475d305}{closeLight}}()\ :\ \mbox{\hyperlink{class_service_af07a5f8f11210a23ef23f0812632b818}{openLight}}();}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00097}00097\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00099}00099\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00100}\mbox{\hyperlink{class_service_a3a7cd41b2954cbd40b8fe5145fa5f690}{00100}}\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_service_a3a7cd41b2954cbd40b8fe5145fa5f690}{Func}}\ \{}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00101}00101\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_service_a3a7cd41b2954cbd40b8fe5145fa5f690ac3bf447eabe632720a3aa1a7ce401274}{Open}},}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00102}00102\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_service_a3a7cd41b2954cbd40b8fe5145fa5f690ad3d2e617335f08df83599665eef8a418}{Close}},}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00103}00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_service_a3a7cd41b2954cbd40b8fe5145fa5f690abbc155fb2b111bf61c4f5ff892915e6b}{Switch}},}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00104}00104\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00106}\mbox{\hyperlink{class_service_a2a3aa267b40015331ecd9cf82fa1a394}{00106}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_service_a2a3aa267b40015331ecd9cf82fa1a394}{run}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_service_a3a7cd41b2954cbd40b8fe5145fa5f690}{Func}}\ \&f)\ \{}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00107}00107\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (f)\ \{}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_service_a3a7cd41b2954cbd40b8fe5145fa5f690ac3bf447eabe632720a3aa1a7ce401274}{Func::Open}}:}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_service_af07a5f8f11210a23ef23f0812632b818}{openLight}}();}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_service_a3a7cd41b2954cbd40b8fe5145fa5f690ad3d2e617335f08df83599665eef8a418}{Func::Close}}:}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_service_a75c98dab2695799d71a054426475d305}{closeLight}}();}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_service_a3a7cd41b2954cbd40b8fe5145fa5f690abbc155fb2b111bf61c4f5ff892915e6b}{Func::Switch}}:}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_service_a87d41879e019adc4cf82d7da0c212437}{switchLight}}();}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00119}00119\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00120}00120\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00121}00121\ \};}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00123}00123\ }
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00124}\mbox{\hyperlink{service_8h_a1b46775c31a2f35b2366d575c1b118fc}{00124}}\ \textcolor{preprocessor}{\#define\ SERVICE\_H}}
+\DoxyCodeLine{\Hypertarget{service_8h_source_l00125}00125\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,51 @@
+\doxysection{launcher.\+h}
+\hypertarget{launcher_8h_source}{}\label{launcher_8h_source}\index{astra/ui/launcher.h@{astra/ui/launcher.h}}
+\mbox{\hyperlink{launcher_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ Fir\ on\ 2024/2/2.}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00004}00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ ASTRA\_CORE\_SRC\_ASTRA\_UI\_SCHEDULER\_H\_}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00006}\mbox{\hyperlink{launcher_8h_abc7473000f949d273fb6b94cecbd65a8}{00006}}\ \textcolor{preprocessor}{\#define\ ASTRA\_CORE\_SRC\_ASTRA\_UI\_SCHEDULER\_H\_}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{app_8h}{app/app.h}}>}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_camera_8h}{element/page/Camera.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_selector_8h}{element/page/Selector.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00014}00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceastra}{astra}}\ \{}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00015}\mbox{\hyperlink{classastra_1_1_launcher}{00015}}\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classastra_1_1_launcher}{Launcher}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classastra_1_1ui_1_1_animation}{ui::Animation}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classapp_1_1_service}{app::Service}}\ \{}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00016}\mbox{\hyperlink{classastra_1_1_launcher_a8a48f9048543db409153778d7eddb91a}{00016}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item}{ui::LifecycleItem}}\ *\mbox{\hyperlink{classastra_1_1_launcher_a8a48f9048543db409153778d7eddb91a}{app}};}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ui::Selector\&\ selector\ =\ ui::Selector::getInstance();}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ui::Camera\&\ camera\ =\ ui::Camera::getInstance();}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00020}\mbox{\hyperlink{classastra_1_1_launcher_a5221afd52c675bee318477dc2800ec6b}{00020}}\ \ \ \ \ \ \ \ \ uint64\_t\ \mbox{\hyperlink{classastra_1_1_launcher_a5221afd52c675bee318477dc2800ec6b}{time}};}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00022}00022\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 启动一个具有生命周期的部件}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classastra_1_1_launcher_ac4d5ae4ef504f2137605437600f44a35}{Launcher}}(\mbox{\hyperlink{classastra_1_1ui_1_1_lifecycle_item}{ui::LifecycleItem}}\ *menu);}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00026}\mbox{\hyperlink{classastra_1_1_launcher_a126926fa29ed4d79d688919dae8ddbf2}{00026}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classastra_1_1_launcher_a126926fa29ed4d79d688919dae8ddbf2}{\string~Launcher}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1_launcher_ac24cb43a812f9ef48729946c094b5cc7}{popInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\_info,\ uint16\_t\ \_time);}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Only\ Useful\ for\ Menu}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classastra_1_1_launcher_af5200ca1754711c51f1576eaf9914543}{open}}();}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Should\ always\ work\ well\ when\ open\ is\ ok}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classastra_1_1_launcher_ad7823766875173d51ca21754448edc2a}{close}}();}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1_launcher_a675f04557f2588a878aa362f227206cc}{setup}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classastra_1_1_launcher_a86f3a3e2e3c82715f5e428fea2f8c88c}{loop}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ const\ ui::Camera\ *getCamera()\ const\ \{\ return\ \&camera;\ \}}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ const\ ui::Selector\ *getSelector()\ const\ \{\ return\ \&selector;\ \}}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00042}00042\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00043}00043\ \}}
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{launcher_8h_source_l00045}00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//ASTRA\_CORE\_SRC\_ASTRA\_UI\_SCHEDULER\_H\_}}
+
+\end{DoxyCode}

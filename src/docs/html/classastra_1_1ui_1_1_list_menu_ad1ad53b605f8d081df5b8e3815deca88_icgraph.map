@@ -1,0 +1,13 @@
+<map id="astra::ui::ListMenu::add" name="astra::ui::ListMenu::add">
+<area shape="rect" id="Node000001" title=" " alt="" coords="396,56,554,83"/>
+<area shape="rect" id="Node000002" href="$class_wi_fi_scan.html#affdedbc92af5a8d136b58b62da903cd8" title=" " alt="" coords="219,5,334,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="404,54,331,35,332,30,406,49"/>
+<area shape="rect" id="Node000004" href="$_u_i___v_i_e_w_8cpp.html#af1a5d0e8df5d2d8fc623203250c832ed" title=" " alt="" coords="240,56,313,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="381,72,314,72,314,67,381,67"/>
+<area shape="rect" id="Node000006" href="$class_wi_fi_scan.html#ae168ee0a2394c2c5bd23203451a645ae" title=" " alt="" coords="205,107,348,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="406,90,332,109,331,103,404,85"/>
+<area shape="rect" id="Node000003" href="$class_wi_fi_scan.html#ab13a7954c2f73aad4d1ee2268cd8dc6b" title=" " alt="" coords="15,5,147,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,21,147,21,147,16,204,16"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1_launcher.html#a675f04557f2588a878aa362f227206cc" title=" " alt="" coords="5,56,157,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="224,72,157,72,157,67,224,67"/>
+</map>

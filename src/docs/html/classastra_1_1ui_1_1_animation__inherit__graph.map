@@ -1,0 +1,19 @@
+<map id="astra::ui::Animation" name="astra::ui::Animation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="237,5,362,160"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1_launcher.html" title=" " alt="" coords="5,347,108,565"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,122,170,160,145,183,123,210,104,242,89,276,70,348,65,346,84,275,99,239,118,206,141,180,167,156,222,118"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_camera.html" title=" " alt="" coords="133,219,295,693"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="281,175,271,219,266,218,276,174"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_menu.html" title=" " alt="" coords="319,251,453,661"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="323,174,341,250,336,252,318,175"/>
+<area shape="rect" id="Node000009" href="$classastra_1_1ui_1_1_selector.html" title=" " alt="" coords="477,208,593,704"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="376,123,424,160,447,182,467,206,480,227,475,230,462,210,443,186,421,164,373,127"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1ui_1_1_list_menu.html" title=" " alt="" coords="251,752,374,992"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="350,677,336,753,331,752,345,676"/>
+<area shape="rect" id="Node000008" href="$classastra_1_1ui_1_1_tile_menu.html" title=" " alt="" coords="398,752,521,992"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="427,676,441,752,436,753,422,677"/>
+<area shape="rect" id="Node000006" href="$class_wi_fi_info_item.html" title=" " alt="" coords="175,1040,309,1259"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="281,1007,272,1041,267,1040,276,1006"/>
+<area shape="rect" id="Node000007" href="$class_wi_fi_scan.html" title=" " alt="" coords="333,1093,433,1205"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="349,1006,372,1093,367,1094,344,1007"/>
+</map>

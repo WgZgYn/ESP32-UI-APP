@@ -1,0 +1,10 @@
+<map id="DeviceInfo" name="DeviceInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="27,639,129,793"/>
+<area shape="rect" id="Node000002" href="$classapp_1_1_activity.html" title=" " alt="" coords="35,371,121,589"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,604,81,639,75,639,75,604"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_lifecycle_item.html" title=" " alt="" coords="5,167,151,321"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,336,81,371,75,371,75,336"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_item.html" title=" " alt="" coords="31,5,125,117"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="81,132,81,167,75,167,75,132"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="125,44,143,48,151,61,149,69,143,75,140,70,144,66,146,62,140,53,124,49"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="WiFiScan::WiFiInfoItem::onLoop" name="WiFiScan::WiFiInfoItem::onLoop">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,167,91"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#af47235ed8b44135e01d8648aec34ba6b" title=" " alt="" coords="215,5,330,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,45,205,34,207,39,168,50"/>
+<area shape="rect" id="Node000003" href="$class_h_a_l.html#ae63b81f88feafa8a8eb1670c75b986cd" title="system timers." alt="" coords="229,56,316,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,67,214,67,214,72,167,72"/>
+<area shape="rect" id="Node000006" href="$class_h_a_l.html#a30256dd9718cc0bfa99a3b808848af96" title=" " alt="" coords="221,107,324,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="168,89,207,100,205,105,166,94"/>
+<area shape="rect" id="Node000004" href="$class_h_a_l.html#a9990718b01d90c567a8baa1ecadc1ead" title=" " alt="" coords="386,5,479,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="315,53,373,35,374,40,317,58"/>
+<area shape="rect" id="Node000005" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="925,107,998,133"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="316,66,555,72,715,82,877,99,910,105,909,110,877,104,715,87,555,77,316,72"/>
+<area shape="poly" id="edge12_Node000006_Node000005" title=" " alt="" coords="324,117,909,117,909,123,324,123"/>
+<area shape="rect" id="Node000007" href="$class_h_a_l.html#a3cefcc81caaec0f5066a310b9305a561" title=" " alt="" coords="378,183,487,209"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="304,132,390,173,388,178,301,136"/>
+<area shape="rect" id="Node000008" href="$class_h_a_l.html#a4d7c6e5ced87dfdb336c2b9ea787f8c8" title=" " alt="" coords="740,157,877,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="488,190,724,174,725,179,488,195"/>
+<area shape="rect" id="Node000010" href="$class_h_a_l.html#a69524fe0b9c868103aba8d611fdacdd9" title="system config." alt="" coords="535,208,692,235"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="488,201,520,206,519,211,488,206"/>
+<area shape="rect" id="Node000011" href="$class_h_a_l.html#a6b4545a8451d53bd4bca5ba9d8192316" title=" " alt="" coords="559,259,668,285"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="461,208,536,244,553,251,551,256,534,249,458,212"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="850,154,910,134,911,139,852,159"/>
+<area shape="poly" id="edge11_Node000011_Node000008" title=" " alt="" coords="663,256,691,244,736,218,776,191,779,196,739,223,693,249,665,261"/>
+</map>

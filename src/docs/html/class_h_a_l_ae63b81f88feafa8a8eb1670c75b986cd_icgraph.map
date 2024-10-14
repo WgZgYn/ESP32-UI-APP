@@ -1,0 +1,27 @@
+<map id="HAL::delay" name="HAL::delay">
+<area shape="rect" id="Node000001" title="system timers." alt="" coords="436,224,522,251"/>
+<area shape="rect" id="Node000002" href="$class_a_r_d_u_i_n_o_b_i_n_d.html#a776f082123c43cb31862c67b17f39568" title=" " alt="" coords="216,5,379,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="470,210,460,172,443,128,419,84,386,46,368,35,371,30,390,42,424,81,448,126,465,171,475,208"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_animation.html#a57363684c43afda80d55526e61c0529e" title=" " alt="" coords="230,56,364,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="462,211,432,161,411,135,386,113,364,99,366,95,390,109,414,132,436,158,467,208"/>
+<area shape="rect" id="Node000006" href="$classapp_1_1_app.html#a43b0c24c14cf08b53d3762c383aea315" title=" " alt="" coords="227,123,368,149"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="453,215,423,188,387,164,360,152,362,148,389,159,426,184,456,211"/>
+<area shape="rect" id="Node000008" href="$class_wi_fi_scan_item.html#ad76bec03ab24de41b12e024051ca6cb6" title=" " alt="" coords="220,173,374,200"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="420,224,347,203,349,198,422,219"/>
+<area shape="rect" id="Node000009" href="$classblock.html#aa9fcde09d74e682ad66b3a690568f4c0" title=" " alt="" coords="248,224,347,251"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="420,240,347,240,347,235,420,235"/>
+<area shape="rect" id="Node000010" href="$class_device_info.html#abf68dba0337b8139fdd561d08d09de5c" title=" " alt="" coords="232,275,363,301"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="422,256,349,277,347,272,420,251"/>
+<area shape="rect" id="Node000011" href="$classgame_1_1_game_of_life_1_1_runner.html#ab3258be0bfcf5743a52ab737ecd76276" title=" " alt="" coords="207,325,388,368"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="456,263,426,290,389,316,366,327,364,322,387,311,422,286,453,259"/>
+<area shape="rect" id="Node000012" href="$class_network_manager.html#aa78e68868876c7a00727ad566c50f89e" title=" " alt="" coords="214,392,381,419"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="470,266,440,325,417,356,390,382,369,394,366,389,386,378,413,352,435,322,465,264"/>
+<area shape="rect" id="Node000013" href="$class_wi_fi_info_item_1_1_connect_to.html#a91fe3570cf980215b7acba56ae76fbc9" title=" " alt="" coords="214,443,381,485"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="474,266,464,304,447,348,423,393,390,433,374,444,371,440,386,429,418,390,442,346,459,302,469,265"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_menu.html#a534eaa390530d0a250499128f4e62911" title=" " alt="" coords="8,17,156,44"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="215,62,146,47,147,42,216,57"/>
+<area shape="rect" id="Node000005" href="$classastra_1_1ui_1_1_menu.html#a6a8d85babc1c7a2caa603fd2f3a5ae9d" title=" " alt="" coords="5,68,159,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="215,82,159,83,159,77,215,76"/>
+<area shape="rect" id="Node000007" href="$classapp_1_1_app.html#a4a289c6cb8f8d34895492cc66ed0be8e" title=" " alt="" coords="30,123,134,149"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="212,139,135,139,135,133,212,133"/>
+</map>

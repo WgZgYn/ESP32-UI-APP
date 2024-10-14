@@ -1,0 +1,11 @@
+<map id="WiFiScan::WiFiInfoItem::onInit" name="WiFiScan::WiFiInfoItem::onInit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,167,73"/>
+<area shape="rect" id="Node000002" href="$class_wi_fi_scan_1_1_wi_fi_info_item.html#a8041ae1726055f7940f9b927747cd458" title=" " alt="" coords="215,31,376,73"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,49,199,49,199,55,167,55"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_list_menu.html#a566a18860038c127579ddfb7a72ff99a" title=" " alt="" coords="435,13,593,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="376,40,419,35,419,40,377,45"/>
+<area shape="rect" id="Node000005" href="$class_wi_fi_scan_item.html#a957a144ac96854f73b9e5567cb210df8" title=" " alt="" coords="424,64,604,91"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="377,59,409,62,408,68,376,64"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_list_menu.html#ac36e60e8edba67c1ebd2371ffe849bbc" title=" " alt="" coords="652,5,782,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="593,24,637,24,637,29,593,29"/>
+</map>

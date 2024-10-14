@@ -1,0 +1,20 @@
+<map id="WiFiInfoItem" name="WiFiInfoItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="186,1683,319,1901"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_list_menu.html" title=" " alt="" coords="191,1276,314,1516"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,1531,255,1683,250,1683,250,1531"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_menu.html" title=" " alt="" coords="242,748,365,1095"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,1110,268,1276,263,1276,281,1109"/>
+<area shape="rect" id="Node000009" href="$classastra_1_1ui_1_1_selector.html" title=" " alt="" coords="339,1159,455,1633"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="310,1094,318,1134,328,1158,336,1177,330,1179,324,1160,313,1135,305,1095"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_lifecycle_item.html" title=" " alt="" coords="5,369,151,524"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="104,537,133,629,172,723,207,783,245,840,240,843,202,786,168,725,128,630,99,539"/>
+<area shape="rect" id="Node000006" href="$classastra_1_1ui_1_1_animation.html" title=" " alt="" coords="423,5,549,160"/>
+<area shape="poly" id="edge4_Node000003_Node000006" title=" " alt="" coords="409,99,358,113,304,136,255,168,234,188,216,211,199,252,190,307,187,371,188,441,201,578,217,683,228,733,245,782,240,784,223,735,211,685,195,579,183,441,181,371,185,306,194,250,212,208,230,184,252,164,302,131,356,108,408,94"/>
+<area shape="rect" id="Node000008" href="$classastra_1_1ui_1_1_camera.html" title=" " alt="" coords="405,209,567,684"/>
+<area shape="poly" id="edge7_Node000008_Node000006" title=" " alt="" coords="489,175,489,210,483,210,483,175"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="560,163,582,208,602,278,614,338,618,392,617,443,602,550,582,684,559,827,527,969,492,1103,457,1221,452,1220,487,1102,522,968,553,826,577,684,597,549,611,443,613,392,608,339,597,279,577,210,555,166"/>
+<area shape="rect" id="Node000007" href="$structastra_1_1ui_1_1_menu_1_1_position_foreground.html" title=" " alt="" coords="226,287,381,607"/>
+<area shape="poly" id="edge5_Node000003_Node000007" title=" " alt="" coords="306,606,306,731,301,731,301,606"/>
+<area shape="poly" id="edge6_Node000003_Node000008" title=" " alt="" coords="448,685,434,725,408,779,377,829,372,826,403,776,429,723,443,683"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="366,1159,358,1119,356,1112,362,1111,363,1118,371,1158"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="mqtt::MqttView" name="mqtt::MqttView">
+<area shape="rect" id="Node000001" title=" " alt="" coords="27,635,129,768"/>
+<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_widget.html" title=" " alt="" coords="23,368,133,587"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,601,81,635,75,635,75,601"/>
+<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_lifecycle_item.html" title=" " alt="" coords="5,165,151,320"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,335,81,368,75,368,75,335"/>
+<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_item.html" title=" " alt="" coords="31,5,125,117"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="81,132,81,165,75,165,75,132"/>
+</map>

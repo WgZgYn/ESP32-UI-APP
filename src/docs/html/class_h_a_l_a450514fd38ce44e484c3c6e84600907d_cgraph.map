@@ -1,0 +1,7 @@
+<map id="HAL::drawRBox" name="HAL::drawRBox">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,122,57"/>
+<area shape="rect" id="Node000002" href="$class_h_a_l.html#aa1aa27b38bc99460d965314b197ea4e6" title=" " alt="" coords="170,5,293,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,33,154,28,155,33,123,38"/>
+<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="195,56,268,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,50,180,59,179,64,122,55"/>
+</map>

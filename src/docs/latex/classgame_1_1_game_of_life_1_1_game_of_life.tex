@@ -1,0 +1,412 @@
+\doxysection{game\+::Game\+Of\+Life\+::Game\+Of\+Life\texorpdfstring{$<$}{<} WIDTH, HEIGHT \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classgame_1_1_game_of_life_1_1_game_of_life}{}\label{classgame_1_1_game_of_life_1_1_game_of_life}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+
+
+Collaboration diagram for game\+::Game\+Of\+Life\+::Game\+Of\+Life\texorpdfstring{$<$}{<} WIDTH, HEIGHT \texorpdfstring{$>$}{>}\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classgame_1_1_game_of_life_1_1_game_of_life__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2}{Status}} \{ \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2ae044fc67f01df2467a4780f13793606b}{Dead}} = 0
+, \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2a393ad014fed19c9afbbd0a7b8e48339b}{Active}} = 1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a9916e868a2cf055534f905b558e92cdf}{Game\+Of\+Life}} (int lives=\mbox{\hyperlink{namespacegame_1_1_game_of_life_a09c51569b55742889deabe58d6b7e287}{width}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespacegame_1_1_game_of_life_a7dbea809bfb9b7222ca03ba0465ebc95}{height}}/2)
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a9d7dd13a53600a706150bd473f680188}{restart}} ()
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a22a7cf3868763c0beb414dd8334dfed8}{update}} ()
+\item 
+const \mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a502fa6ede3a2b39dd8ccc6031a8a85f2}{get\+\_\+board\+\_\+status}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a5b5ff0ac0f2c2f9743402ac574b4a38c}{init}} (int lives=\mbox{\hyperlink{namespacegame_1_1_game_of_life_a09c51569b55742889deabe58d6b7e287}{width}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{namespacegame_1_1_game_of_life_a7dbea809bfb9b7222ca03ba0465ebc95}{height}}/2)
+\item 
+\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2}{Status}} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_ab84a32604d63611281195f33814596b7}{update}} (int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a75e401e37ee667fe28883fcad4a885c6}{max}} (const int a, const int b)
+\item 
+static constexpr int \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a2bb596990158f5da8a6b0449fe518c53}{min}} (const int a, const int b)
+\item 
+static void \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a71b6cc01945f5aaa7e8e1d101fc7926e}{set\+Random\+Seed}} ()
+\item 
+static unsigned long \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_ae204d8f97cd975daecd57403d0dcf277}{random}} (const long a, const long b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_acdd239a680082dd651ae934f9cc5bce3}{data}}
+\item 
+\mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a79b2d002bf90bee39de6d806b3fac68c}{temp}}
+\item 
+\mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_aa4452e6819a2369f1c4cbe42214f4f93}{p\+Board}} = \&\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_acdd239a680082dd651ae934f9cc5bce3}{data}}
+\item 
+\mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_ae7bd9d160b3bbbdcb9241d555ad207a0}{n\+Board}} = \&\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a79b2d002bf90bee39de6d806b3fac68c}{temp}}
+\item 
+int \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_add28c87732fe88065cac5290fe68d8bd}{gen}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$int WIDTH, int HEIGHT$>$\newline
+class game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$}
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00032}{32}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!Status@{Status}}
+\index{Status@{Status}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+enum \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life\+::\+Status}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dead@{Dead}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!Dead@{Dead}}}\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2ae044fc67f01df2467a4780f13793606b}\label{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2} 
+Dead&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Active@{Active}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!Active@{Active}}}\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2a393ad014fed19c9afbbd0a7b8e48339b}\label{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2} 
+Active&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00034}{34}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a9916e868a2cf055534f905b558e92cdf}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!GameOfLife@{GameOfLife}}
+\index{GameOfLife@{GameOfLife}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{GameOfLife()}{GameOfLife()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_a9916e868a2cf055534f905b558e92cdf} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::\+Game\+Of\+Life (\begin{DoxyParamCaption}\item[{int}]{lives}{ = {\ttfamily \mbox{\hyperlink{namespacegame_1_1_game_of_life_a09c51569b55742889deabe58d6b7e287}{width}}~\texorpdfstring{$\ast$}{*}~\mbox{\hyperlink{namespacegame_1_1_game_of_life_a7dbea809bfb9b7222ca03ba0465ebc95}{height}}~/~2}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00097}{97}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_a9916e868a2cf055534f905b558e92cdf_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a502fa6ede3a2b39dd8ccc6031a8a85f2}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!get\_board\_status@{get\_board\_status}}
+\index{get\_board\_status@{get\_board\_status}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{get\_board\_status()}{get\_board\_status()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_a502fa6ede3a2b39dd8ccc6031a8a85f2} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+const \mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::get\+\_\+board\+\_\+status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00125}{125}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a5b5ff0ac0f2c2f9743402ac574b4a38c}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!init@{init}}
+\index{init@{init}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_a5b5ff0ac0f2c2f9743402ac574b4a38c} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+void \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::init (\begin{DoxyParamCaption}\item[{int}]{lives}{ = {\ttfamily \mbox{\hyperlink{namespacegame_1_1_game_of_life_a09c51569b55742889deabe58d6b7e287}{width}}~\texorpdfstring{$\ast$}{*}~\mbox{\hyperlink{namespacegame_1_1_game_of_life_a7dbea809bfb9b7222ca03ba0465ebc95}{height}}~/~2}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00058}{58}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{game_8h_source_l00097}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::\+Game\+Of\+Life()}}, and \mbox{\hyperlink{game_8h_source_l00101}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::restart()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_a5b5ff0ac0f2c2f9743402ac574b4a38c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_a5b5ff0ac0f2c2f9743402ac574b4a38c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a75e401e37ee667fe28883fcad4a885c6}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!max@{max}}
+\index{max@{max}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_a75e401e37ee667fe28883fcad4a885c6} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+static constexpr int \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::max (\begin{DoxyParamCaption}\item[{const int}]{a}{, }\item[{const int}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00040}{40}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{game_8h_source_l00070}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::update()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_a75e401e37ee667fe28883fcad4a885c6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a2bb596990158f5da8a6b0449fe518c53}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!min@{min}}
+\index{min@{min}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_a2bb596990158f5da8a6b0449fe518c53} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+static constexpr int \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::min (\begin{DoxyParamCaption}\item[{const int}]{a}{, }\item[{const int}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00044}{44}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{game_8h_source_l00070}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::update()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_a2bb596990158f5da8a6b0449fe518c53_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_ae204d8f97cd975daecd57403d0dcf277}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!random@{random}}
+\index{random@{random}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{random()}{random()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_ae204d8f97cd975daecd57403d0dcf277} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+static unsigned long \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::random (\begin{DoxyParamCaption}\item[{const long}]{a}{, }\item[{const long}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00053}{53}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{game_8h_source_l00058}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::init()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_ae204d8f97cd975daecd57403d0dcf277_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_ae204d8f97cd975daecd57403d0dcf277_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a9d7dd13a53600a706150bd473f680188}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!restart@{restart}}
+\index{restart@{restart}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_a9d7dd13a53600a706150bd473f680188} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+void \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::restart (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00101}{101}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_a9d7dd13a53600a706150bd473f680188_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a71b6cc01945f5aaa7e8e1d101fc7926e}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!setRandomSeed@{setRandomSeed}}
+\index{setRandomSeed@{setRandomSeed}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{setRandomSeed()}{setRandomSeed()}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_a71b6cc01945f5aaa7e8e1d101fc7926e} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+static void \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::set\+Random\+Seed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00048}{48}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{game_8h_source_l00058}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::init()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_a71b6cc01945f5aaa7e8e1d101fc7926e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_a71b6cc01945f5aaa7e8e1d101fc7926e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a22a7cf3868763c0beb414dd8334dfed8}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!update@{update}}
+\index{update@{update}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_a22a7cf3868763c0beb414dd8334dfed8} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+void \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00112}{112}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{game_8h_source_l00112}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::update()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classgame_1_1_game_of_life_1_1_game_of_life_a22a7cf3868763c0beb414dd8334dfed8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classgame_1_1_game_of_life_1_1_game_of_life_a22a7cf3868763c0beb414dd8334dfed8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_ab84a32604d63611281195f33814596b7}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!update@{update}}
+\index{update@{update}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_ab84a32604d63611281195f33814596b7} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a3612e9d68e7d7493f84f7ffad6602ff2}{Status}} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::update (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00070}{70}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgame_1_1_game_of_life_1_1_game_of_life_ab84a32604d63611281195f33814596b7_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_acdd239a680082dd651ae934f9cc5bce3}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!data@{data}}
+\index{data@{data}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_acdd239a680082dd651ae934f9cc5bce3} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+\mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00130}{130}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_add28c87732fe88065cac5290fe68d8bd}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!gen@{gen}}
+\index{gen@{gen}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{gen}{gen}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_add28c87732fe88065cac5290fe68d8bd} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+int \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::gen = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00132}{132}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{game_8h_source_l00112}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::update()}}.
+
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_ae7bd9d160b3bbbdcb9241d555ad207a0}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!nBoard@{nBoard}}
+\index{nBoard@{nBoard}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{nBoard}{nBoard}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_ae7bd9d160b3bbbdcb9241d555ad207a0} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+\mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::n\+Board = \&\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_a79b2d002bf90bee39de6d806b3fac68c}{temp}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00131}{131}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{game_8h_source_l00101}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::restart()}}, and \mbox{\hyperlink{game_8h_source_l00112}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::update()}}.
+
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_aa4452e6819a2369f1c4cbe42214f4f93}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!pBoard@{pBoard}}
+\index{pBoard@{pBoard}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{pBoard}{pBoard}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_aa4452e6819a2369f1c4cbe42214f4f93} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+\mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::p\+Board = \&\mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life_acdd239a680082dd651ae934f9cc5bce3}{data}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00131}{131}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{game_8h_source_l00125}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::get\+\_\+board\+\_\+status()}}, \mbox{\hyperlink{game_8h_source_l00058}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::init()}}, \mbox{\hyperlink{game_8h_source_l00101}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::restart()}}, \mbox{\hyperlink{game_8h_source_l00112}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::update()}}, and \mbox{\hyperlink{game_8h_source_l00070}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::update()}}.
+
+\Hypertarget{classgame_1_1_game_of_life_1_1_game_of_life_a79b2d002bf90bee39de6d806b3fac68c}\index{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}!temp@{temp}}
+\index{temp@{temp}!game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$@{game::GameOfLife::GameOfLife$<$ WIDTH, HEIGHT $>$}}
+\doxysubsubsection{\texorpdfstring{temp}{temp}}
+{\footnotesize\ttfamily \label{classgame_1_1_game_of_life_1_1_game_of_life_a79b2d002bf90bee39de6d806b3fac68c} 
+template$<$int WIDTH, int HEIGHT$>$ \\
+\mbox{\hyperlink{structgame_1_1_game_of_life_1_1_game_of_life_1_1_board}{Board}} \mbox{\hyperlink{classgame_1_1_game_of_life_1_1_game_of_life}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life}}$<$ WIDTH, HEIGHT $>$\+::temp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{game_8h_source_l00130}{130}} of file \mbox{\hyperlink{game_8h_source}{game.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{game_8h_source_l00112}{game\+::\+Game\+Of\+Life\+::\+Game\+Of\+Life$<$ WIDTH, HEIGHT $>$\+::update()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game/\mbox{\hyperlink{game_8h}{game.\+h}}\end{DoxyCompactItemize}
