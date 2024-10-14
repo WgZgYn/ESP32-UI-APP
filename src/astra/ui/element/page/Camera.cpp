@@ -155,7 +155,7 @@ namespace astra {
         }
 
         void Camera::update(Menu *_menu, Selector *_selector) {
-            //todo 不完善
+            // 不完善
 
             if (dynamic_cast<ListMenu *>(_menu)) {
                 if (ui::cfg.listPageTurningMode == 0) goToListItemPage(_menu->selectIndex);

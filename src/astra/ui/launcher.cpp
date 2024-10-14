@@ -51,7 +51,7 @@ namespace astra {
 
             animation(&yPop, yPopTrg, ui::cfg.popSpeed); //动画
 
-            //todo 这里条件可以加上一个如果按键按下 就退出
+            // 这里条件可以加上一个如果按键按下 就退出
             if (time - beginTime >= _time && yPop == 0 - hPop - 8) onRender = false; //退出条件
         }
     }

@@ -101,7 +101,7 @@ namespace astra {
                     const char *str = _menu->items[menu->selectIndex].title.c_str();
                     HAL::drawChinese(
                         (static_cast<float>(sys::cfg.screenWeight) - static_cast<float>(HAL::getFontWidth(str))) / 2.0f,
-                        yText + ui::cfg.tileTitleHeight, str); // FIXME: in the first frame, this have some problem
+                        yText + ui::cfg.tileTitleHeight, str);
 
                     //draw box.
                     //大框需要受摄像机的影响

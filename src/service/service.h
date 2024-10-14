@@ -49,7 +49,7 @@
 //    String token; // 20
 //
 //    WiFiClient client;
-//    bool light = false; // TODO: store the light status
+//    bool light = false; // store the light status
 //
 //public:
 //    Controller();

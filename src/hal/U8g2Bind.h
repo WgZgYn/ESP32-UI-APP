@@ -72,7 +72,7 @@ public:
     }
 
     // notice: _x和_y是字体左下角的坐标 _x and _y is the coordinate the lower left corner of the font
-    // todo 检查所有的draw函数的坐标是否是左下角的坐标
+    // 检查所有的draw函数的坐标是否是左下角的坐标
 
     void _drawEnglish(const float _x, const float _y, const char *_text) override {
         u8g2.drawStr(R16(_x), R16(_y), _text);

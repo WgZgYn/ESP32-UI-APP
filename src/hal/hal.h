@@ -35,7 +35,7 @@ namespace sys {
         uint8_t screenWeight = 128;
         uint8_t screenHeight = 64;
         float screenBright = 255;
-        // todo place other param of system
+        // place other param of system
 
         static config &getSystemConfig() {
             static config sysConfig;
@@ -135,7 +135,7 @@ public:
     virtual void _drawLine(float _x, float _y, float _x2, float _y2) = 0;
 
     // notice: _x和_y是字体左下角的坐标 _x and _y is the coordinate the lower left corner of the font
-    // todo 检查所有的draw函数的坐标是否是左下角的坐标
+    // 检查所有的draw函数的坐标是否是左下角的坐标
     static void drawEnglish(float _x, float _y, const char *_text) { get()->_drawEnglish(_x, _y, _text); }
 
     virtual void _drawEnglish(float _x, float _y, const char *_text) = 0;
