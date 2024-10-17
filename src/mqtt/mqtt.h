@@ -12,6 +12,8 @@
 #include <wifi/config.h>
 
 
+
+
 namespace mqtt {
 #ifdef AUTO_CONNECT
     void connectToWifi();

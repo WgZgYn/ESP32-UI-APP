@@ -19,7 +19,6 @@ namespace app {
     public:
         ~Activity() override = default;
 
-
         void onInit() override {
             // setup();
         }
@@ -54,13 +53,17 @@ namespace app {
 
         static void SERIAL_INIT();
 
+        static void SERVICE_INIT();
+
         void UI_INIT();
 
         void WIFI_INIT();
 
         void MQTT_INIT();
 
-        void SERVICE_INIT();
+        void WEB_INIT();
+
+        void PAIR_INIT();
 
         void add(Service *activity);
 

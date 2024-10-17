@@ -32,7 +32,9 @@ class NetworkManager final : public app::Activity {
 private:
     WiFiState wifiState = WiFiState::None;
     WiFiServer server;
-    WiFiClient client;
+    WiFiClient remoteClient;
+    WiFiClient localClient;
+    bool inited = false;
     // AsyncClient async_client;
 
     constexpr static size_t bufferSize = 128;
@@ -53,7 +55,7 @@ private:
     bool EEPROM_inited = false;
     bool no_host = false;
 
-    NetworkManager(): buffer{} {
+    NetworkManager(): server{serv_port}, buffer{} {
     }
 
 
@@ -62,11 +64,29 @@ private:
         NoData,
         MessageTooLong,
         FormatError,
-        Finish,
         FinishWithoutHost,
+        FinishWithHost,
+        OtherClientConnect,
+        AskForPair,
     };
 
+    void startAP();
+
+    void startServer();
+
+    void recvClient();
+
+    bool readMessage();
+
 public:
+    NetworkManager(const NetworkManager &) = delete;
+
+    NetworkManager(NetworkManager &&) = delete;
+
+    NetworkManager &operator=(const NetworkManager &) = delete;
+
+    NetworkManager &operator=(NetworkManager &&) = delete;
+
     WiFiState getWiFiState() const { return wifiState; }
 
     static IPAddress getIP();
@@ -77,6 +97,24 @@ public:
 
     static NetworkManager &getInstance() {
         static NetworkManager instance;
+        return instance;
+    }
+};
+
+class WiFiManagerService final : public app::Service {
+    void setup() override {
+        auto &mgr = NetworkManager::getInstance();
+        while (mgr.getWiFiState() != WiFiState::Finish) {
+            mgr.update();
+        }
+    }
+
+    void loop() override {
+    }
+
+public:
+    static WiFiManagerService &getInstance() {
+        static WiFiManagerService instance;
         return instance;
     }
 };

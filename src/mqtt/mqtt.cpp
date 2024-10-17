@@ -15,6 +15,10 @@ extern "C" {
 }
 
 namespace mqtt {
+    String MQTT_SUB = String(ESP.getEfuseMac()) + String("/ops");
+    auto DEVICE_BRO = "device";
+
+
     AsyncMqttClient mqttClient;
     TimerHandle_t mqttReconnectTimer;
 
@@ -57,17 +61,27 @@ namespace mqtt {
         Serial.println("Connected to MQTT.");
         Serial.print("Session present: ");
         Serial.println(sessionPresent);
-        uint16_t packetIdSub = mqttClient.subscribe("test/lol", 2);
+
+        // 不重不漏
+        uint16_t packetIdSub = mqttClient.subscribe(MQTT_SUB.c_str(), 2);
         Serial.print("Subscribing at QoS 2, packetId: ");
         Serial.println(packetIdSub);
-        mqttClient.publish("test/lol", 0, true, "test 1");
+
+        mqttClient.publish(DEVICE_BRO, 0, true, String(ESP.getEfuseMac()).c_str());
         Serial.println("Publishing at QoS 0");
-        uint16_t packetIdPub1 = mqttClient.publish("test/lol", 1, true, "test 2");
-        Serial.print("Publishing at QoS 1, packetId: ");
-        Serial.println(packetIdPub1);
-        uint16_t packetIdPub2 = mqttClient.publish("test/lol", 2, true, "test 3");
-        Serial.print("Publishing at QoS 2, packetId: ");
-        Serial.println(packetIdPub2);
+
+        {
+            mqttClient.publish("test/lol", 0, true, "test 1");
+            Serial.println("Publishing at QoS 0");
+
+            uint16_t packetIdPub1 = mqttClient.publish("test/lol", 1, true, "test 2");
+            Serial.print("Publishing at QoS 1, packetId: ");
+            Serial.println(packetIdPub1);
+
+            uint16_t packetIdPub2 = mqttClient.publish("test/lol", 2, true, "test 3");
+            Serial.print("Publishing at QoS 2, packetId: ");
+            Serial.println(packetIdPub2);
+        }
     }
 
     void onMqttDisconnect(AsyncMqttClientDisconnectReason reason) {
@@ -162,7 +176,6 @@ namespace mqtt {
 #ifdef AUTO_CONNECT
         connectToWifi();
 #endif
-
     }
 
     void MqttClient::loop() {

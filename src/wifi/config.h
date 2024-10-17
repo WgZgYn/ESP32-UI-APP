@@ -18,6 +18,7 @@
 #define MQTT_PORT 1883
 
 
+
 #define EMPTY_PASSWORD ""
 extern std::vector<std::pair<const char *, const char *> > wifiConfig;
 
