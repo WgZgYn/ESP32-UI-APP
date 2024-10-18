@@ -130,6 +130,8 @@ namespace astra {
     }
 
     void Launcher::loop() {
+        if (!app::App::getInstance().ui) return;
+
         HAL::canvasClear();
 
         app->onLoop();

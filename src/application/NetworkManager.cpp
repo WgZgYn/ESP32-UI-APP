@@ -34,20 +34,43 @@ int32_t first_char_at(const char *str, const size_t len, const char c, size_t be
     return begin;
 }
 
+#ifdef USING_BLUETOOTH
+void NetworkManager::startBTH() {
+    HAL::printInfo("NetworkManager::startBTH()");
+    HAL::delay(500);
+    server.begin("ESP32");
+}
+#endif
+
 void NetworkManager::startAP() {
     const IPAddress local(192, 168, 4, 1);
     const IPAddress gateway(192, 168, 4, 1);
-    const IPAddress subnet(255, 255, 255, 0);
+    const IPAddress subnet(255, 255, 255, 0); {
+        HAL::printInfo("Opening SoftAP");
+        HAL::delay(1000);
+    }
 
     WiFi.mode(WIFI_MODE_AP);
     WiFi.softAPConfig(local, gateway, subnet);
-    WiFi.softAP(SSID, Password);
+    WiFi.softAP(SSID, Password); {
+        HAL::printInfo("WiFi: ");
+        HAL::printInfo(SSID);
+        HAL::delay(1000);
+        HAL::printInfo(Password);
+        HAL::delay(1000);
+    }
 }
 
 void NetworkManager::startServer() {
     server.begin();
 }
-
+#ifdef USING_BLUETOOTH
+void NetworkManager::recvClient() {
+    if (server.available()) {
+        server.write(static_cast<uint8_t>(TcpResponse::AskForPair));
+    }
+}
+#else
 void NetworkManager::recvClient() {
     if (remoteClient && remoteClient.connected()) {
         remoteClient.write(static_cast<uint8_t>(TcpResponse::OtherClientConnect));
@@ -56,37 +79,45 @@ void NetworkManager::recvClient() {
     remoteClient = server.available();
     remoteClient.write(static_cast<uint8_t>(TcpResponse::AskForPair));
 }
+#endif
 
 bool NetworkManager::readMessage() {
     if (buffer[0] != '\0') {
         memset(buffer, 0, bufferSize); // 清空缓存区
     }
-    size_t n = remoteClient.readBytesUntil(terminator, buffer, bufferSize); // This will not read the terminator.
+#ifdef USING_BLUETOOTH
+#define CLIENT server
+#define SERVER server
+#else
+#define CLIENT remoteClient
+#define SERVER server
+#endif
+    size_t n = CLIENT.readBytesUntil(terminator, buffer, bufferSize); // This will not read the terminator.
     if (n == 0) {
-        remoteClient.write(static_cast<uint8_t>(TcpResponse::NoData));
+        CLIENT.write(static_cast<uint8_t>(TcpResponse::NoData));
         return false;
     }
 
     if (n >= bufferSize) {
-        remoteClient.write(static_cast<uint8_t>(TcpResponse::MessageTooLong));
+        CLIENT.write(static_cast<uint8_t>(TcpResponse::MessageTooLong));
         return false;
     }
 
     // buffer[n] = '\0'; // keep it C String-Like, no panic, it's ok
     const int32_t pos1 = first_char_at(buffer, n, '\t');
     if (pos1 == -1) {
-        remoteClient.write(static_cast<uint8_t>(TcpResponse::FormatError));
+        CLIENT.write(static_cast<uint8_t>(TcpResponse::FormatError));
         return false;
     }
     buffer[pos1] = '\0'; // replace the '\t' to '\0'
     const int32_t pos2 = first_char_at(buffer, n, '\t', pos1 + 1);
     if (pos2 == -1) {
-        remoteClient.write(static_cast<uint8_t>(TcpResponse::FormatError));
+        CLIENT.write(static_cast<uint8_t>(TcpResponse::FormatError));
         return false;
     }
     buffer[pos2] = '\0';
 
-    remoteClient.write(static_cast<uint8_t>(TcpResponse::Valid));
+    CLIENT.write(static_cast<uint8_t>(TcpResponse::Valid));
 
     WiFi_SSID = &buffer[0];
     WiFi_Password = &buffer[pos1 + 1];
@@ -96,7 +127,7 @@ bool NetworkManager::readMessage() {
     HAL::printInfo("Config Finished");
     wifiState = WiFiState::WiFiConnecting;
 
-    WiFi.mode(WIFI_MODE_STA);
+    WiFi.mode(WIFI_MODE_APSTA);
     WiFi.begin(WiFi_SSID, WiFi_Password); {
         HAL::printInfo("Connecting to WiFi");
         HAL::printInfo("SSID: ");
@@ -109,7 +140,6 @@ bool NetworkManager::readMessage() {
         Serial.println(WiFi_IP);
         HAL::printInfo(WiFi_IP);
     }
-
     return true;
 }
 
@@ -136,22 +166,11 @@ void NetworkManager::update() {
     HAL::showInfo();
     switch (wifiState) {
         case WiFiState::None: {
-            {
-                HAL::printInfo("None NetWork");
-                HAL::delay(1000);
-                HAL::printInfo("Open SoftAP");
-                HAL::delay(1000);
-            }
-
-            startAP(); {
-                HAL::printInfo("SSID: ");
-                HAL::printInfo(SSID);
-                HAL::delay(1000);
-                HAL::printInfo("Password: ");
-                HAL::printInfo(Password);
-                HAL::delay(1000);
-            }
-
+#ifdef USING_BLUETOOTH
+            startBTH();
+#else
+            startAP();
+#endif
             wifiState = WiFiState::SoftAP;
         }
         break;
@@ -179,7 +198,12 @@ void NetworkManager::update() {
         break;
 
         case WiFiState::ClientConnected: {
-            if (!remoteClient.connected()) {
+#ifdef USING_BLUETOOTH
+            if (!server.hasClient())
+#else
+            if (!remoteClient.connected())
+#endif
+            {
                 HAL::printInfo("Client Disconnected");
                 wifiState = WiFiState::WaitingClient;
                 return;
@@ -189,6 +213,19 @@ void NetworkManager::update() {
         break;
 
         case WiFiState::WiFiConnecting: {
+            static int times = 0;
+            if (++times == 50) {
+                times = 0;
+                if (remoteClient.connected()) {
+                    wifiState = WiFiState::ClientConnected;
+                    remoteClient.write(static_cast<uint8_t>(TcpResponse::WiFiConnectionTimeout)); // WiFi Timeout
+                } else {
+                    wifiState = WiFiState::WaitingClient;
+                }
+                return;
+            }
+
+
             if (WiFi.status() == WL_CONNECTED) {
                 HAL::printInfo("WiFi Connected");
                 wifiState = WiFiState::WiFiConnected;
@@ -201,17 +238,31 @@ void NetworkManager::update() {
         case WiFiState::WiFiConnected: {
             if (WiFi_IP == nullptr || WiFi_IP[0] == '\0') {
                 wifiState = WiFiState::Finish;
-                remoteClient.write(static_cast<uint8_t>(TcpResponse::FinishWithoutHost));
+                CLIENT.write(static_cast<uint8_t>(TcpResponse::FinishWithoutHost));
                 HAL::delay(100);
                 HAL::printInfo("Config Finished");
                 return;
             }
 
-            int _ = localClient.connect(WiFi_IP, host_port);
+            localClient.connect(WiFi_IP, host_port, 1000);
             wifiState = WiFiState::HostConnecting;
         }
 
         case WiFiState::HostConnecting: {
+            static int times = 0;
+            Serial.println(times);
+            if (++times == 5) {
+                times = 0;
+                if (remoteClient.connected()) {
+                    remoteClient.write(static_cast<uint8_t>(TcpResponse::HostConnectionTimeOut));
+                    wifiState = WiFiState::ClientConnected;
+                } else {
+                    wifiState = WiFiState::WaitingClient;
+                }
+                return;
+            }
+
+
             if (localClient.connected()) {
                 wifiState = WiFiState::HostConnected;
                 localClient.write(static_cast<uint8_t>(TcpResponse::AskForPair));
@@ -224,6 +275,7 @@ void NetworkManager::update() {
 
         case WiFiState::HostConnected: {
             if (!localClient.connected()) {
+                remoteClient.write(static_cast<uint8_t>(TcpResponse::FinishWithHost));
                 wifiState = WiFiState::WiFiConnected;
                 return;
             }
@@ -239,6 +291,8 @@ void NetworkManager::update() {
 
         case WiFiState::Finish: {
             HAL::delay(50);
+            remoteClient.write(static_cast<uint8_t>(TcpResponse::Finish));
+            remoteClient.stop();
         }
         break;
         default:

@@ -1,10 +1,10 @@
 #include "app.h"
 
 #include <application/NetworkManager.h>
+#include <application/WebAuthServer.h>
 #include <astra/ui/UI_VIEW.h>
 #include <mqtt/mqtt.h>
 #include <service/service.h>
-#include <web/WebService.h>
 
 #include "hal/myhal.hpp"
 
@@ -72,7 +72,7 @@ namespace app {
     }
 
     void App::WEB_INIT() {
-        // add(&WebService::getInstance());
+        add(&WebAuthService::getInstance());
     }
 
     void App::PAIR_INIT() {

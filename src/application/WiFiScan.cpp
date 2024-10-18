@@ -82,7 +82,7 @@ void WiFiScanItem::onExit() {
     inited = false;
 }
 
-const char *WiFiInfoItem::ConnectTo::get_password(const uint8_t index) {
+const char *WiFiInfoList::ConnectTo::get_password(const uint8_t index) {
     if (WiFi.encryptionType(index) == WIFI_AUTH_OPEN) {
         return EMPTY_PASSWORD;
     }
@@ -94,7 +94,7 @@ const char *WiFiInfoItem::ConnectTo::get_password(const uint8_t index) {
     return nullptr;
 }
 
-void WiFiInfoItem::ConnectTo::setup() {
+void WiFiInfoList::ConnectTo::setup() {
     // Serial.println("ConnectTo Setup");
     // if (WiFi.SSID() == WiFi.SSID(index)) {
     //     connected = true;
@@ -110,21 +110,7 @@ void WiFiInfoItem::ConnectTo::setup() {
     WiFi.begin(WiFi.SSID(index), get_password(index));
 }
 
-void WiFiInfoItem::ConnectTo::update() {
-    // HAL::showInfo();
-    // static uint8_t time = 0;
-    // if (time % 4 == 0) {
-    //     HAL::printInfo("|");
-    // } else if (time % 4 == 1) {
-    //     HAL::printInfo("/");
-    // } else if (time % 4 == 2) {
-    //     HAL::printInfo("-");
-    // } else if (time % 4 == 3) {
-    //     HAL::printInfo("\\");
-    // }
-    // time = (time + 1) % 4;
-    // HAL::delay(50);
-    // HAL::cancelInfo();
+void WiFiInfoList::ConnectTo::update() {
     HAL::showInfo();
     if (connected) {
         HAL::delay(50);
@@ -154,7 +140,7 @@ void WiFiInfoItem::ConnectTo::update() {
     }
 }
 
-void WiFiInfoItem::add_network_info() {
+void WiFiInfoList::add_network_info() {
     if (!WiFiScanItem::getInstance().finish) {
         // 没有经过扫描
         add("No WiFi");
@@ -169,29 +155,34 @@ void WiFiInfoItem::add_network_info() {
     }
 }
 
-void WiFiInfoItem::onInit() {
+void WiFiInfoList::onInit() {
     add_network_info();
 }
 
-bool WiFiInfoItem::onOpen() {
-    if (!inited) {
-        onInit();
-        inited = true;
-    }
+bool WiFiInfoList::onOpen() {
+    // if (!inited) {
+    //     onInit();
+    //     inited = true;
+    // }
+    add_network_info();
     ListMenu::onOpen();
     return true;
 }
 
-void WiFiInfoItem::onExit() {
-    // for (const auto connect: connects) {
-    //     delete connect;
-    // }
-    // connects.clear();
+void WiFiInfoList::onExit() {
+    for (const auto connect: connects) {
+        delete connect;
+    }
+    connects.clear();
+
+    items.clear();
+    add("No WiFI"); // avoid empty error
     // inited = false;
+
     ListMenu::onExit();
 }
 
-WiFiInfoItem::~WiFiInfoItem() {
+WiFiInfoList::~WiFiInfoList() {
     for (const auto connect: connects) {
         delete connect;
     }
@@ -199,5 +190,25 @@ WiFiInfoItem::~WiFiInfoItem() {
 
 WiFiScan::WiFiScan() {
     add("wifi scan", &WiFiScanItem::getInstance());
-    add("wifi connect", &WiFiInfoItem::getInstance());
+    add("wifi connect", &WiFiInfoList::getInstance());
+}
+
+void WiFiScanService::setup() {
+
+}
+
+void WiFiScanService::loop() {
+    if (WiFi.scanComplete()) {
+        scan_ok = true;
+    }
+}
+
+void WiFiScanService::scan_now() {
+    scan_ok = false;
+    last_scan = HAL::millis();
+    WiFi.scanNetworks(true);
+}
+
+bool WiFiScanService::completed() const {
+    return scan_ok;
 }

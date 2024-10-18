@@ -33,7 +33,7 @@ public:
 };
 
 
-class WiFiInfoItem final : public astra::ui::ListMenu {
+class WiFiInfoList final : public astra::ui::ListMenu {
     class ConnectTo final : public app::Activity {
         const uint8_t index;
         bool connected = false;
@@ -52,7 +52,7 @@ class WiFiInfoItem final : public astra::ui::ListMenu {
     bool inited;
     std::vector<ConnectTo *> connects;
 
-    WiFiInfoItem(): inited(false), connects(std::vector<ConnectTo *>()) {
+    WiFiInfoList(): inited(false), connects(std::vector<ConnectTo *>()) {
     }
 
     void add_network_info();
@@ -64,10 +64,10 @@ public:
 
     void onExit() override;
 
-    ~WiFiInfoItem() override;
+    ~WiFiInfoList() override;
 
-    static WiFiInfoItem &getInstance() {
-        static WiFiInfoItem instance;
+    static WiFiInfoList &getInstance() {
+        static WiFiInfoList instance;
         return instance;
     }
 };
@@ -82,6 +82,33 @@ public:
         static WiFiScan instance;
         return instance;
     }
+};
+
+class WiFiScanService final : public app::Service {
+private:
+    unsigned long last_scan = 0;
+    int scan_start = 0;
+    int scan_time = 0;
+    int scan_times = 0;
+
+    bool scan_ok = false;
+
+    WiFiScanService() {
+    }
+
+public:
+    static WiFiScanService &getInstance() {
+        static WiFiScanService instance;
+        return instance;
+    }
+
+
+    void setup() override;
+
+    void loop() override;
+
+    void scan_now();
+    bool completed() const;
 };
 
 

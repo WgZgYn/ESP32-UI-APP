@@ -68,6 +68,9 @@ namespace app {
         void add(Service *activity);
 
     public:
+
+        bool ui = false;
+
         void setup();
 
         void loop();
