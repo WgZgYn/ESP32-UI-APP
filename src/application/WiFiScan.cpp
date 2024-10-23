@@ -194,12 +194,13 @@ WiFiScan::WiFiScan() {
 }
 
 void WiFiScanService::setup() {
-
+    WiFi.scanNetworks(true);
 }
 
 void WiFiScanService::loop() {
-    if (WiFi.scanComplete()) {
+    if (WiFi.scanComplete() >= 0) {
         scan_ok = true;
+        WiFi.scanNetworks(true);
     }
 }
 
