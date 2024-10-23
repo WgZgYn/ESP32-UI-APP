@@ -45,6 +45,8 @@ namespace app {
     };
 
     class App {
+        constexpr static size_t EEPROM_SIZE = 128;
+
         std::vector<Service *> _service_list;
 
         App();
@@ -57,13 +59,18 @@ namespace app {
 
         void UI_INIT();
 
-        void WIFI_INIT();
+        static void STORE_INIT();
+
+        static void WIFI_MODE_INIT();
+
+        void KEY_INIT();
 
         void MQTT_INIT();
 
         void WEB_INIT();
 
         void PAIR_INIT();
+
 
         void add(Service *activity);
 

@@ -1,5 +1,6 @@
 #include "app.h"
 
+#include <EEPROM.h>
 #include <application/NetworkManager.h>
 #include <application/WebAuthServer.h>
 #include <astra/ui/UI_VIEW.h>
@@ -58,7 +59,19 @@ namespace app {
         add(&astraLauncher);
     }
 
-    void App::WIFI_INIT() {
+    void App::STORE_INIT() {
+        nvs_flash_init(); // Used to store the Wi-Fi connect state;
+        if (!EEPROM.begin(EEPROM_SIZE)) {
+            Serial.println("Failed to initialize EEPROM");
+        }
+    }
+
+    void App::WIFI_MODE_INIT() {
+        WiFi.mode(WIFI_MODE_APSTA);
+    }
+
+    void App::KEY_INIT() {
+
     }
 
     void App::MQTT_INIT() {
@@ -81,6 +94,9 @@ namespace app {
 
     App::App() {
         SERIAL_INIT();
+        WIFI_MODE_INIT();
+        STORE_INIT();
+        KEY_INIT();
         SERVICE_INIT();
         HAL_INIT();
         UI_INIT();
