@@ -15,8 +15,17 @@ extern "C" {
 }
 
 namespace mqtt {
-    String MQTT_SUB = String(ESP.getEfuseMac()) + String("/ops");
+    const String MQTT_SERVICE = String(ESP.getEfuseMac()) + String("/service");
+    const String MQTT_EVENTS = String(ESP.getEfuseMac()) + String("/events");
+
     auto DEVICE_BRO = "device";
+
+    String DEVICE_INFO =
+            String() +
+            "efusemac=" + String(ESP.getEfuseMac()) +
+            "&type:Light" +
+            "&model:" + String(ESP.getChipModel())
+    ;
 
 
     AsyncMqttClient mqttClient;
@@ -63,14 +72,12 @@ namespace mqtt {
         Serial.println(sessionPresent);
 
         // 不重不漏
-        uint16_t packetIdSub = mqttClient.subscribe(MQTT_SUB.c_str(), 2);
+        uint16_t packetIdSub = mqttClient.subscribe(MQTT_SERVICE.c_str(), 2);
         Serial.print("Subscribing at QoS 2, packetId: ");
         Serial.println(packetIdSub);
 
         mqttClient.publish(DEVICE_BRO, 0, true, String(ESP.getEfuseMac()).c_str());
-        Serial.println("Publishing at QoS 0");
-
-        {
+        Serial.println("Publishing at QoS 0"); {
             mqttClient.publish("test/lol", 0, true, "test 1");
             Serial.println("Publishing at QoS 0");
 
@@ -134,9 +141,9 @@ namespace mqtt {
         msg.topic = topic;
         Serial.println("store message");
 
-        if (msg.payload == "open") {
+        if (msg.payload == "turnOn") {
             Service::run(Service::Func::Open);
-        } else if (msg.payload == "close") {
+        } else if (msg.payload == "turnOff") {
             Service::run(Service::Func::Close);
         } else if (msg.payload == "switch") {
             Service::run(Service::Func::Switch);
