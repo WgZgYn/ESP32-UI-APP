@@ -63,6 +63,8 @@ private:
     char *WiFi_IP = nullptr; // It's Optional, so strlen(WiFi_IP) can be 0
 
     bool EEPROM_inited = false;
+    bool EEPROM_loaded = false;
+
     bool no_host = false;
 
 #ifdef USING_BLUETOOTH
@@ -99,6 +101,8 @@ private:
     void recvClient();
 
     bool readMessage();
+
+    bool loadSavedWiFi();
 
 public:
     NetworkManager(const NetworkManager &) = delete;
