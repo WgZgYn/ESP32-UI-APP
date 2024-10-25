@@ -135,11 +135,7 @@ class WiFiManagerService final : public app::Service {
 
     void loop() override {
         if (app::App::getInstance().ui) return;
-        if (NetworkManager::getInstance().getWiFiState() != WiFiState::Finish) {
-            NetworkManager::getInstance().update();
-        } else {
-            app::App::getInstance().ui = true;
-        }
+        NetworkManager::getInstance().update();
     }
 
 public:

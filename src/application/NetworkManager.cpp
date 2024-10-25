@@ -144,10 +144,21 @@ bool NetworkManager::readMessage() {
 }
 
 bool NetworkManager::loadSavedWiFi() {
+    const int flag = EEPROM.read(0);
+    Serial.println(flag);
+
     if (EEPROM.read(0) != 0xFF) {
         Serial.println("load saved wifi config");
         EEPROM.readBytes(0, buffer, 128);
         EEPROM_loaded = true;
+        for(int i = 0; i < bufferSize; i++) {
+            if (buffer[i] == 0) {
+                Serial.print("0");
+            } else {
+                Serial.print(buffer[i]);
+            }
+        }
+        Serial.println();
         return true;
     }
     return false;
@@ -164,12 +175,12 @@ void NetworkManager::setup() {
     }
 
     if (loadSavedWiFi()) {
-        const int32_t pos1 = first_char_at(buffer, bufferSize, '\t');
+        const int32_t pos1 = first_char_at(buffer, bufferSize, '\0');
         if (pos1 == -1) {
             EEPROM_loaded = false;
             return;
         }
-        const int32_t pos2 = first_char_at(buffer, bufferSize, '\t', pos1 + 1);
+        const int32_t pos2 = first_char_at(buffer, bufferSize, '\0', pos1 + 1);
         if (pos2 == -1) {
             EEPROM_loaded = false;
             return;
@@ -177,6 +188,13 @@ void NetworkManager::setup() {
         WiFi_SSID = &buffer[0];
         WiFi_Password = &buffer[pos1 + 1];
         WiFi_IP = &buffer[pos2 + 1];
+
+
+        Serial.println(WiFi_SSID);
+        Serial.println(WiFi_Password);
+        Serial.println(WiFi_IP);
+
+
         wifiState = WiFiState::WiFiConnecting;
         WiFi.begin(WiFi_SSID, WiFi_Password);
         {
@@ -252,6 +270,7 @@ void NetworkManager::update() {
         case WiFiState::WiFiConnecting: {
             static int times = 0;
             if (++times == 50) {
+                Serial.println("time out");
                 times = 0;
                 if (remoteClient.connected()) {
                     wifiState = WiFiState::ClientConnected;
@@ -327,14 +346,19 @@ void NetworkManager::update() {
         }
 
         case WiFiState::Finish: {
+            Serial.println("Finish");
+
             if (!EEPROM_loaded) {
                 EEPROM.writeBytes(0, buffer, bufferSize);
                 EEPROM.commit();
+                Serial.println("store the wifi config");
             }
 
             HAL::delay(50);
             remoteClient.write(static_cast<uint8_t>(TcpResponse::Finish));
             remoteClient.stop();
+
+            app::App::getInstance().ui = true;
         }
         break;
         default:
