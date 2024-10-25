@@ -1,4 +1,5 @@
 auto web = R"delimiter(
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,4 +71,5 @@ auto web = R"delimiter(
     }
 </script>
 </html>
+
 )delimiter";
