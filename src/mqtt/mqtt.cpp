@@ -15,14 +15,15 @@ extern "C" {
 }
 
 namespace mqtt {
-    const String MQTT_SERVICE = String(ESP.getEfuseMac()) + String("/service");
-    const String MQTT_EVENTS = String(ESP.getEfuseMac()) + String("/events");
+    const String& ID = String(ESP.getEfuseMac());
+    const String MQTT_SERVICE = ID + String("/service");
+    const String MQTT_EVENTS = String("/device/events");
 
     auto DEVICE_BRO = "device";
 
     String DEVICE_INFO =
             String() +
-            "efusemac=" + String(ESP.getEfuseMac()) +
+            "efusemac=" + ID +
             "&type:Light" +
             "&model:" + String(ESP.getChipModel())
     ;
@@ -77,7 +78,8 @@ namespace mqtt {
         Serial.println(packetIdSub);
 
         mqttClient.publish(DEVICE_BRO, 0, true, String(ESP.getEfuseMac()).c_str());
-        Serial.println("Publishing at QoS 0"); {
+        Serial.println("Publishing at QoS 0");
+        {
             mqttClient.publish("test/lol", 0, true, "test 1");
             Serial.println("Publishing at QoS 0");
 
@@ -143,10 +145,13 @@ namespace mqtt {
 
         if (msg.payload == "turnOn") {
             Service::run(Service::Func::Open);
+            mqttClient.publish(MQTT_EVENTS.c_str(), 2, false,  (ID + ",turnOn").c_str());
         } else if (msg.payload == "turnOff") {
             Service::run(Service::Func::Close);
+            mqttClient.publish(MQTT_EVENTS.c_str(), 2, false, "turnOff");
         } else if (msg.payload == "switch") {
             Service::run(Service::Func::Switch);
+            mqttClient.publish(MQTT_EVENTS.c_str(), 2, false, "update");
         }
     }
 
