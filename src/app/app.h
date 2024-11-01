@@ -48,6 +48,7 @@ namespace app {
         constexpr static size_t EEPROM_SIZE = 128;
 
         std::vector<Service *> _service_list;
+        std::vector<uint8_t> priority;
 
         App();
 
@@ -72,7 +73,7 @@ namespace app {
         void PAIR_INIT();
 
 
-        void add(Service *activity);
+        void add(Service *activity, uint8_t priority);
 
     public:
 

@@ -26,8 +26,9 @@ namespace app {
         return app;
     }
 
-    void App::add(Service *service) {
+    void App::add(Service *service, uint8_t priority = 1) {
         _service_list.push_back(service);
+        this->priority.push_back(priority);
     }
 
     void App::HAL_INIT() {
@@ -56,7 +57,7 @@ namespace app {
     extern void UIConfig();
 
     void App::UI_INIT() {
-        add(&astraLauncher);
+        add(&astraLauncher, 3);
     }
 
     void App::STORE_INIT() {
@@ -114,9 +115,9 @@ namespace app {
     }
 
     void App::loop() {
-        for (Service *service: this->_service_list) {
-            if (service != nullptr) {
-                service->loop();
+        for (int i = 0; i < _service_list.size(); i++) {
+            for(int _ = 0; _ < priority[i]; _ ++) {
+                _service_list[i]->loop();
             }
         }
     }
