@@ -1,6 +1,7 @@
 #include "app.h"
 
 #include <EEPROM.h>
+#include <nvs_flash.h>
 #include <application/NetworkManager.h>
 #include <application/WebAuthServer.h>
 #include <astra/ui/UI_VIEW.h>
@@ -9,7 +10,6 @@
 
 #include "hal/myhal.hpp"
 
-#define RESET_BUTTON_PIN 0 // 按钮引脚，使用GPIO 0
 
 void setup() {
     app::App::getInstance().setup();
@@ -33,18 +33,6 @@ namespace app {
 
     void App::HAL_INIT() {
         HAL::inject(&MyHAL::getInstance());
-
-        // Below is to test function
-        // HAL::delay(200);
-        // HAL::printInfo("loading...");
-        // HAL::delay(200);
-        // HAL::printInfo("astra UI modified by wzy.");
-        // HAL::delay(300);
-        // HAL::printInfo("If stuck on this page,");
-        // HAL::delay(300);
-        // HAL::printInfo("version 2.0.0");
-        // HAL::delay(300);
-
         Serial.println("HAL ready");
     }
 
@@ -58,39 +46,44 @@ namespace app {
 
     void App::UI_INIT() {
         add(&astraLauncher, 3);
+        Serial.println("UI initialized");
     }
 
     void App::STORE_INIT() {
         nvs_flash_init(); // Used to store the Wi-Fi connect state;
         if (!EEPROM.begin(EEPROM_SIZE)) {
             Serial.println("Failed to initialize EEPROM");
+        } else {
+            Serial.println("EEPROM initialized");
         }
     }
 
     void App::WIFI_MODE_INIT() {
         WiFi.mode(WIFI_MODE_APSTA);
+        Serial.println("WIFI_MODE initialized");
     }
 
     void App::KEY_INIT() {
-
+        Serial.println("KEY initialized");
     }
 
     void App::MQTT_INIT() {
         add(&mqtt::MqttClient::getInstance());
+        Serial.println("MQTT initialized");
     }
 
     void App::SERVICE_INIT() {
-        pinMode(LED_BUILTIN, OUTPUT); // 使用蓝色LED管脚
-        pinMode(RESET_BUTTON_PIN, INPUT_PULLUP);
-        // pinMode(RESET_BUTTON_PIN, INPUT_PULLUP); // 按钮连接到GPIO0，低电平触发
+        ::Service::getInstance().init();
     }
 
     void App::WEB_INIT() {
         add(&WebAuthService::getInstance());
+        Serial.println("WEB initialized");
     }
 
     void App::PAIR_INIT() {
         add(&WiFiManagerService::getInstance());
+        Serial.println("PAIRING initialized");
     }
 
     App::App() {
@@ -114,7 +107,7 @@ namespace app {
         }
     }
 
-    void App::loop() {
+    void App::loop() const {
         for (int i = 0; i < _service_list.size(); i++) {
             for(int _ = 0; _ < priority[i]; _ ++) {
                 _service_list[i]->loop();

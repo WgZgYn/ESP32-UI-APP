@@ -64,7 +64,7 @@ namespace app {
 
         static void WIFI_MODE_INIT();
 
-        void KEY_INIT();
+        static void KEY_INIT();
 
         void MQTT_INIT();
 
@@ -81,7 +81,7 @@ namespace app {
 
         void setup();
 
-        void loop();
+        void loop() const;
 
         static App &getInstance();
     };
