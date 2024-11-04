@@ -94,7 +94,7 @@ private:
     void startBTH();
 #endif
 
-    void startAP();
+    void startAP() const;
 
     void startServer();
 
@@ -129,8 +129,7 @@ public:
 
 class WiFiManagerService final : public app::Service {
     void setup() override {
-        NetworkManager::getInstance()
-                .setup();
+        NetworkManager::getInstance().setup();
     }
 
     void loop() override {

@@ -4,9 +4,7 @@
 
 #include "WebAuthServer.h"
 
-#include <hal/hal.h>
-
-bool WebAuthService::CaptiveRequestHandler::handle(WebServer &server, HTTPMethod requestMethod, String requestUri) {
+bool WebAuthService::CaptiveRequestHandler::handle(WebServer &server, const HTTPMethod requestMethod, const String requestUri) {
     if (requestMethod == HTTP_POST && requestUri == "/connect") {
         const String ssid = server.arg("ssid");
         const String password = server.arg("password");

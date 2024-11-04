@@ -41,23 +41,25 @@ void NetworkManager::startBTH() {
 }
 #endif
 
-void NetworkManager::startAP() {
+void NetworkManager::startAP() const {
     const IPAddress local(192, 168, 4, 1);
     const IPAddress gateway(192, 168, 4, 1);
-    const IPAddress subnet(255, 255, 255, 0); {
-        HAL::printInfo("Opening SoftAP");
-        HAL::delay(1000);
-    }
+    const IPAddress subnet(255, 255, 255, 0);
+
+    HAL::printInfo("Opening SoftAP");
+    HAL::delay(1000);
+
 
     // WiFi.mode(WIFI_MODE_AP);
     WiFi.softAPConfig(local, gateway, subnet);
-    WiFi.softAP(SSID, Password); {
-        HAL::printInfo("WiFi: ");
-        HAL::printInfo(SSID);
-        HAL::delay(1000);
-        HAL::printInfo(Password);
-        HAL::delay(1000);
-    }
+    WiFi.softAP(SSID, Password);
+
+
+    HAL::printInfo("WiFi: ");
+    HAL::printInfo(SSID);
+    HAL::delay(1000);
+    HAL::printInfo(Password);
+    HAL::delay(1000);
 }
 
 void NetworkManager::startServer() {
@@ -123,23 +125,23 @@ bool NetworkManager::readMessage() {
     WiFi_IP = &buffer[pos2 + 1];
 
     no_host = pos2 + 1 == n - 1;
-    HAL::printInfo("Config Finished");
+
     wifiState = WiFiState::WiFiConnecting;
 
     // WiFi.mode(WIFI_MODE_APSTA); // MOVED
     WiFi.begin(WiFi_SSID, WiFi_Password);
-    {
-        HAL::printInfo("Connecting to WiFi");
-        HAL::printInfo("SSID: ");
-        Serial.println(WiFi_SSID);
-        HAL::printInfo(WiFi_SSID);
-        HAL::printInfo("Password: ");
-        Serial.println(WiFi_Password);
-        HAL::printInfo(WiFi_Password);
-        HAL::printInfo("Host: ");
-        Serial.println(WiFi_IP);
-        HAL::printInfo(WiFi_IP);
-    }
+    HAL::printInfo("Config Finished");
+    HAL::printInfo("Connecting to WiFi");
+    HAL::printInfo("SSID: ");
+    Serial.println(WiFi_SSID);
+    HAL::printInfo(WiFi_SSID);
+    HAL::printInfo("Password: ");
+    Serial.println(WiFi_Password);
+    HAL::printInfo(WiFi_Password);
+    HAL::printInfo("Host: ");
+    Serial.println(WiFi_IP);
+    HAL::printInfo(WiFi_IP);
+
     return true;
 }
 
@@ -151,7 +153,7 @@ bool NetworkManager::loadSavedWiFi() {
         Serial.println("load saved wifi config");
         EEPROM.readBytes(0, buffer, 128);
         EEPROM_loaded = true;
-        for(int i = 0; i < bufferSize; i++) {
+        for (int i = 0; i < bufferSize; i++) {
             if (buffer[i] == 0) {
                 Serial.print("0");
             } else {
@@ -197,18 +199,17 @@ void NetworkManager::setup() {
 
         wifiState = WiFiState::WiFiConnecting;
         WiFi.begin(WiFi_SSID, WiFi_Password);
-        {
-            HAL::printInfo("Connecting to WiFi");
-            HAL::printInfo("SSID: ");
-            Serial.println(WiFi_SSID);
-            HAL::printInfo(WiFi_SSID);
-            HAL::printInfo("Password: ");
-            Serial.println(WiFi_Password);
-            HAL::printInfo(WiFi_Password);
-            HAL::printInfo("Host: ");
-            Serial.println(WiFi_IP);
-            HAL::printInfo(WiFi_IP);
-        }
+
+        HAL::printInfo("Connecting to WiFi");
+        HAL::printInfo("SSID: ");
+        Serial.println(WiFi_SSID);
+        HAL::printInfo(WiFi_SSID);
+        HAL::printInfo("Password: ");
+        Serial.println(WiFi_Password);
+        HAL::printInfo(WiFi_Password);
+        HAL::printInfo("Host: ");
+        Serial.println(WiFi_IP);
+        HAL::printInfo(WiFi_IP);
     }
 
 
