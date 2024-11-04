@@ -4,6 +4,7 @@
 
 #include "mqtt.h"
 #include <wifi/config.h>
+#include <ArduinoJson.h>
 
 
 #include "MqttView.h"
@@ -15,18 +16,13 @@ extern "C" {
 }
 
 namespace mqtt {
-    const String& ID = String(ESP.getEfuseMac());
-    const String MQTT_SERVICE = ID + String("/service");
+    auto DEVICE_BRO = "/device";
+    auto DEVICE_INFO = "/device/info";
+
+    const String ID = String(ESP.getEfuseMac());
+    const String MQTT_SERVICE = String("/device/") + ID + "/service";
     const String MQTT_EVENTS = String("/device/events");
-
-    auto DEVICE_BRO = "device";
-
-    String DEVICE_INFO =
-            String() +
-            "efusemac=" + ID +
-            "&type:Light" +
-            "&model:" + String(ESP.getChipModel())
-    ;
+    const String MQTT_SELF_EVENTS = String("/device/") + ID + "/events";
 
 
     AsyncMqttClient mqttClient;
@@ -77,20 +73,24 @@ namespace mqtt {
         Serial.print("Subscribing at QoS 2, packetId: ");
         Serial.println(packetIdSub);
 
-        mqttClient.publish(DEVICE_BRO, 0, true, String(ESP.getEfuseMac()).c_str());
-        Serial.println("Publishing at QoS 0");
-        {
-            mqttClient.publish("test/lol", 0, true, "test 1");
-            Serial.println("Publishing at QoS 0");
 
-            uint16_t packetIdPub1 = mqttClient.publish("test/lol", 1, true, "test 2");
-            Serial.print("Publishing at QoS 1, packetId: ");
-            Serial.println(packetIdPub1);
+        // online message
+        mqttClient.publish(DEVICE_BRO, 1, false, String(ESP.getEfuseMac()).c_str());
 
-            uint16_t packetIdPub2 = mqttClient.publish("test/lol", 2, true, "test 3");
-            Serial.print("Publishing at QoS 2, packetId: ");
-            Serial.println(packetIdPub2);
-        }
+        // info message
+        StaticJsonDocument<128> doc;
+        doc["efuse_mac"] = ID;
+        doc["device_type"] = "light";
+        doc["device_model"] = ESP.getChipModel();
+        Service::getInstance().callback("status", doc);
+        doc["type"] = "info";
+        String msg;
+        serializeJson(doc, msg);
+        Serial.println(msg);
+        mqttClient.publish(DEVICE_INFO, 1, false, msg.c_str());
+
+
+        Serial.println("Publishing at QoS 1");
     }
 
     void onMqttDisconnect(AsyncMqttClientDisconnectReason reason) {
@@ -115,8 +115,7 @@ namespace mqtt {
         Serial.println(packetId);
     }
 
-    void onMqttMessage(char *topic, char *payload, AsyncMqttClientMessageProperties properties, size_t len,
-                       size_t index, size_t total) {
+    void onMqttMessage(char *topic, char *payload, AsyncMqttClientMessageProperties properties, size_t len, size_t index, size_t total) {
         Serial.println("---------------------------");
         Serial.println("Publish received.");
         Serial.print("  topic: ");
@@ -136,22 +135,27 @@ namespace mqtt {
         Serial.println("  payload: ");
         Serial.println(String(payload, len));
 
-
         Message &msg = Message::current();
         msg.payload = String(payload, len);
         msg.qos = properties.qos;
         msg.topic = topic;
         Serial.println("store message");
 
-        if (msg.payload == "turnOn") {
-            Service::run(Service::Func::Open);
-            mqttClient.publish(MQTT_EVENTS.c_str(), 2, false,  (ID + ",turnOn").c_str());
-        } else if (msg.payload == "turnOff") {
-            Service::run(Service::Func::Close);
-            mqttClient.publish(MQTT_EVENTS.c_str(), 2, false, "turnOff");
-        } else if (msg.payload == "switch") {
-            Service::run(Service::Func::Switch);
-            mqttClient.publish(MQTT_EVENTS.c_str(), 2, false, "update");
+        StaticJsonDocument<128> doc;
+        doc["efuse_mac"] = ID;
+        doc["type"] = "event";
+
+        const bool ok = Service::getInstance().callback(msg.payload.c_str(), doc);
+        if (ok) {
+            String temp;
+            serializeJson(doc, temp);
+            Serial.println(temp);
+
+            // event message
+            mqttClient.publish(MQTT_EVENTS.c_str(), 2, false, temp.c_str());
+            mqttClient.publish(MQTT_SELF_EVENTS.c_str(), 2, false, temp.c_str());
+        } else {
+            Serial.println("can't handle the error message");
         }
     }
 
