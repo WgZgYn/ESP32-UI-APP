@@ -7,116 +7,32 @@
 
 #include <Arduino.h>
 #include <WiFi.h>
-#include <nvs_flash.h>
-//
-//
-//#define EEPROM_SIZE 512    // EEPROM大小 (根据需要设置)
-//#define COUNTER_ADDR 0     // 数据存储的起始地址
-//#define RESET_BUTTON_PIN 0 // 按钮引脚，使用GPIO 0
-//
-//// const char *name = "MECHREV 9674";
-//// const char *pawd = "12345678";
-//
-//// const char *name = "550W主机服务器";
-//// const char *pawd = "301a301a";
-//
-//
-//constexpr static int host_port = 45677;
-//constexpr static int serv_port = 45678;
-//
-//constexpr static unsigned long baud = 115200;
-//const static uint64_t ID = ESP.getEfuseMac(); // 162756773954388 1.
-//const String uuid = String(ESP.getEfuseMac());
-//
-//const char *name = "ESP32";
-//const char *pasw = uuid.c_str();
-//
-//enum State {
-//    Ok,
-//    AskForConfig,
-//    MessageError,
-//    WiFiConnectError,
-//    HostConnectError,
-//    Success,
-//};
-//
-//
-//class Controller {
-//    WiFiServer server{serv_port};
-//
-//    String host; // 16
-//    String ssid; // 20
-//    String token; // 20
-//
-//    WiFiClient client;
-//    bool light = false; // store the light status
-//
-//public:
-//    Controller();
-//
-//    static void handleInput(const String &s, WiFiClient &client);
-//
-//    void loadState();
-//
-//    void saveState() const;
-//
-//    static void clearState();
-//
-//    void printConfig() const;
-//
-//    void configAP();
-//
-//    // First use it will stuck here to make a bind with the center host
-//    int parseMessage(String &msg);
-//
-//    int connectToWiFi() const;
-//
-//    int connectToHost() const;
-//
-//    void config();
-//
-//    void serve();
-//};
-//
-//
+#include <ArduinoJson/Document/StaticJsonDocument.hpp>
+
+#define LED_BUILTIN 2
+#define RESET_BUTTON_PIN 0 // 按钮引脚，使用GPIO 0
+
+
 class Service {
-    static bool light;
+    bool light = false;
+    uint8_t brightness = 0;
 
-    static void openLight() {
-        digitalWrite(LED_BUILTIN, HIGH);
-        light = true;
-    }
+    const char* openLight();
 
-    static void closeLight() {
-        digitalWrite(LED_BUILTIN, LOW);
-        light = false;
-    }
+    const char* closeLight();
 
-    static void switchLight() {
-        light ? closeLight() : openLight();
-    }
+    const char* switchLight();
+
+    void setBrightness(uint8_t val);
 
 public:
-    enum class Func {
-        Open,
-        Close,
-        Switch,
-    };
+    static void init();
 
-    static void run(const Func &f) {
-        switch (f) {
-            case Func::Open:
-                openLight();
-                break;
-            case Func::Close:
-                closeLight();
-                break;
-            case Func::Switch:
-                switchLight();
-                break;
-            default:
-                break;
-        }
+    bool callback(const char *cmd, ArduinoJson::StaticJsonDocument<128>& doc);
+
+    static Service& getInstance() {
+        static Service service;
+        return service;
     }
 };
 
