@@ -16,14 +16,12 @@ extern "C" {
 }
 
 namespace mqtt {
-    auto DEVICE_BRO = "/device";
-    auto DEVICE_INFO = "/device/info";
-
+    auto MQTT_PUBLISH_STATUS =  "/status";
+    auto MQTT_PUBLISH_EVENTS =  "/events";
     const String ID = String(ESP.getEfuseMac());
-    const String MQTT_SERVICE = String("/device/") + ID + "/service";
-    const String MQTT_EVENTS = String("/device/events");
-    const String MQTT_SELF_EVENTS = String("/device/") + ID + "/events";
-
+    const String MQTT_PUBLISH_SELF_EVENTS = String("/device/") + ID + "/events";
+    const String MQTT_SUBSCRIBE_SERVICE   = String("/device/") + ID + "/service";
+    static StaticJsonDocument<128> doc;
 
     AsyncMqttClient mqttClient;
     TimerHandle_t mqttReconnectTimer;
@@ -69,27 +67,20 @@ namespace mqtt {
         Serial.println(sessionPresent);
 
         // 不重不漏
-        uint16_t packetIdSub = mqttClient.subscribe(MQTT_SERVICE.c_str(), 2);
+        uint16_t packetIdSub = mqttClient.subscribe(MQTT_SUBSCRIBE_SERVICE.c_str(), 2);
         Serial.print("Subscribing at QoS 2, packetId: ");
         Serial.println(packetIdSub);
 
-
-        // online message
-        mqttClient.publish(DEVICE_BRO, 1, false, String(ESP.getEfuseMac()).c_str());
-
-        // info message
-        StaticJsonDocument<128> doc;
+        // status message
         doc["efuse_mac"] = ID;
-        doc["device_type"] = "light";
-        doc["device_model"] = ESP.getChipModel();
+        doc["chip_model"] = ESP.getChipModel();
+        doc["type_id"] = 1;
         Service::getInstance().callback("status", doc);
-        doc["type"] = "info";
+
         String msg;
         serializeJson(doc, msg);
         Serial.println(msg);
-        mqttClient.publish(DEVICE_INFO, 1, false, msg.c_str());
-
-
+        mqttClient.publish(MQTT_PUBLISH_STATUS, 1, false, msg.c_str());
         Serial.println("Publishing at QoS 1");
     }
 
@@ -115,7 +106,8 @@ namespace mqtt {
         Serial.println(packetId);
     }
 
-    void onMqttMessage(char *topic, char *payload, AsyncMqttClientMessageProperties properties, size_t len, size_t index, size_t total) {
+    void onMqttMessage(char *topic, char *payload, AsyncMqttClientMessageProperties properties, size_t len,
+                       size_t index, size_t total) {
         Serial.println("---------------------------");
         Serial.println("Publish received.");
         Serial.print("  topic: ");
@@ -141,22 +133,21 @@ namespace mqtt {
         msg.topic = topic;
         Serial.println("store message");
 
-        StaticJsonDocument<128> doc;
-        doc["efuse_mac"] = ID;
+
         doc["type"] = "event";
-
         const bool ok = Service::getInstance().callback(msg.payload.c_str(), doc);
-        if (ok) {
-            String temp;
-            serializeJson(doc, temp);
-            Serial.println(temp);
-
-            // event message
-            mqttClient.publish(MQTT_EVENTS.c_str(), 2, false, temp.c_str());
-            mqttClient.publish(MQTT_SELF_EVENTS.c_str(), 2, false, temp.c_str());
-        } else {
+        if (!ok) {
             Serial.println("can't handle the error message");
+            return;
         }
+
+        String temp;
+        serializeJson(doc, temp);
+        Serial.println(temp);
+
+        // event message
+        mqttClient.publish(MQTT_PUBLISH_EVENTS, 2, false, temp.c_str());
+        mqttClient.publish(MQTT_PUBLISH_SELF_EVENTS.c_str(), 2, false, temp.c_str());
     }
 
     void onMqttPublish(uint16_t packetId) {

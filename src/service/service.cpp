@@ -29,13 +29,18 @@ void Service::setBrightness(const uint8_t val) {
     if (scaledVal < 0) scaledVal = 0;
 
     // 将浮点数转换为 uint8_t
-    const uint8_t targetBrightness = static_cast<uint8_t>(scaledVal);
+    const auto targetBrightness = static_cast<uint8_t>(scaledVal);
 
 
     Serial.print("from ");
     Serial.print(brightness);
     Serial.print(" to ");
     Serial.println(targetBrightness);
+
+    // avoid divide 0
+    if (brightness == targetBrightness) {
+        return;
+    }
 
     const int step = targetBrightness > brightness ? 1 : -1;
 
