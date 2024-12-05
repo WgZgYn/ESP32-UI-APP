@@ -1,108 +1,110 @@
 #include "service.h"
 #include <ArduinoJson.h>
-#include <utils/utils.h>
+#include <Adafruit_AM2320.h>
+#include <hal/hal.h>
 
+#define SDA_PIN 21
+#define SCL_PIN 22
 
-const char *Service::openLight() {
-    light = true;
-    brightness = 255;
-    analogWrite(LED_BUILTIN, 255);
-    return "open";
+extern "C" {
+#include "freertos/timers.h"
+#include "freertos/FreeRTOS.h"
 }
 
-const char *Service::closeLight() {
-    light = false;
-    brightness = 0;
-    analogWrite(LED_BUILTIN, 0);
-    return "close";
+constexpr int SENSOR_OFFSET = 2;
+const String Service::ID{ESP.getEfuseMac() + SENSOR_OFFSET};
+
+Adafruit_AM2320 am2320 = Adafruit_AM2320();
+TimerHandle_t sensorTimer;
+
+void sensorTimerCallback(TimerHandle_t timer) {
+    Service &service = Service::getInstance();
+    float temp = am2320.readTemperature();
+    float hum = am2320.readHumidity();
+
+    service.temperature = temp;
+    service.humidity = hum;
+
+    service.reportStatus();
 }
 
-const char *Service::switchLight() {
-    return light ? closeLight() : openLight();
+
+StaticJsonDocument<512> newJsonDocument() {
+    StaticJsonDocument<512> doc;
+    doc["efuse_mac"] = Service::ID;
+    doc["model_id"] = Service::model_id;
+    doc["model_name"] = Service::model_name;
+    return doc;
 }
 
-void Service::setBrightness(const uint8_t val) {
-    float scaledVal = val * 2.56;
-
-    // 确保 scaledVal 在 0 到 255 之间
-    if (scaledVal > 255) scaledVal = 255;
-    if (scaledVal < 0) scaledVal = 0;
-
-    // 将浮点数转换为 uint8_t
-    const auto targetBrightness = static_cast<uint8_t>(scaledVal);
-
-
-    Serial.print("from ");
-    Serial.print(brightness);
-    Serial.print(" to ");
-    Serial.println(targetBrightness);
-
-    // avoid divide 0
-    if (brightness == targetBrightness) {
-        return;
-    }
-
-    const int step = targetBrightness > brightness ? 1 : -1;
-
-
-    const int stepDelay = 500 / utils::abs_diff(targetBrightness, brightness);
-
-    // 使用循环更新亮度
-    while (brightness != targetBrightness) {
-        brightness += step; // 增加或减少亮度
-        analogWrite(LED_BUILTIN, brightness);
-        delay(stepDelay);
-        yield();
-    }
-
-    Serial.println(brightness);
-}
 
 void Service::init() {
-    pinMode(LED_BUILTIN, OUTPUT); // 使用蓝色LED管脚
-    pinMode(RESET_BUTTON_PIN, INPUT_PULLUP); // 按钮连接到GPIO0，低电平触发
+    Wire.begin(SDA_PIN, SCL_PIN);
+
+    bool ok = am2320.begin();
+    Serial.println("begining am2320");
+    Serial.println(ok ? "ok" : "err");
+
+    sensorTimer = xTimerCreate(
+        "SensorTimer",
+        pdMS_TO_TICKS(5000),
+        pdTRUE,
+        nullptr,
+        sensorTimerCallback
+    );
+    if (sensorTimer != NULL) {
+        xTimerStart(sensorTimer, 0);
+    }
     Serial.println("SERVICE initialized");
 }
 
-bool Service::callback(const char *cmd, StaticJsonDocument<128> &doc) {
-    if (strcmp(cmd, "open") == 0) {
-        doc["payload"] = openLight();
-        return true;
+void Service::reportStatus() const {
+    StaticJsonDocument<512> doc(newJsonDocument());
+
+    doc["type"] = "status";
+    const JsonObject status = doc.createNestedObject("payload"); // Otherwise create a new one
+
+
+    // fetch data in the background task
+
+    Serial.print("Temperature: ");
+    Serial.print(temperature);
+    Serial.print(" Humidity: ");
+    Serial.println(humidity);
+
+    status["temperature"] = temperature;
+    status["humidity"] = humidity;
+
+
+    String res;
+    serializeJson(doc, res);
+    mqtt::publish(mqtt::MQTT_PUBLISH_STATUS, 1, res.c_str());
+}
+
+
+void Service::callback(const StaticJsonDocument<512> &message) {
+    const char *serviceName = message["service_name"];
+    if (strcmp("status", serviceName) == 0) {
+        reportStatus();
     }
-    if (strcmp(cmd, "close") == 0) {
-        doc["payload"] = closeLight();
-        return true;
-    }
-    if (strcmp(cmd, "switch") == 0) {
-        doc["payload"] = switchLight();
-        return true;
-    }
-    if (strncmp(cmd, "light=", 6) == 0) {
-        const char *val = cmd + 6;
-        char *endptr;
-        const unsigned intValue = strtoul(val, &endptr, 10);
-        if (endptr != val) {
-            setBrightness(intValue);
-            doc["payload"] = cmd;
-            return true;
-        }
-        if (strcmp(val, "true") == 0) {
-            doc["payload"] = openLight();
-            return true;
-        }
-        if (strcmp(val, "false") == 0) {
-            doc["payload"] = closeLight();
-            return true;
-        }
-        return false;
-    }
-    if (strcmp(cmd, "status") == 0) {
-        // Change the type to status
-        doc["type"] = "status";
-        JsonObject status = doc.createNestedObject("payload");
-        status["灯开关"] = light ? "true" : "false";
-        status["灯亮度"] = brightness;
-        return true;
-    }
-    return false;
+}
+
+void ServiceUI::onInit() {
+}
+
+bool ServiceUI::onOpen() {
+    return true;
+}
+
+void ServiceUI::onLoop() {
+    HAL::cleanInfo();
+    const String temperature = "temperature: " + String(service.temperature);
+    const String humidity = "humidity: " + String(service.humidity);
+    HAL::printInfo(temperature);
+    HAL::printInfo("\n");
+    HAL::printInfo(humidity);
+    HAL::delay(100);
+}
+
+void ServiceUI::onExit() {
 }
