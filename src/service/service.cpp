@@ -3,22 +3,30 @@
 #include <utils/utils.h>
 
 
+const String Service::ID{ESP.getEfuseMac()};
+
+StaticJsonDocument<512> newJsonDocument() {
+    StaticJsonDocument<512> doc;
+    doc["efuse_mac"] = Service::ID;
+    doc["model_id"] = Service::model_id;
+    doc["model_name"] = Service::model_name;
+    return doc;
+}
+
 const char *Service::openLight() {
-    light = true;
     brightness = 255;
     analogWrite(LED_BUILTIN, 255);
     return "open";
 }
 
 const char *Service::closeLight() {
-    light = false;
     brightness = 0;
     analogWrite(LED_BUILTIN, 0);
     return "close";
 }
 
 const char *Service::switchLight() {
-    return light ? closeLight() : openLight();
+    return brightness > 0 ? closeLight() : openLight();
 }
 
 void Service::setBrightness(const uint8_t val) {
@@ -58,51 +66,73 @@ void Service::setBrightness(const uint8_t val) {
     Serial.println(brightness);
 }
 
+
 void Service::init() {
     pinMode(LED_BUILTIN, OUTPUT); // 使用蓝色LED管脚
     pinMode(RESET_BUTTON_PIN, INPUT_PULLUP); // 按钮连接到GPIO0，低电平触发
     Serial.println("SERVICE initialized");
 }
 
-bool Service::callback(const char *cmd, StaticJsonDocument<128> &doc) {
-    if (strcmp(cmd, "open") == 0) {
+void Service::reportStatus() const {
+    StaticJsonDocument<512> doc(newJsonDocument());
+
+    doc["type"] = "status";
+    const JsonObject status = doc.createNestedObject("payload"); // Otherwise create a new one
+
+    status["灯开关"] = brightness > 0;
+    status["灯亮度"] = brightness;
+
+    String res;
+    serializeJson(doc, res);
+    mqtt::publish(mqtt::MQTT_PUBLISH_STATUS, 1, res.c_str());
+}
+
+void Service::lightService(const StaticJsonDocument<512> &message) {
+    StaticJsonDocument<512> doc(newJsonDocument());
+
+    doc["type"] = "event";
+    const char *serviceName = message["service_name"];
+    if (strcmp("light", serviceName) == 0) {
+        if (message["payload"].is<String>()) {
+            const String payload = message["payload"];
+            char *endp;
+            const char *start = payload.c_str();
+            const uint8_t value = strtoul(start, &endp, 10);
+            if (endp != start) {
+                setBrightness(value);
+                doc["payload"] = value;
+            } else if (strcmp(start, "true") == 0) {
+                doc["payload"] = openLight();
+            } else if (strcmp(start, "false") == 0) {
+                doc["payload"] = closeLight();
+            }
+        }
+        if (message["payload"].is<uint8_t>()) {
+            const uint8_t value = message["payload"];
+            setBrightness(value);
+            doc["payload"] = value;
+        }
+    } else if (strcmp("open", serviceName) == 0) {
         doc["payload"] = openLight();
-        return true;
-    }
-    if (strcmp(cmd, "close") == 0) {
+    } else if (strcmp("close", serviceName) == 0) {
         doc["payload"] = closeLight();
-        return true;
-    }
-    if (strcmp(cmd, "switch") == 0) {
+    } else if (strcmp("switch", serviceName) == 0) {
         doc["payload"] = switchLight();
-        return true;
     }
-    if (strncmp(cmd, "light=", 6) == 0) {
-        const char *val = cmd + 6;
-        char *endptr;
-        const unsigned intValue = strtoul(val, &endptr, 10);
-        if (endptr != val) {
-            setBrightness(intValue);
-            doc["payload"] = cmd;
-            return true;
-        }
-        if (strcmp(val, "true") == 0) {
-            doc["payload"] = openLight();
-            return true;
-        }
-        if (strcmp(val, "false") == 0) {
-            doc["payload"] = closeLight();
-            return true;
-        }
-        return false;
+
+    if (!doc.containsKey("payload")) {
+        return;
     }
-    if (strcmp(cmd, "status") == 0) {
-        // Change the type to status
-        doc["type"] = "status";
-        JsonObject status = doc.createNestedObject("payload");
-        status["灯开关"] = light ? "true" : "false";
-        status["灯亮度"] = brightness;
-        return true;
+
+    String res;
+    serializeJson(doc, res);
+    mqtt::publish(mqtt::MQTT_PUBLISH_EVENTS, 2, res.c_str());
+}
+
+void Service::callback(const StaticJsonDocument<512> &message) {
+    const char *serviceName = message["service_name"];
+    if (strcmp("status", serviceName) != 0) {
+        lightService(message);
     }
-    return false;
+    reportStatus();
 }
