@@ -1,7 +1,0 @@
-<map id="astra::Launcher" name="astra::Launcher">
-<area shape="rect" id="Node000001" title=" " alt="" coords="81,208,183,427"/>
-<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_animation.html" title=" " alt="" coords="5,5,131,160"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,174,105,208,100,209,90,175"/>
-<area shape="rect" id="Node000003" href="$classapp_1_1_service.html" title=" " alt="" coords="155,27,240,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,154,165,209,160,207,175,152"/>
-</map>

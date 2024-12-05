@@ -1,7 +1,0 @@
-<map id="font/u8g2_font_myfont.c" name="font/u8g2_font_myfont.c">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,168,32"/>
-<area shape="rect" id="Node000002" href="$u8g2__font__myfont_8h.html" title=" " alt="" coords="18,80,155,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,33,89,64,84,64,84,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="44,155,129,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,107,89,139,84,139,84,107"/>
-</map>

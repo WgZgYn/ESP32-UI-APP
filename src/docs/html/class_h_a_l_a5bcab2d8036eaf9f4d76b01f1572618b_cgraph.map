@@ -1,7 +1,0 @@
-<map id="HAL::drawFrame" name="HAL::drawFrame">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,126,57"/>
-<area shape="rect" id="Node000002" href="$class_h_a_l.html#aa06891253d5636e314fca7fa83eefae2" title=" " alt="" coords="174,5,301,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,33,158,28,158,33,126,38"/>
-<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="201,56,274,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,50,186,59,185,64,126,55"/>
-</map>

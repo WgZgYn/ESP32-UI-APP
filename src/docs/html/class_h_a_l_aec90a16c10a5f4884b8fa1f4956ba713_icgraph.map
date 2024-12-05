@@ -1,7 +1,0 @@
-<map id="HAL::_drawBMP" name="HAL::_drawBMP">
-<area shape="rect" id="Node000001" title=" " alt="" coords="343,13,462,40"/>
-<area shape="rect" id="Node000002" href="$class_h_a_l.html#a2231c6c94a3468e66d945d7a6dff4eaf" title=" " alt="" coords="183,13,295,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="328,29,295,29,295,24,328,24"/>
-<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_tile_menu.html#a2eabdfc144220c4de74f184dd0459cc2" title=" " alt="" coords="5,5,135,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="167,29,135,29,135,24,167,24"/>
-</map>

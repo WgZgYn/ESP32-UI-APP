@@ -1,9 +1,0 @@
-<map id="hal/hal.h" name="hal/hal.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="77,5,147,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,62,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,35,60,71,56,67,97,31"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="86,80,139,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,33,115,64,110,64,110,33"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="163,80,240,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,30,176,68,173,72,126,35"/>
-</map>
