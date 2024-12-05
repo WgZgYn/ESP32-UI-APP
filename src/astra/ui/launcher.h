@@ -7,7 +7,6 @@
 
 #include <app/app.h>
 
-#include "element/page/Camera.h"
 #include "element/page/Selector.h"
 
 
@@ -36,9 +35,6 @@ namespace astra {
         void setup() override;
 
         void loop() override;
-
-        // const ui::Camera *getCamera() const { return &camera; }
-        // const ui::Selector *getSelector() const { return &selector; }
     };
 }
 
