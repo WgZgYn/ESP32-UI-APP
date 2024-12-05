@@ -9,12 +9,17 @@
 #include <AsyncMqttClient.h>
 #include <app/app.h>
 
-#include <wifi/config.h>
-
-
-
-
 namespace mqtt {
+    constexpr static uint8_t MAX_URL_LENGTH = 127;
+    extern AsyncMqttClient mqttClient;
+    extern const char* MQTT_PUBLISH_STATUS;
+    extern const char* MQTT_PUBLISH_EVENTS;
+    extern const char* MQTT_SUBSCRIBE_BROADCAST;
+    extern const String MQTT_PUBLISH_SELF_EVENTS;
+    extern const String MQTT_SUBSCRIBE_SERVICE;
+
+
+
 #ifdef AUTO_CONNECT
     void connectToWifi();
 #endif
@@ -35,9 +40,9 @@ namespace mqtt {
 
     void onMqttPublish(uint16_t packetId);
 
+    void publish(const char* topic, uint8_t qos, const char* payload);
 
-    class MqttClient : public app::Service {
-    private:
+    class MqttClient final : public app::Service {
         MqttClient() = default;
 
     public:
