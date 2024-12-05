@@ -64,14 +64,11 @@ namespace app {
 
         static void WIFI_MODE_INIT();
 
-        static void KEY_INIT();
-
         void MQTT_INIT();
-
-        void WEB_INIT();
 
         void PAIR_INIT();
 
+        static void KEY_INIT();
 
         void add(Service *activity, uint8_t priority);
 

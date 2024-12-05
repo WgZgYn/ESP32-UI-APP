@@ -1,7 +1,0 @@
-<map id="HAL::canvasUpdate" name="HAL::canvasUpdate">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,145,57"/>
-<area shape="rect" id="Node000002" href="$class_h_a_l.html#a6fa3ce5052ac2d845033494c38545459" title=" " alt="" coords="193,5,339,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,32,177,28,178,33,146,37"/>
-<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="229,56,302,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,51,215,60,214,65,145,56"/>
-</map>

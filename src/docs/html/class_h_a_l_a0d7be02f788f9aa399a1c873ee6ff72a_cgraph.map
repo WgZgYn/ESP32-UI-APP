@@ -1,7 +1,0 @@
-<map id="HAL::beep" name="HAL::beep">
-<area shape="rect" id="Node000001" title="buzzer." alt="" coords="5,31,89,57"/>
-<area shape="rect" id="Node000002" href="$class_h_a_l.html#a629d66763368eb51a6a9563cb0c7dddd" title=" " alt="" coords="137,5,227,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,34,121,27,122,33,90,39"/>
-<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="145,56,218,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,49,130,57,129,62,89,54"/>
-</map>

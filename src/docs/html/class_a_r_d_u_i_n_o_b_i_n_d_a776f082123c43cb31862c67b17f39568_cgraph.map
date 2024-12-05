@@ -1,9 +1,0 @@
-<map id="ARDUINOBIND::_delay" name="ARDUINOBIND::_delay">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,169,57"/>
-<area shape="rect" id="Node000002" href="$class_h_a_l.html#ae63b81f88feafa8a8eb1670c75b986cd" title="system timers." alt="" coords="217,31,303,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,41,201,41,201,47,169,47"/>
-<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9990718b01d90c567a8baa1ecadc1ead" title=" " alt="" coords="351,5,444,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,33,335,27,336,33,304,39"/>
-<area shape="rect" id="Node000004" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="361,56,434,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="304,49,346,57,345,62,303,55"/>
-</map>

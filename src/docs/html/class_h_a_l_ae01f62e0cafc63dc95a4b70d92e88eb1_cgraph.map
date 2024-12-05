@@ -1,7 +1,0 @@
-<map id="HAL::setDrawType" name="HAL::setDrawType">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,138,57"/>
-<area shape="rect" id="Node000002" href="$class_h_a_l.html#a04ab7db4043ed43d64b0ff67b0c28b36" title=" " alt="" coords="186,5,325,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,32,170,28,170,33,139,37"/>
-<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="219,56,292,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,51,204,60,203,65,138,56"/>
-</map>

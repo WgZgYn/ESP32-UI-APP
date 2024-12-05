@@ -1,9 +1,0 @@
-<map id="WiFiInfoItem::ConnectTo" name="WiFiInfoItem::ConnectTo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,635,164,789"/>
-<area shape="rect" id="Node000002" href="$classapp_1_1_activity.html" title=" " alt="" coords="42,368,127,587"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,602,87,635,82,635,82,602"/>
-<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_lifecycle_item.html" title=" " alt="" coords="12,165,157,320"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,335,87,368,82,368,82,335"/>
-<area shape="rect" id="Node000004" href="$classastra_1_1ui_1_1_item.html" title=" " alt="" coords="38,5,131,117"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,132,87,165,82,165,82,132"/>
-</map>

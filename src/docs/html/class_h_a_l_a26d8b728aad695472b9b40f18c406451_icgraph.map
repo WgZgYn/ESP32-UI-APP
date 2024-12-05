@@ -1,7 +1,0 @@
-<map id="HAL::_drawLine" name="HAL::_drawLine">
-<area shape="rect" id="Node000001" title=" " alt="" coords="308,5,422,32"/>
-<area shape="rect" id="Node000002" href="$class_h_a_l.html#ac47f62fe2c8497c9198d83e9455f2314" title=" " alt="" coords="153,5,260,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,21,260,21,260,16,292,16"/>
-<area shape="rect" id="Node000003" href="$classblock.html#aa9fcde09d74e682ad66b3a690568f4c0" title=" " alt="" coords="5,5,105,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="137,21,105,21,105,16,137,16"/>
-</map>
