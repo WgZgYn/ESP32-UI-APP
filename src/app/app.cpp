@@ -3,12 +3,12 @@
 #include <EEPROM.h>
 #include <nvs_flash.h>
 #include <application/NetworkManager.h>
-#include <application/WebAuthServer.h>
 #include <astra/ui/UI_VIEW.h>
 #include <mqtt/mqtt.h>
 #include <service/service.h>
 
 #include "hal/myhal.hpp"
+#include "../hal/pins.h"
 
 
 void setup() {
@@ -64,6 +64,7 @@ namespace app {
     }
 
     void App::KEY_INIT() {
+        pinMode(BOOT_BUTTON_PIN, INPUT_PULLUP);
         Serial.println("KEY initialized");
     }
 
@@ -74,11 +75,6 @@ namespace app {
 
     void App::SERVICE_INIT() {
         ::Service::getInstance().init();
-    }
-
-    void App::WEB_INIT() {
-        add(&WebAuthService::getInstance());
-        Serial.println("WEB initialized");
     }
 
     void App::PAIR_INIT() {
@@ -95,7 +91,6 @@ namespace app {
         HAL_INIT();
         UI_INIT();
         MQTT_INIT();
-        WEB_INIT();
         PAIR_INIT();
     }
 

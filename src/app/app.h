@@ -68,10 +68,7 @@ namespace app {
 
         void MQTT_INIT();
 
-        void WEB_INIT();
-
         void PAIR_INIT();
-
 
         void add(Service *activity, uint8_t priority);
 
