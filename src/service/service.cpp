@@ -1,15 +1,15 @@
 #include "service.h"
 #include <ArduinoJson.h>
+#include <device/device.h>
+#include <hal/pins.h>
 #include <utils/utils.h>
 
 
-const String Service::ID{ESP.getEfuseMac()};
-
 StaticJsonDocument<512> newJsonDocument() {
     StaticJsonDocument<512> doc;
-    doc["efuse_mac"] = Service::ID;
-    doc["model_id"] = Service::model_id;
-    doc["model_name"] = Service::model_name;
+    doc["efuse_mac"] = DeviceConfig::ID;
+    doc["model_id"] = DeviceConfig::model_id;
+    doc["model_name"] = DeviceConfig::model_name;
     return doc;
 }
 
@@ -69,7 +69,6 @@ void Service::setBrightness(const uint8_t val) {
 
 void Service::init() {
     pinMode(LED_BUILTIN, OUTPUT); // 使用蓝色LED管脚
-    pinMode(RESET_BUTTON_PIN, INPUT_PULLUP); // 按钮连接到GPIO0，低电平触发
     Serial.println("SERVICE initialized");
 }
 
