@@ -125,7 +125,7 @@ public:
 
     void reset() {
         WiFi.disconnect();
-        wifiState = WiFiState::None; // TODO: Test
+        wifiState = WiFiState::None;
     }
 
     static NetworkManager &getInstance() {
