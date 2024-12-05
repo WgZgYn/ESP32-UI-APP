@@ -5,12 +5,10 @@
 #ifndef UI_VIEW_H
 #define UI_VIEW_H
 
-#include "element/page/Menu.h"
 #include "launcher.h"
 
 extern astra::Launcher astraLauncher;
-extern astra::ui::TileMenu rootPage;
-extern astra::ui::ListMenu secondPage;
+extern astra::ui::LifecycleItem* rootPage;
 
 
 #endif //UI_VIEW_H
