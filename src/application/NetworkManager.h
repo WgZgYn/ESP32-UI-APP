@@ -11,6 +11,8 @@
 #include <WiFiServer.h>
 #include <app/app.h>
 #include <BluetoothSerial.h>
+#include <WiFi.h>
+#include <hal/pins.h>
 
 // #define USING_BLUETOOTH
 
@@ -121,6 +123,11 @@ public:
 
     void update() override;
 
+    void reset() {
+        WiFi.disconnect();
+        wifiState = WiFiState::None; // TODO: Test
+    }
+
     static NetworkManager &getInstance() {
         static NetworkManager instance;
         return instance;
@@ -133,6 +140,11 @@ class WiFiManagerService final : public app::Service {
     }
 
     void loop() override {
+        // WiFi 重置按钮被按下
+        if (digitalRead(BOOT_BUTTON_PIN) == LOW) {
+            app::App::getInstance().ui = false;
+            NetworkManager::getInstance().reset();
+        }
         if (app::App::getInstance().ui) return;
         NetworkManager::getInstance().update();
     }
