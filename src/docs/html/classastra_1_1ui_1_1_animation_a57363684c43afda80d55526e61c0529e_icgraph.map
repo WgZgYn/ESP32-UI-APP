@@ -1,7 +1,0 @@
-<map id="astra::ui::Animation::exitAnimation" name="astra::ui::Animation::exitAnimation">
-<area shape="rect" id="Node000001" title=" " alt="" coords="207,23,341,65"/>
-<area shape="rect" id="Node000002" href="$classastra_1_1ui_1_1_menu.html#a534eaa390530d0a250499128f4e62911" title=" " alt="" coords="8,5,156,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,36,156,31,157,26,192,30"/>
-<area shape="rect" id="Node000003" href="$classastra_1_1ui_1_1_menu.html#a6a8d85babc1c7a2caa603fd2f3a5ae9d" title=" " alt="" coords="5,56,159,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,58,159,62,158,57,191,52"/>
-</map>

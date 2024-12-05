@@ -1,8 +1,0 @@
-<map id="mqtt::connectToMqtt" name="mqtt::connectToMqtt">
-<area shape="rect" id="Node000001" title=" " alt="" coords="373,5,514,32"/>
-<area shape="rect" id="Node000002" href="$classmqtt_1_1_mqtt_client.html#a4af282eb2dc3c1be818bbed63beb26a7" title=" " alt="" coords="5,5,161,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="357,21,161,21,161,16,357,16"/>
-<area shape="rect" id="Node000003" href="$namespacemqtt.html#acfe06a680b70b91f54ba555c4732128c" title=" " alt="" coords="209,31,325,57"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="358,34,326,38,325,33,357,28"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="193,37,161,32,162,27,193,31"/>
-</map>

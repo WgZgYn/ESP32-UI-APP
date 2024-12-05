@@ -1,9 +1,0 @@
-<map id="astra/config/config.h" name="astra/config/config.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="24,5,164,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,88,66,115"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,34,55,77,51,74,83,31"/>
-<area shape="rect" id="Node000003" href="$u8g2__font__myfont_8h.html" title=" " alt="" coords="90,80,218,123"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,31,132,66,128,69,101,34"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="112,171,196,197"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="157,123,157,155,152,155,152,123"/>
-</map>

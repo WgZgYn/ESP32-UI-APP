@@ -1,7 +1,0 @@
-<map id="HAL::drawEnglish" name="HAL::drawEnglish">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,132,57"/>
-<area shape="rect" id="Node000002" href="$class_h_a_l.html#a3bd412c91f3b852f10fe47adeee484a4" title=" " alt="" coords="180,5,313,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,32,164,28,165,33,132,38"/>
-<area shape="rect" id="Node000003" href="$class_h_a_l.html#a9a66283b8e193c0d49986f0f39a5e8c6" title=" " alt="" coords="210,56,283,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,50,195,59,194,65,132,56"/>
-</map>

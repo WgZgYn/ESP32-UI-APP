@@ -1,7 +1,0 @@
-<map id="game::GameOfLife::GameOfLife::update" name="game::GameOfLife::GameOfLife::update">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,194,81"/>
-<area shape="rect" id="Node000002" href="$classgame_1_1_game_of_life_1_1_game_of_life.html#a75e401e37ee667fe28883fcad4a885c6" title=" " alt="" coords="242,5,430,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,44,226,39,227,45,195,49"/>
-<area shape="rect" id="Node000003" href="$classgame_1_1_game_of_life_1_1_game_of_life.html#a2bb596990158f5da8a6b0449fe518c53" title=" " alt="" coords="242,72,430,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,71,227,75,226,81,194,76"/>
-</map>

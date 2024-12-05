@@ -1,9 +1,0 @@
-<map id="game::GameOfLife::GameOfLife::random" name="game::GameOfLife::GameOfLife::random">
-<area shape="rect" id="Node000001" title=" " alt="" coords="478,39,666,81"/>
-<area shape="rect" id="Node000002" href="$classgame_1_1_game_of_life_1_1_game_of_life.html#a5b5ff0ac0f2c2f9743402ac574b4a38c" title=" " alt="" coords="242,39,430,81"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="462,63,430,63,430,57,462,57"/>
-<area shape="rect" id="Node000003" href="$classgame_1_1_game_of_life_1_1_game_of_life.html#a9916e868a2cf055534f905b558e92cdf" title=" " alt="" coords="5,5,194,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="226,47,194,43,194,37,226,42"/>
-<area shape="rect" id="Node000004" href="$classgame_1_1_game_of_life_1_1_game_of_life.html#a9d7dd13a53600a706150bd473f680188" title=" " alt="" coords="5,72,194,115"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="226,78,194,83,194,77,226,73"/>
-</map>
