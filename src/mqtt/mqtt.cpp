@@ -16,14 +16,15 @@ extern "C" {
 }
 
 namespace mqtt {
-    auto MQTT_PUBLISH_STATUS =  "/status";
-    auto MQTT_PUBLISH_EVENTS =  "/events";
-    const String ID = String(ESP.getEfuseMac());
-    const String MQTT_PUBLISH_SELF_EVENTS = String("/device/") + ID + "/events";
-    const String MQTT_SUBSCRIBE_SERVICE   = String("/device/") + ID + "/service";
-    static StaticJsonDocument<128> doc;
+    const char *MQTT_PUBLISH_STATUS = "/status";
+    const char *MQTT_PUBLISH_EVENTS = "/events";
+    const char *MQTT_SUBSCRIBE_BROADCAST = "/device";
+
+    const String MQTT_PUBLISH_SELF_EVENTS = String("/device/") + Service::ID + "/events";
+    const String MQTT_SUBSCRIBE_SERVICE = String("/device/") + Service::ID + "/service";
 
     AsyncMqttClient mqttClient;
+
     TimerHandle_t mqttReconnectTimer;
 
 #ifdef AUTO_CONNECT
@@ -63,25 +64,11 @@ namespace mqtt {
 
     void onMqttConnect(bool sessionPresent) {
         Serial.println("Connected to MQTT.");
-        Serial.print("Session present: ");
-        Serial.println(sessionPresent);
 
-        // 不重不漏
-        uint16_t packetIdSub = mqttClient.subscribe(MQTT_SUBSCRIBE_SERVICE.c_str(), 2);
-        Serial.print("Subscribing at QoS 2, packetId: ");
-        Serial.println(packetIdSub);
+        mqttClient.subscribe(MQTT_SUBSCRIBE_SERVICE.c_str(), 2);
+        mqttClient.subscribe(MQTT_SUBSCRIBE_BROADCAST, 1);
 
-        // status message
-        doc["efuse_mac"] = ID;
-        doc["chip_model"] = ESP.getChipModel();
-        doc["type_id"] = 1;
-        Service::getInstance().callback("status", doc);
-
-        String msg;
-        serializeJson(doc, msg);
-        Serial.println(msg);
-        mqttClient.publish(MQTT_PUBLISH_STATUS, 1, false, msg.c_str());
-        Serial.println("Publishing at QoS 1");
+        Service::getInstance().reportStatus();
     }
 
     void onMqttDisconnect(AsyncMqttClientDisconnectReason reason) {
@@ -94,16 +81,10 @@ namespace mqtt {
 
     void onMqttSubscribe(uint16_t packetId, uint8_t qos) {
         Serial.println("Subscribe acknowledged.");
-        Serial.print("  packetId: ");
-        Serial.println(packetId);
-        Serial.print("  qos: ");
-        Serial.println(qos);
     }
 
     void onMqttUnsubscribe(uint16_t packetId) {
         Serial.println("Unsubscribe acknowledged.");
-        Serial.print("  packetId: ");
-        Serial.println(packetId);
     }
 
     void onMqttMessage(char *topic, char *payload, AsyncMqttClientMessageProperties properties, size_t len,
@@ -124,36 +105,32 @@ namespace mqtt {
         Serial.println(index);
         Serial.print("  total: ");
         Serial.println(total);
-        Serial.println("  payload: ");
-        Serial.println(String(payload, len));
 
+        for (int i = 0; i < len; i++) {
+            Serial.print(static_cast<uint8_t>(payload[i]));
+        }
+
+        const String s(payload, len);
         Message &msg = Message::current();
-        msg.payload = String(payload, len);
+        msg.payload = s;
         msg.qos = properties.qos;
         msg.topic = topic;
         Serial.println("store message");
 
 
-        doc["type"] = "event";
-        const bool ok = Service::getInstance().callback(msg.payload.c_str(), doc);
-        if (!ok) {
-            Serial.println("can't handle the error message");
-            return;
+        StaticJsonDocument<512> doc;
+        const DeserializationError error = deserializeJson(doc, s.c_str());
+        if (error.code() == DeserializationError::Ok) {
+            Service::getInstance().callback(doc);
         }
-
-        String temp;
-        serializeJson(doc, temp);
-        Serial.println(temp);
-
-        // event message
-        mqttClient.publish(MQTT_PUBLISH_EVENTS, 2, false, temp.c_str());
-        mqttClient.publish(MQTT_PUBLISH_SELF_EVENTS.c_str(), 2, false, temp.c_str());
     }
 
     void onMqttPublish(uint16_t packetId) {
         Serial.println("Publish acknowledged.");
-        Serial.print("  packetId: ");
-        Serial.println(packetId);
+    }
+
+    void publish(const char *topic, uint8_t qos, const char *payload) {
+        mqttClient.publish(topic, qos, false, payload);
     }
 
     void MqttClient::setup() {
