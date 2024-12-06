@@ -360,9 +360,8 @@ void NetworkManager::update() {
             remoteClient.write(static_cast<uint8_t>(TcpResponse::Finish));
             const String msg = String("efuse_mac:") + DeviceConfig::getInstance().ID + String(",model_id:") + String(DeviceConfig::model_id) + "\n";
             remoteClient.write(msg.c_str());
-
-            remoteClient.stop();
-
+            // remoteClient.stop();
+            HAL::delay(50);
             app::App::getInstance().ui = true;
         }
         break;
