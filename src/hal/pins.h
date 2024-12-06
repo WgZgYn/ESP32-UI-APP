@@ -6,5 +6,6 @@
 #define PINS_H
 
 #define BOOT_BUTTON_PIN 0  // GPIO 0 对应 Boot 按钮
+#define LED_BUILTIN 2 // Blue LED
 
 #endif //PINS_H

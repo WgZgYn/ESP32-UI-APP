@@ -5,6 +5,7 @@
 #include "mqtt.h"
 #include <wifi/config.h>
 #include <ArduinoJson.h>
+#include <device/device.h>
 
 
 #include "MqttView.h"
@@ -20,8 +21,8 @@ namespace mqtt {
     const char *MQTT_PUBLISH_EVENTS = "/events";
     const char *MQTT_SUBSCRIBE_BROADCAST = "/device";
 
-    const String MQTT_PUBLISH_SELF_EVENTS = String("/device/") + Service::ID + "/events";
-    const String MQTT_SUBSCRIBE_SERVICE = String("/device/") + Service::ID + "/service";
+    const String MQTT_PUBLISH_SELF_EVENTS = String("/device/") + DeviceConfig::getInstance().ID + "/events";
+    const String MQTT_SUBSCRIBE_SERVICE = String("/device/") + DeviceConfig::getInstance().ID + "/service";
 
     AsyncMqttClient mqttClient;
 
@@ -64,6 +65,8 @@ namespace mqtt {
 
     void onMqttConnect(bool sessionPresent) {
         Serial.println("Connected to MQTT.");
+
+        Serial.println(MQTT_SUBSCRIBE_SERVICE);
 
         mqttClient.subscribe(MQTT_SUBSCRIBE_SERVICE.c_str(), 2);
         mqttClient.subscribe(MQTT_SUBSCRIBE_BROADCAST, 1);

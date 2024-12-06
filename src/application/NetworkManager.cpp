@@ -6,6 +6,7 @@
 
 #include <EEPROM.h>
 #include <WiFi.h>
+#include <device/device.h>
 #include <hal/hal.h>
 
 constexpr size_t EEPROM_SIZE = 128;
@@ -357,8 +358,10 @@ void NetworkManager::update() {
 
             HAL::delay(50);
             remoteClient.write(static_cast<uint8_t>(TcpResponse::Finish));
-            remoteClient.stop();
-
+            const String msg = String("efuse_mac:") + DeviceConfig::getInstance().ID + String(",model_id:") + String(DeviceConfig::model_id) + "\n";
+            remoteClient.write(msg.c_str());
+            // remoteClient.stop();
+            HAL::delay(50);
             app::App::getInstance().ui = true;
         }
         break;
