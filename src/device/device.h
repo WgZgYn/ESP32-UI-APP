@@ -9,13 +9,19 @@
 
 struct DeviceConfig {
 private:
-    DeviceConfig() {
+    DeviceConfig(): ID(ESP.getEfuseMac()) {
+
     }
 
 public:
     static constexpr uint8_t model_id = 2;
     static constexpr auto model_name = "ESP-Light-Dimmable";
-    static const String ID;
+    const String ID;
+
+    static DeviceConfig& getInstance() {
+        static DeviceConfig instance;
+        return instance;
+    }
 };
 
 

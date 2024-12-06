@@ -3,4 +3,4 @@
 //
 #include "device/device.h"
 
-const String DeviceConfig::ID{ESP.getEfuseMac()};
+
