@@ -6,7 +6,6 @@
 #define SERVICE_H
 
 #include <Arduino.h>
-#include <WiFi.h>
 #include <ArduinoJson/Document/StaticJsonDocument.hpp>
 #include <mqtt/mqtt.h>
 
@@ -29,9 +28,7 @@ public:
         AirSupply,
     };
 
-    static constexpr uint8_t model_id = 9;
-    static constexpr auto model_name = "ESP-air-condition";
-    static const String ID;
+
 
     static constexpr float minTemp = 18;
     static constexpr float maxTemp = 30;

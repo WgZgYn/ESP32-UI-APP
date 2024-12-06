@@ -1,11 +1,8 @@
 #include "service.h"
 #include <ArduinoJson.h>
+#include <device/device.h>
 #include <hal/hal.h>
-#include <utils/utils.h>
 
-constexpr int AIR_CONDITION_OFFSET = 1;
-
-const String Service::ID{ESP.getEfuseMac() + AIR_CONDITION_OFFSET};
 
 const char *modeStr(const int mode) {
     switch (mode) {
@@ -37,9 +34,9 @@ const char *windStr(const int wind) {
 
 StaticJsonDocument<512> newJsonDocument() {
     StaticJsonDocument<512> doc;
-    doc["efuse_mac"] = Service::ID;
-    doc["model_id"] = Service::model_id;
-    doc["model_name"] = Service::model_name;
+    doc["efuse_mac"] = DeviceConfig::getInstance().ID;
+    doc["model_id"] = DeviceConfig::model_id;
+    doc["model_name"] = DeviceConfig::model_name;
     return doc;
 }
 
