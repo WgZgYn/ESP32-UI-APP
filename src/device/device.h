@@ -9,13 +9,15 @@
 
 struct DeviceConfig {
 private:
-    DeviceConfig(): ID(ESP.getEfuseMac()) {
+    constexpr int SENSOR_OFFSET = 2;
+
+    DeviceConfig(): ID(ESP.getEfuseMac() + SENSOR_OFFSET) {
 
     }
 
 public:
-    static constexpr uint8_t model_id = 2;
-    static constexpr auto model_name = "ESP-Light-Dimmable";
+    static constexpr uint8_t model_id = 8;
+    static constexpr auto model_name = "ESP-Sensor-Temperature-Humidity";
     const String ID;
 
     static DeviceConfig& getInstance() {

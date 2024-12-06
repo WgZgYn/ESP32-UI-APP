@@ -5,8 +5,6 @@
 #ifndef SERVICE_H
 #define SERVICE_H
 
-#include <Arduino.h>
-#include <WiFi.h>
 #include <ArduinoJson/Document/StaticJsonDocument.hpp>
 #include <mqtt/mqtt.h>
 
@@ -16,10 +14,6 @@ class Service {
 public:
     float temperature = 0;
     float humidity = 0;
-
-    static constexpr uint8_t model_id = 8;
-    static constexpr auto model_name = "ESP-Sensor-Temperature-Humidity";
-    static const String ID;
 
     void reportStatus() const;
 

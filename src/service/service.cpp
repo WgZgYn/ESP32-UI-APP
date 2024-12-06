@@ -1,6 +1,7 @@
 #include "service.h"
 #include <ArduinoJson.h>
 #include <Adafruit_AM2320.h>
+#include <device/device.h>
 #include <hal/hal.h>
 
 #define SDA_PIN 21
@@ -11,8 +12,6 @@ extern "C" {
 #include "freertos/FreeRTOS.h"
 }
 
-constexpr int SENSOR_OFFSET = 2;
-const String Service::ID{ESP.getEfuseMac() + SENSOR_OFFSET};
 
 Adafruit_AM2320 am2320 = Adafruit_AM2320();
 TimerHandle_t sensorTimer;
@@ -31,9 +30,9 @@ void sensorTimerCallback(TimerHandle_t timer) {
 
 StaticJsonDocument<512> newJsonDocument() {
     StaticJsonDocument<512> doc;
-    doc["efuse_mac"] = Service::ID;
-    doc["model_id"] = Service::model_id;
-    doc["model_name"] = Service::model_name;
+    doc["efuse_mac"] = DeviceConfig::getInstance().ID;
+    doc["model_id"] = DeviceConfig::model_id;
+    doc["model_name"] = DeviceConfig::model_name;
     return doc;
 }
 
