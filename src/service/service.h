@@ -11,7 +11,6 @@
 
 
 class Service {
-
     uint8_t brightness = 0;
 
     const char *openLight();
