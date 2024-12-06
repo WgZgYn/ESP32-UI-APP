@@ -79,7 +79,7 @@ void Service::reportStatus() const {
     const JsonObject status = doc.createNestedObject("payload"); // Otherwise create a new one
 
     status["灯开关"] = brightness > 0;
-    status["灯亮度"] = static_cast<int>(brightness / 2.55); // TODO:
+    status["灯亮度"] = static_cast<int>(brightness / 2.55);
 
     String res;
     serializeJson(doc, res);
