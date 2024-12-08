@@ -109,15 +109,14 @@ namespace mqtt {
         Serial.print("  total: ");
         Serial.println(total);
 
-        for (int i = 0; i < len; i++) {
-            Serial.print(static_cast<uint8_t>(payload[i]));
-        }
-
         const String s(payload, len);
+        Serial.println(s);
+
         Message &msg = Message::current();
         msg.payload = s;
         msg.qos = properties.qos;
         msg.topic = topic;
+
         Serial.println("store message");
 
 
